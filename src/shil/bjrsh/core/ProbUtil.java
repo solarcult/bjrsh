@@ -1,4 +1,4 @@
-package shil.bjrsh;
+package shil.bjrsh.core;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -16,13 +16,16 @@ public class ProbUtil {
 	public static int TotalOneSameCards = Ndeck * OneSameCardInOneDeck;
 	public static int TotalCards = Ndeck * DeckCards;
 
-	public static double calcProb(CardsPathValue cardsPathValue){
-		Map<Card,Integer> cardsMap = cardsPathValue.getCardsMap();
-		for(Entry<Card, Integer> entry : cardsMap.entrySet()){
-			
+	public static double calcProb(List<Card> cards){
+		double prob = 1, usedcard = 0;
+		Map<Card,Integer> cardsMap = convertList2Map(cards);
+		for(Entry<Card,Integer> entry : cardsMap.entrySet()){
+			for(int i=0;i<entry.getValue();i++){
+				prob *= (double)(TotalOneSameCards-i)/(TotalCards-usedcard);
+				usedcard++;
+			}
 		}
-		
-		return 0;
+		return prob;
 	}
 	
 	public static Map<Card,Integer> convertList2Map(List<Card> cards){
@@ -30,7 +33,7 @@ public class ProbUtil {
 		for(Card card : cards){
 			//将11转换为 A
 			if(Card.Eleven.equals(card)){
-				card = Card.One;
+				card = Card.One1;
 			}
 			Integer count = cardsMap.get(card);
 			if(count == null){
@@ -43,13 +46,13 @@ public class ProbUtil {
 	}
 	
 	public static void main(String[] args){
-		CardsPathValue cardsPathValue = new CardsPathValue(Card.One);
+		CardsPathValue cardsPathValue = new CardsPathValue(Card.One1);
 		cardsPathValue.addCard(Card.Eleven);
-		cardsPathValue.addCard(Card.Eight);
+		cardsPathValue.addCard(Card.Eight8);
 		
-		CardsPathValue cardsPathValue2 = new CardsPathValue(Card.One);
-		cardsPathValue2.addCard(Card.One);
-		cardsPathValue2.addCard(Card.Eight);
+		CardsPathValue cardsPathValue2 = new CardsPathValue(Card.One1);
+		cardsPathValue2.addCard(Card.One1);
+		cardsPathValue2.addCard(Card.Eight8);
 		
 		Set<CardsPathValue> a = new HashSet<CardsPathValue>();
 		a.add(cardsPathValue);
@@ -58,6 +61,9 @@ public class ProbUtil {
 		System.out.println(cardsPathValue.equals(cardsPathValue2));
 		System.out.println(cardsPathValue);
 		System.out.println(cardsPathValue2);
+		
+		System.out.println(calcProb(cardsPathValue.getCards()));
+		System.out.println(calcProb(cardsPathValue2.getCards()));
 	}
 	
 }

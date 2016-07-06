@@ -1,4 +1,4 @@
-package shil.bjrsh;
+package shil.bjrsh.core;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class CardsPathValue{
 	
-	public static int IlleageCards = -1;
+	public static int IllegalCards = -1;
 	
 	private int value;
 	private List<Card> cards;
@@ -33,20 +33,30 @@ public class CardsPathValue{
 	}
 	
 	public int getValue(){
-		if(value > GenerateCardsUtil.BlackJack){
+		if(value > BlackJackInfo.BlackJack){
 			//如果A做为11超过了21点,则这个A会被看成1,这种情况,在其他A当1的组合里应该已经存在了,所以此情形忽略掉.
 			if(cards.contains(Card.Eleven)){
 				int reduceV = value - 10;
-				if(reduceV < GenerateCardsUtil.BlackJack){
-					value = IlleageCards;
+				if(reduceV < BlackJackInfo.BlackJack){
+					value = IllegalCards;
 				}
 			}
 		}
 		return value;
 	}
 	
-	public Card getFirstInHand(){
-		return cards.get(0);
+	public boolean isValid(){
+		boolean isElevenOk = getValue() != IllegalCards;
+		boolean notOutofCards = true;
+		Map<Card,Integer> cardsMap = getCardsMap();
+		for(Integer cards : cardsMap.values()){
+			if(cards > ProbUtil.TotalOneSameCards){
+				notOutofCards = false;
+				System.out.println("this is it, out of cards: "+ cards);
+				break;
+			}
+		}
+		return isElevenOk && notOutofCards; 
 	}
 	
 	public List<Card> getCards(){
@@ -57,7 +67,9 @@ public class CardsPathValue{
 		return ProbUtil.convertList2Map(cards);
 	}
 
-
+	public double prob(){
+		return ProbUtil.calcProb(cards);
+	}
 
 	@Override
 	public int hashCode() {
@@ -92,8 +104,9 @@ public class CardsPathValue{
 
 	@Override
 	public String toString() {
-		return "CardsPathValue [firstInHand=" + getFirstInHand() + ", cards=" + cards + "]" + ", value=" + getValue() + ", cardsMap=" + getCardsMap();
+		return "CardsPathValue [cards=" + cards + ", value=" + value
+				+ ", getCardsMap()=" + getCardsMap() + ", prob()=" + prob()
+				+ "]";
 	}
-	
 	
 }
