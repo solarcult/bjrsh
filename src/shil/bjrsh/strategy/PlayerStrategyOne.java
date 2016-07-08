@@ -23,7 +23,7 @@ public class PlayerStrategyOne {
 	
 	public static Collection<PlayerCardsPathValue> hitMeOneMoreTillBad(PlayerCardsPathValue playerCardsPathValue, Card dealerCard){
 		Collection<PlayerCardsPathValue> decidePackage = new ArrayList<PlayerCardsPathValue>(); 
-		double[] nowChance = PlayerAnalyzeWithCardsProb.playerNowVSDealerChance(playerCardsPathValue, dealerCard);
+		double[] nowChance = PlayerAnalyzeWithCardsProb.playerNowVSDealerChance(StartValue.getOne(playerCardsPathValue.getValue()), dealerCard);
 		double[] oneMoreCardChance = PlayerAnalyzeWithCardsProb.playerChanceOneMoreCard(playerCardsPathValue, dealerCard);
 		//如果多发一张牌,输的可能性会更小,则发牌
 		if(nowChance[WinDrawLose.lose] > oneMoreCardChance[WinDrawLose.lose] + benefit){

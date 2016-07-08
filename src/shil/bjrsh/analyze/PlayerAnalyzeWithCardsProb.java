@@ -1,6 +1,7 @@
 package shil.bjrsh.analyze;
 
 import java.util.Collection;
+import java.util.HashSet;
 
 import shil.bjrsh.HelloWorld;
 import shil.bjrsh.core.BlackJackInfo;
@@ -17,8 +18,8 @@ public class PlayerAnalyzeWithCardsProb {
 	 * @param dealerValue
 	 * @return
 	 */
-	public static double[] playerNowVSDealerChance(PlayerCardsPathValue playerCardsPathValue, Card dealerCard){
-		double[] dealerWDL = DealerAnalyzeWithCardsProb.dealerResultChance(dealerCard, playerCardsPathValue.getValue());
+	public static double[] playerNowVSDealerChance(StartValue playerValue, Card dealerCard){
+		double[] dealerWDL = DealerAnalyzeWithCardsProb.dealerResultChance(dealerCard, playerValue.getValue());
 		return new double[]{dealerWDL[WinDrawLose.lose],dealerWDL[WinDrawLose.draw],dealerWDL[WinDrawLose.win]};
 	}
 	
@@ -29,9 +30,7 @@ public class PlayerAnalyzeWithCardsProb {
 	 * @return
 	 */
 	public static double[] playerChanceOneMoreCard(StartValue startValue,Card dealerCard){
-//		System.out.println("Player StartValue: "+startValue +" Dealer Card: "+dealerCard);
-		PlayerCardsPathValue playerCardsPathValue = new PlayerCardsPathValue(startValue);
-		return playerChanceOneMoreCard(playerCardsPathValue, dealerCard);
+		return playerChanceOneMoreCard(new PlayerCardsPathValue(startValue), dealerCard);
 	}
 	
 	/**
@@ -42,10 +41,14 @@ public class PlayerAnalyzeWithCardsProb {
 	 */
 	public static double[] playerChanceOneMoreCard(PlayerCardsPathValue playerCardsPathValue,Card dealerCard){
 		Collection<PlayerCardsPathValue> oneHitCards = GenerateCardsUtil.hitPlayerOneMoreCard(playerCardsPathValue);
+		return calcPlayerCollectionsProb(oneHitCards, dealerCard);
+	}
+	
+	public static double[] calcPlayerCollectionsProb(Collection<PlayerCardsPathValue> playerCards,Card dealerCard){
 		double winrate = 0;
 		double drawrate = 0;
 		double loserate = 0;
-		for(PlayerCardsPathValue onehit : oneHitCards){
+		for(PlayerCardsPathValue onehit : playerCards){
 			if(onehit.getValue() > BlackJackInfo.BlackJack){
 				loserate += onehit.prob();
 			}else{
@@ -60,15 +63,36 @@ public class PlayerAnalyzeWithCardsProb {
 		return new double[]{winrate/totalrate,drawrate/totalrate,loserate/totalrate};
 	}
 	
+	public static double[] playerAX1moreCvsDealer(Card notACardvalue,Card dealerCard){
+		Collection<PlayerCardsPathValue> oneHitCards = new HashSet<PlayerCardsPathValue>();
+		PlayerCardsPathValue ainstead1 = new PlayerCardsPathValue(StartValue.One);
+		ainstead1.addCard(notACardvalue);
+		HelloWorld.print(GenerateCardsUtil.hitPlayerOneMoreCard(ainstead1));
+		oneHitCards.addAll(GenerateCardsUtil.hitPlayerOneMoreCard(ainstead1));
+		System.out.println("s");
+		PlayerCardsPathValue ainstead11 = new PlayerCardsPathValue(StartValue.Eleven);
+		ainstead11.addCard(notACardvalue);
+		oneHitCards.addAll(GenerateCardsUtil.hitPlayerOneMoreCard(ainstead11));
+		HelloWorld.print(GenerateCardsUtil.hitPlayerOneMoreCard(ainstead11));
+		
+		return calcPlayerCollectionsProb(oneHitCards, dealerCard);
+	}
+	
 	public static void main(String[] args) {
-		for(StartValue startValue : StartValue.values()){
-			System.out.println(" * Player:"+startValue +" *");
-			for(Card card : Card.values()){
-				System.out.println(" == Player:"+startValue+" vs Dealer:"+card+" == ");
-//				HelloWorld.printDoubleWDL(playerChanceOneMoreCard(startValue,card));
-				HelloWorld.printDoubleWDL(playerNowVSDealerChance(new PlayerCardsPathValue(startValue),card));
-			}
-		}
+		
+		HelloWorld.printDoubleWDL(playerAX1moreCvsDealer(Card.Two2,Card.Six6));
+		HelloWorld.printDoubleWDL(playerChanceOneMoreCard(StartValue.Two,Card.Six6));
+		HelloWorld.printDoubleWDL(playerNowVSDealerChance(StartValue.Two,Card.Six6));
+		
+		
+//		for(StartValue startValue : StartValue.values()){
+//			System.out.println(" * Player:"+startValue +" *");
+//			for(Card card : Card.values()){
+//				System.out.println(" == Player:"+startValue+" vs Dealer:"+card+" == ");
+////				HelloWorld.printDoubleWDL(playerChanceOneMoreCard(startValue,card));
+//				HelloWorld.printDoubleWDL(playerNowVSDealerChance(new PlayerCardsPathValue(startValue),card));
+//			}
+//		}
 	}
 
 }

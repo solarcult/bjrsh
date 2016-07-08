@@ -4,7 +4,6 @@ import java.util.Comparator;
 
 import shil.bjrsh.HelloWorld;
 import shil.bjrsh.core.Card;
-import shil.bjrsh.core.PlayerCardsPathValue;
 import shil.bjrsh.core.StartValue;
 
 public class DealerVSPlayerChance{
@@ -42,7 +41,7 @@ public class DealerVSPlayerChance{
 
 	@Override
 	public String toString() {
-		double[] origin = PlayerAnalyzeWithCardsProb.playerNowVSDealerChance(new PlayerCardsPathValue(playerStartValue), dealerCard);
+		double[] origin = PlayerAnalyzeWithCardsProb.playerNowVSDealerChance(playerStartValue, dealerCard);
 		return "DealerVSPlayerChance [who=" + who + ", \tdealerCard="
 				+ dealerCard + ", \tplayerStartValue=" + playerStartValue.getValue()
 				+ ", \twinRate()=" + winRate() + ", \tdrawRate()=" + drawRate()

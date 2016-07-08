@@ -81,6 +81,7 @@ public class PlayerCardsPathValue {
 				+ ((cards == null) ? 0 : replaceEleven2One().hashCode());
 		result = prime * result
 				+ ((startValue == null) ? 0 : startValue.hashCode());
+		result = prime * result + value;
 		return result;
 	}
 	
@@ -112,6 +113,8 @@ public class PlayerCardsPathValue {
 		} else if (!replaceEleven2One().equals(other.replaceEleven2One()))
 			return false;
 		if(startValue != other.startValue)
+			return false;
+		if (value != other.value)
 			return false;
 		return true;
 	}
