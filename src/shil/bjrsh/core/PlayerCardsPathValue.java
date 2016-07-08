@@ -34,7 +34,7 @@ public class PlayerCardsPathValue {
 			//如果A做为11超过了21点,则这个A会被看成1,这种情况,在其他A当1的组合里应该已经存在了,所以此情形忽略掉.
 			if(cards.contains(Card.Eleven)){
 				int reduceV = value - 10;
-				if(reduceV < BlackJackInfo.BlackJack){
+				if(reduceV <= BlackJackInfo.BlackJack){
 					value = IllegalCards;
 				}
 			}
@@ -78,11 +78,22 @@ public class PlayerCardsPathValue {
 		int result = 1;
 		result = prime * result + 
 				//定制化的
-				+ ((getCardsMap() == null) ? 0 : getCardsMap().hashCode());
+				+ ((cards == null) ? 0 : replaceEleven2One().hashCode());
 		result = prime * result
 				+ ((startValue == null) ? 0 : startValue.hashCode());
-		result = prime * result + value;
 		return result;
+	}
+	
+	protected List<Card> replaceEleven2One(){
+		List<Card> replaceEvelen2One = new ArrayList<Card>();
+		for(Card card : cards){
+			if(Card.Eleven.equals(card)){
+				replaceEvelen2One.add(Card.One1);
+			}else{
+				replaceEvelen2One.add(card);
+			}
+		}
+		return replaceEvelen2One;
 	}
 	
 	@Override
@@ -95,12 +106,10 @@ public class PlayerCardsPathValue {
 			return false;
 		PlayerCardsPathValue other = (PlayerCardsPathValue) obj;
 		//定制化的
-		if (getCardsMap() == null) {
-			if (other.getCardsMap() != null)
+		if (cards == null) {
+			if (other.cards != null)
 				return false;
-		} else if (!getCardsMap().equals(other.getCardsMap()))
-			return false;
-		if (value != other.value)
+		} else if (!replaceEleven2One().equals(other.replaceEleven2One()))
 			return false;
 		if(startValue != other.startValue)
 			return false;

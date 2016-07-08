@@ -6,6 +6,7 @@ import shil.bjrsh.HelloWorld;
 import shil.bjrsh.core.BlackJackInfo;
 import shil.bjrsh.core.Card;
 import shil.bjrsh.core.CardsPathValue;
+import shil.bjrsh.core.StartValue;
 
 public class DealerAnalyzeWithCardsProb {
 	
@@ -37,10 +38,19 @@ public class DealerAnalyzeWithCardsProb {
 	}
 	
 	public static void main(String[] args){
-		HelloWorld.printDoubleWDL(dealerResultChance(Card.Ten, 12));
-		HelloWorld.printDoubleWDL(dealerResultChance(Card.Ten, 19));
-		HelloWorld.printDoubleWDL(dealerResultChance(Card.Six6, 12));
-		HelloWorld.printDoubleWDL(dealerResultChance(Card.Five5, 12));
-		HelloWorld.printDoubleWDL(dealerResultChance(Card.Five5, 18));
+		
+		for(Card card : Card.values()){
+			for(StartValue startValue : StartValue.values()){
+				System.out.println("== Dealer:"+ card +"  vs  " + "Player:"+startValue.getValue() +"==");
+				HelloWorld.printDoubleWDL(dealerResultChance(card, startValue.getValue()));
+			}
+		}
+		
+//		HelloWorld.printDoubleWDL(dealerResultChance(Card.Ten, 12));
+//		HelloWorld.printDoubleWDL(dealerResultChance(Card.Ten, 19));
+//		HelloWorld.printDoubleWDL(dealerResultChance(Card.Six6, 12));
+//		HelloWorld.printDoubleWDL(dealerResultChance(Card.Six6, 5));
+//		HelloWorld.printDoubleWDL(dealerResultChance(Card.Five5, 12));
+//		HelloWorld.printDoubleWDL(dealerResultChance(Card.Five5, 18));
 	}
 }

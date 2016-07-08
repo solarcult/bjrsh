@@ -1,8 +1,7 @@
 package shil.bjrsh.core;
 
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
+import java.util.HashSet;
 
 import shil.bjrsh.HelloWorld;
 
@@ -14,7 +13,7 @@ public class GenerateCardsUtil {
 	 * @return Collection<CardsPathValue> 未过滤,有重复cards数据,但顺序不同
 	 */
 	public static Collection<CardsPathValue> generateDealerCards(CardsPathValue cardsPathValue){
-		List<CardsPathValue> cardsPathValues = new ArrayList<CardsPathValue>(); 
+		Collection<CardsPathValue> cardsPathValues = new HashSet<CardsPathValue>();
 		
 		//这个组合不合理的,也就是A当做11爆掉
 		if(!cardsPathValue.isValid()) return cardsPathValues;
@@ -44,7 +43,7 @@ public class GenerateCardsUtil {
 	 * @return Collection<CardsPathValue> 未过滤,有重复cards数据,但顺序不同
 	 */
 	public static Collection<PlayerCardsPathValue> generatePlayerCardsPaths(PlayerCardsPathValue playerCardsPathValue,int enableHitOneMoreCardNumber){
-		List<PlayerCardsPathValue> playerCardsPathValues = new ArrayList<PlayerCardsPathValue>(); 
+		Collection<PlayerCardsPathValue> playerCardsPathValues = new HashSet<PlayerCardsPathValue>();
 		
 		if(!playerCardsPathValue.isValid()) return playerCardsPathValues;
 		
@@ -70,7 +69,7 @@ public class GenerateCardsUtil {
 	 * @return
 	 */
 	public static Collection<PlayerCardsPathValue> hitPlayerOneMoreCard(PlayerCardsPathValue playerCardsPathValue){
-		List<PlayerCardsPathValue> playerCardsPathValues = new ArrayList<PlayerCardsPathValue>(); 
+		Collection<PlayerCardsPathValue> playerCardsPathValues = new HashSet<PlayerCardsPathValue>();
 		
 		if(!playerCardsPathValue.isValid()) return playerCardsPathValues;
 		

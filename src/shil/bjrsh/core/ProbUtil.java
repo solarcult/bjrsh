@@ -1,11 +1,11 @@
 package shil.bjrsh.core;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Set;
 
 public class ProbUtil {
 	
@@ -54,16 +54,49 @@ public class ProbUtil {
 		cardsPathValue2.addCard(Card.One1);
 		cardsPathValue2.addCard(Card.Eight8);
 		
-		Set<CardsPathValue> a = new HashSet<CardsPathValue>();
+		CardsPathValue cardsPathValue3 = new CardsPathValue(Card.One1);
+		cardsPathValue3.addCard(Card.Eight8);
+		cardsPathValue3.addCard(Card.One1);
+		
+		PlayerCardsPathValue playerCardsPathValue = new PlayerCardsPathValue(StartValue.One);
+		playerCardsPathValue.addCard(Card.One1);
+		playerCardsPathValue.addCard(Card.Eleven);
+		playerCardsPathValue.addCard(Card.Eight8);
+		playerCardsPathValue.addCard(Card.Eleven);
+		
+		PlayerCardsPathValue playerCardsPathValue2 = new PlayerCardsPathValue(StartValue.One);
+		playerCardsPathValue2.addCard(Card.One1);
+		playerCardsPathValue2.addCard(Card.One1);
+		playerCardsPathValue2.addCard(Card.Eight8);
+		playerCardsPathValue2.addCard(Card.One1);
+		
+		PlayerCardsPathValue playerCardsPathValue3 = new PlayerCardsPathValue(StartValue.One);
+		playerCardsPathValue3.addCard(Card.One1);
+		playerCardsPathValue3.addCard(Card.Eight8);
+		playerCardsPathValue3.addCard(Card.One1);
+		
+		Collection<CardsPathValue> a = new HashSet<CardsPathValue>();
 		a.add(cardsPathValue);
 		a.add(cardsPathValue2);
+		a.add(cardsPathValue3);
 		System.out.println(a.size());
 		System.out.println(cardsPathValue.equals(cardsPathValue2));
-		System.out.println(cardsPathValue);
-		System.out.println(cardsPathValue2);
+		System.out.println(cardsPathValue.hashCode());
+		System.out.println(cardsPathValue2.hashCode());
+		System.out.println(cardsPathValue3.hashCode());
 		
 		System.out.println(calcProb(cardsPathValue.getCards()));
 		System.out.println(calcProb(cardsPathValue2.getCards()));
+		
+		Collection<PlayerCardsPathValue> b = new HashSet<PlayerCardsPathValue>();
+		b.add(playerCardsPathValue);
+		b.add(playerCardsPathValue2);
+		b.add(playerCardsPathValue3);
+		System.out.println(playerCardsPathValue.hashCode());
+		System.out.println(playerCardsPathValue2.hashCode());
+		System.out.println(playerCardsPathValue3.hashCode());
+		System.out.println(playerCardsPathValue.equals(playerCardsPathValue2));
+		System.out.println(b.size());
 	}
 	
 }

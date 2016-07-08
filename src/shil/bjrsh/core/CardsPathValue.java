@@ -76,10 +76,20 @@ public class CardsPathValue{
 		final int prime = 31;
 		int result = 1;
 		result = prime * result
-				//定制化的
-				+ ((getCardsMap() == null) ? 0 : getCardsMap().hashCode());
-		result = prime * result + value;
+		+ ((cards == null) ? 0 : replaceEleven2One().hashCode());
 		return result;
+	}
+	
+	protected List<Card> replaceEleven2One(){
+		List<Card> replaceEvelen2One = new ArrayList<Card>();
+		for(Card card : cards){
+			if(Card.Eleven.equals(card)){
+				replaceEvelen2One.add(Card.One1);
+			}else{
+				replaceEvelen2One.add(card);
+			}
+		}
+		return replaceEvelen2One;
 	}
 	
 	@Override
@@ -92,12 +102,10 @@ public class CardsPathValue{
 			return false;
 		CardsPathValue other = (CardsPathValue) obj;
 		//定制化的
-		if (getCardsMap() == null) {
-			if (other.getCardsMap() != null)
+		if (cards == null) {
+			if (other.cards != null)
 				return false;
-		} else if (!getCardsMap().equals(other.getCardsMap()))
-			return false;
-		if (value != other.value)
+		} else if (!replaceEleven2One().equals(other.replaceEleven2One()))
 			return false;
 		return true;
 	}
