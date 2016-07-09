@@ -3,27 +3,27 @@ package shil.bjrsh.analyze;
 import java.util.Collection;
 
 import shil.bjrsh.core.Card;
-import shil.bjrsh.core.CardsPathValue;
+import shil.bjrsh.core.DealerCardsPathValue;
 import shil.bjrsh.core.GenerateCardsUtil;
 
 public class DealerCards {
 	
-	public static Collection<CardsPathValue> StartOne = GenerateCardsUtil.generateDealerCards(new CardsPathValue(Card.One1));
-	public static Collection<CardsPathValue> StartTwo = GenerateCardsUtil.generateDealerCards(new CardsPathValue(Card.Two2));
-	public static Collection<CardsPathValue> StartThree = GenerateCardsUtil.generateDealerCards(new CardsPathValue(Card.Three3));
-	public static Collection<CardsPathValue> StartFour = GenerateCardsUtil.generateDealerCards(new CardsPathValue(Card.Four4));
-	public static Collection<CardsPathValue> StartFive = GenerateCardsUtil.generateDealerCards(new CardsPathValue(Card.Five5));
-	public static Collection<CardsPathValue> StartSix = GenerateCardsUtil.generateDealerCards(new CardsPathValue(Card.Six6));
-	public static Collection<CardsPathValue> StartSeven = GenerateCardsUtil.generateDealerCards(new CardsPathValue(Card.Seven7));
-	public static Collection<CardsPathValue> StartEight = GenerateCardsUtil.generateDealerCards(new CardsPathValue(Card.Eight8));
-	public static Collection<CardsPathValue> StartNine = GenerateCardsUtil.generateDealerCards(new CardsPathValue(Card.Nine9));
-	public static Collection<CardsPathValue> StartTen = GenerateCardsUtil.generateDealerCards(new CardsPathValue(Card.Ten));
-	public static Collection<CardsPathValue> StartJ = GenerateCardsUtil.generateDealerCards(new CardsPathValue(Card.JJJ));
-	public static Collection<CardsPathValue> StartQ = GenerateCardsUtil.generateDealerCards(new CardsPathValue(Card.QQQ));
-	public static Collection<CardsPathValue> StartK = GenerateCardsUtil.generateDealerCards(new CardsPathValue(Card.KKK));
-	public static Collection<CardsPathValue> StartEleven = GenerateCardsUtil.generateDealerCards(new CardsPathValue(Card.Eleven));
+	public static Collection<DealerCardsPathValue> StartOne = GenerateCardsUtil.generateDealerCards(new DealerCardsPathValue(Card.One1));
+	public static Collection<DealerCardsPathValue> StartTwo = GenerateCardsUtil.generateDealerCards(new DealerCardsPathValue(Card.Two2));
+	public static Collection<DealerCardsPathValue> StartThree = GenerateCardsUtil.generateDealerCards(new DealerCardsPathValue(Card.Three3));
+	public static Collection<DealerCardsPathValue> StartFour = GenerateCardsUtil.generateDealerCards(new DealerCardsPathValue(Card.Four4));
+	public static Collection<DealerCardsPathValue> StartFive = GenerateCardsUtil.generateDealerCards(new DealerCardsPathValue(Card.Five5));
+	public static Collection<DealerCardsPathValue> StartSix = GenerateCardsUtil.generateDealerCards(new DealerCardsPathValue(Card.Six6));
+	public static Collection<DealerCardsPathValue> StartSeven = GenerateCardsUtil.generateDealerCards(new DealerCardsPathValue(Card.Seven7));
+	public static Collection<DealerCardsPathValue> StartEight = GenerateCardsUtil.generateDealerCards(new DealerCardsPathValue(Card.Eight8));
+	public static Collection<DealerCardsPathValue> StartNine = GenerateCardsUtil.generateDealerCards(new DealerCardsPathValue(Card.Nine9));
+	public static Collection<DealerCardsPathValue> StartTen = GenerateCardsUtil.generateDealerCards(new DealerCardsPathValue(Card.Ten));
+	public static Collection<DealerCardsPathValue> StartJ = GenerateCardsUtil.generateDealerCards(new DealerCardsPathValue(Card.JJJ));
+	public static Collection<DealerCardsPathValue> StartQ = GenerateCardsUtil.generateDealerCards(new DealerCardsPathValue(Card.QQQ));
+	public static Collection<DealerCardsPathValue> StartK = GenerateCardsUtil.generateDealerCards(new DealerCardsPathValue(Card.KKK));
+	public static Collection<DealerCardsPathValue> StartEleven = GenerateCardsUtil.generateDealerCards(new DealerCardsPathValue(Card.Eleven));
 	
-	public static Collection<CardsPathValue> fetchDealerCards(Card card){
+	public static Collection<DealerCardsPathValue> fetchDealerCards(Card card){
 		switch(card){
 			case One1:
 				return StartOne;

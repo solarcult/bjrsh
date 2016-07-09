@@ -67,13 +67,23 @@ public class PlayerAnalyzeWithCardsProb {
 		Collection<PlayerCardsPathValue> oneHitCards = new HashSet<PlayerCardsPathValue>();
 		PlayerCardsPathValue ainstead1 = new PlayerCardsPathValue(StartValue.One);
 		ainstead1.addCard(notACardvalue);
-		HelloWorld.print(GenerateCardsUtil.hitPlayerOneMoreCard(ainstead1));
-		oneHitCards.addAll(GenerateCardsUtil.hitPlayerOneMoreCard(ainstead1));
+		Collection<PlayerCardsPathValue>  a1all = GenerateCardsUtil.hitPlayerOneMoreCard(ainstead1);
+		for(PlayerCardsPathValue one : a1all){
+			if(one.getValue() > Card.Eleven.getValue()){
+				oneHitCards.add(one);
+			}
+		}
+		HelloWorld.print(oneHitCards);
 		System.out.println("s");
 		PlayerCardsPathValue ainstead11 = new PlayerCardsPathValue(StartValue.Eleven);
 		ainstead11.addCard(notACardvalue);
-		oneHitCards.addAll(GenerateCardsUtil.hitPlayerOneMoreCard(ainstead11));
-		HelloWorld.print(GenerateCardsUtil.hitPlayerOneMoreCard(ainstead11));
+		Collection<PlayerCardsPathValue>  a11all = GenerateCardsUtil.hitPlayerOneMoreCard(ainstead11);
+		for(PlayerCardsPathValue one : a11all){
+			if(one.getValue() <= BlackJackInfo.BlackJack){
+				oneHitCards.add(one);
+			}
+		}
+		HelloWorld.print(oneHitCards);
 		
 		return calcPlayerCollectionsProb(oneHitCards, dealerCard);
 	}

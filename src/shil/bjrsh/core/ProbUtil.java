@@ -46,15 +46,15 @@ public class ProbUtil {
 	}
 	
 	public static void main(String[] args){
-		CardsPathValue cardsPathValue = new CardsPathValue(Card.One1);
+		DealerCardsPathValue cardsPathValue = new DealerCardsPathValue(Card.One1);
 		cardsPathValue.addCard(Card.Eleven);
 		cardsPathValue.addCard(Card.Eight8);
 		
-		CardsPathValue cardsPathValue2 = new CardsPathValue(Card.One1);
+		DealerCardsPathValue cardsPathValue2 = new DealerCardsPathValue(Card.One1);
 		cardsPathValue2.addCard(Card.One1);
 		cardsPathValue2.addCard(Card.Eight8);
 		
-		CardsPathValue cardsPathValue3 = new CardsPathValue(Card.One1);
+		DealerCardsPathValue cardsPathValue3 = new DealerCardsPathValue(Card.One1);
 		cardsPathValue3.addCard(Card.Eight8);
 		cardsPathValue3.addCard(Card.One1);
 		
@@ -75,7 +75,7 @@ public class ProbUtil {
 		playerCardsPathValue3.addCard(Card.Eight8);
 		playerCardsPathValue3.addCard(Card.One1);
 		
-		Collection<CardsPathValue> a = new HashSet<CardsPathValue>();
+		Collection<DealerCardsPathValue> a = new HashSet<DealerCardsPathValue>();
 		a.add(cardsPathValue);
 		a.add(cardsPathValue2);
 		a.add(cardsPathValue3);
@@ -84,6 +84,9 @@ public class ProbUtil {
 		System.out.println(cardsPathValue.hashCode());
 		System.out.println(cardsPathValue2.hashCode());
 		System.out.println(cardsPathValue3.hashCode());
+		System.out.println(cardsPathValue.isValid());
+		System.out.println(cardsPathValue2.isValid());
+		System.out.println(cardsPathValue3.isValid());
 		
 		System.out.println(calcProb(cardsPathValue.getCards()));
 		System.out.println(calcProb(cardsPathValue2.getCards()));

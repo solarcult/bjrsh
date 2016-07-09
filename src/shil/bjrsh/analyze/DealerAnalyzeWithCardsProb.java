@@ -5,7 +5,7 @@ import java.util.Collection;
 import shil.bjrsh.HelloWorld;
 import shil.bjrsh.core.BlackJackInfo;
 import shil.bjrsh.core.Card;
-import shil.bjrsh.core.CardsPathValue;
+import shil.bjrsh.core.DealerCardsPathValue;
 import shil.bjrsh.core.StartValue;
 
 public class DealerAnalyzeWithCardsProb {
@@ -17,12 +17,12 @@ public class DealerAnalyzeWithCardsProb {
 	 * @return
 	 */
 	public static double[] dealerResultChance(Card dealerStartCard, int playerValue){
-		Collection<CardsPathValue> allCardsChances = DealerCards.fetchDealerCards(dealerStartCard);
+		Collection<DealerCardsPathValue> allCardsChances = DealerCards.fetchDealerCards(dealerStartCard);
 		double winrate = 0;
 		double drawrate = 0;
 		double loserate = 0;
 		double totalrate = 0;
-		for(CardsPathValue cardsPathValue : allCardsChances){
+		for(DealerCardsPathValue cardsPathValue : allCardsChances){
 			double rate = cardsPathValue.prob();
 			if(cardsPathValue.getValue() > playerValue && cardsPathValue.getValue() <= BlackJackInfo.BlackJack){
 				winrate += rate;

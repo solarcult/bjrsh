@@ -7,7 +7,7 @@ import org.apache.commons.math3.stat.Frequency;
 
 import shil.bjrsh.core.BlackJackInfo;
 import shil.bjrsh.core.Card;
-import shil.bjrsh.core.CardsPathValue;
+import shil.bjrsh.core.DealerCardsPathValue;
 
 @Deprecated
 public class DealerAnalyzeWithOutCardsProb {
@@ -17,10 +17,10 @@ public class DealerAnalyzeWithOutCardsProb {
 	 * @param cardsPathValues
 	 * @return Frequency
 	 */
-	public static Frequency frequencyAnalyze(Collection<CardsPathValue> cardsPathValues){
-		System.out.println("Dealer Strat Card: " + ((List<CardsPathValue>)cardsPathValues).get(0).getCards().get(0));
+	public static Frequency frequencyAnalyze(Collection<DealerCardsPathValue> cardsPathValues){
+		System.out.println("Dealer Strat Card: " + ((List<DealerCardsPathValue>)cardsPathValues).get(0).getCards().get(0));
 		Frequency frequency = new Frequency();
-		for(CardsPathValue cardsPathValue : cardsPathValues){
+		for(DealerCardsPathValue cardsPathValue : cardsPathValues){
 			frequency.addValue(cardsPathValue.getValue());
 		}
 		System.out.println(frequency);

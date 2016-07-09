@@ -44,6 +44,11 @@ public class PlayerCardsPathValue {
 	
 	public boolean isValid(){
 		boolean isElevenOk = getValue() != IllegalCards;
+		boolean notOutofCards = notOutofCards();
+		return isElevenOk && notOutofCards; 
+	}
+	
+	private boolean notOutofCards(){
 		boolean notOutofCards = true;
 		Map<Card,Integer> cardsMap = getCardsMap();
 		for(Integer cards : cardsMap.values()){
@@ -53,7 +58,7 @@ public class PlayerCardsPathValue {
 				break;
 			}
 		}
-		return isElevenOk && notOutofCards; 
+		return notOutofCards;
 	}
 	
 	public StartValue getStartValue(){

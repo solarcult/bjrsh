@@ -12,13 +12,13 @@ public class GenerateCardsUtil {
 	 * @param cardsPathValue
 	 * @return Collection<CardsPathValue> 未过滤,有重复cards数据,但顺序不同
 	 */
-	public static Collection<CardsPathValue> generateDealerCards(CardsPathValue cardsPathValue){
-		Collection<CardsPathValue> cardsPathValues = new HashSet<CardsPathValue>();
+	public static Collection<DealerCardsPathValue> generateDealerCards(DealerCardsPathValue cardsPathValue){
+		Collection<DealerCardsPathValue> cardsPathValues = new HashSet<DealerCardsPathValue>();
 		
-		//这个组合不合理的,也就是A当做11爆掉
+		//这个组合不合理的,也就是A当做11爆掉1/3
 		if(!cardsPathValue.isValid()) return cardsPathValues;
 		
-		//如果达到了Deal停止要牌的点数,返回,这是递归的出口
+		//如果达到了Deal停止要牌的点数,返回,这是递归的出口1/3
 		if(cardsPathValue.getValue() >= BlackJackInfo.DealerStop){
 			cardsPathValues.add(cardsPathValue);
 			return cardsPathValues;
@@ -27,7 +27,7 @@ public class GenerateCardsUtil {
 		if(cardsPathValue.getValue() < BlackJackInfo.DealerStop ){
 			for(Card card : Card.values()){
 				//这里要深拷贝一个副本,因为要产生不同的13条链路,不能用同一个实例
-				CardsPathValue aNewPath = new CardsPathValue(cardsPathValue);
+				DealerCardsPathValue aNewPath = new DealerCardsPathValue(cardsPathValue);
 				aNewPath.addCard(card);
 				cardsPathValues.addAll(generateDealerCards(aNewPath));
 			}

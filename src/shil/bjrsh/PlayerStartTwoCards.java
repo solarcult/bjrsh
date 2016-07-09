@@ -7,7 +7,7 @@ import java.util.List;
 import org.apache.commons.math3.stat.Frequency;
 
 import shil.bjrsh.core.Card;
-import shil.bjrsh.core.CardsPathValue;
+import shil.bjrsh.core.DealerCardsPathValue;
 import shil.bjrsh.core.PlayerCardsPathValue;
 import shil.bjrsh.core.StartValue;
 
@@ -21,11 +21,11 @@ public class PlayerStartTwoCards {
 		return allType;
 	}
 	
-	public static Collection<CardsPathValue> generatePlayerTwoStartCards(){
-		List<CardsPathValue> allCombination = new ArrayList<CardsPathValue>();
+	public static Collection<DealerCardsPathValue> generatePlayerTwoStartCards(){
+		List<DealerCardsPathValue> allCombination = new ArrayList<DealerCardsPathValue>();
 		for(Card one: Card.values()){
 			for(Card two : Card.values()){
-				CardsPathValue cardsPathValue = new CardsPathValue();
+				DealerCardsPathValue cardsPathValue = new DealerCardsPathValue();
 				cardsPathValue.addCard(one);
 				cardsPathValue.addCard(two);
 				if(cardsPathValue.isValid())
@@ -36,9 +36,9 @@ public class PlayerStartTwoCards {
 	}
 	
 	public static void analyzeStartTwoCardsPercent(){
-		Collection<CardsPathValue> twocards = generatePlayerTwoStartCards();
+		Collection<DealerCardsPathValue> twocards = generatePlayerTwoStartCards();
 		Frequency frequency = new Frequency();
-		for(CardsPathValue cardsPathValue : twocards){
+		for(DealerCardsPathValue cardsPathValue : twocards){
 			frequency.addValue(cardsPathValue.getValue());
 		}
 		System.out.println(frequency);

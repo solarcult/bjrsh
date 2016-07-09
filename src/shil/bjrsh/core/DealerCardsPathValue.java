@@ -4,24 +4,24 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class CardsPathValue{
+public class DealerCardsPathValue{
 	
 	public static int IllegalCards = -1;
 	
 	private int value;
 	private List<Card> cards;
 	
-	public CardsPathValue(){
+	public DealerCardsPathValue(){
 		value = 0;
 		cards = new ArrayList<Card>();
 	}
 	
-	public CardsPathValue(Card card){
+	public DealerCardsPathValue(Card card){
 		this();
 		addCard(card);
 	}
 	
-	public CardsPathValue(CardsPathValue cardsPathValue){
+	public DealerCardsPathValue(DealerCardsPathValue cardsPathValue){
 		value = cardsPathValue.getValue();
 		cards = new ArrayList<Card>(cardsPathValue.getCards());
 	}
@@ -46,7 +46,34 @@ public class CardsPathValue{
 	}
 	
 	public boolean isValid(){
+		//判断A当11是否会爆掉,爆掉这副牌无效,因为庄家会把A当1,则在其他组合里会有.
 		boolean isElevenOk = getValue() != IllegalCards;
+		//判断是否某一种类型的牌超出了范围.
+		boolean notOutofCards = notOutofCards();
+		//规定,庄家如果到17点必须停止,所以当A为11时,庄家必须停止.当A本来当做1但当做11时需停止时,这种情况在A=11时,枚举已经包含,所以这里表现为不合法.
+		boolean isAbe11Conitnue = isAbe11Conitnue();
+		return isElevenOk && notOutofCards &&isAbe11Conitnue; 
+	}
+	
+	private boolean isAbe11Conitnue(){
+		//规定,庄家如果到17点必须停止,所以当A为11时,庄家必须停止.
+		boolean isAbe11Conitnue = true;
+		int tempValue = 0;
+		for(Card card : this.cards){
+			if(Card.One1.equals(card)){
+				int test = tempValue + Card.Eleven.getValue();
+				if(test >= BlackJackInfo.DealerStop && test <= BlackJackInfo.BlackJack){
+					isAbe11Conitnue = false;
+					break;
+				}
+			}
+			tempValue += card.getValue();
+		}
+			
+		return isAbe11Conitnue;
+	}
+	
+	private boolean notOutofCards(){
 		boolean notOutofCards = true;
 		Map<Card,Integer> cardsMap = getCardsMap();
 		for(Integer cards : cardsMap.values()){
@@ -56,7 +83,7 @@ public class CardsPathValue{
 				break;
 			}
 		}
-		return isElevenOk && notOutofCards; 
+		return notOutofCards;
 	}
 	
 	public List<Card> getCards(){
@@ -101,7 +128,7 @@ public class CardsPathValue{
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		CardsPathValue other = (CardsPathValue) obj;
+		DealerCardsPathValue other = (DealerCardsPathValue) obj;
 		//定制化的
 		if (cards == null) {
 			if (other.cards != null)
