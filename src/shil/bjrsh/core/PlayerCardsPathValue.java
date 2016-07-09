@@ -18,6 +18,14 @@ public class PlayerCardsPathValue {
 		cards = new ArrayList<Card>();
 	}
 	
+	public PlayerCardsPathValue(Card one,Card two){
+		this.startValue = StartValue.getOne(one.getValue()+two.getValue());
+		this.value = 0;
+		cards = new ArrayList<Card>();
+		cards.add(one);
+		cards.add(two);
+	}
+	
 	public PlayerCardsPathValue(PlayerCardsPathValue playerCardsPathValue){
 		value = playerCardsPathValue.getValue();
 		cards = new ArrayList<Card>(playerCardsPathValue.getCards());

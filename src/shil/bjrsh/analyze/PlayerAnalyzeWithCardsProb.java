@@ -63,36 +63,46 @@ public class PlayerAnalyzeWithCardsProb {
 		return new double[]{winrate/totalrate,drawrate/totalrate,loserate/totalrate};
 	}
 	
-	public static double[] playerAX1moreCvsDealer(Card notACardvalue,Card dealerCard){
+	public static double[] playerAX1moreCvsDealer(Card playernotACardvalue,Card dealerCard){
 		Collection<PlayerCardsPathValue> oneHitCards = new HashSet<PlayerCardsPathValue>();
 		PlayerCardsPathValue ainstead1 = new PlayerCardsPathValue(StartValue.One);
-		ainstead1.addCard(notACardvalue);
+		ainstead1.addCard(playernotACardvalue);
 		Collection<PlayerCardsPathValue>  a1all = GenerateCardsUtil.hitPlayerOneMoreCard(ainstead1);
 		for(PlayerCardsPathValue one : a1all){
 			if(one.getValue() > Card.Eleven.getValue()){
 				oneHitCards.add(one);
 			}
 		}
-		HelloWorld.print(oneHitCards);
-		System.out.println("s");
+//		HelloWorld.print(oneHitCards);
+//		System.out.println("s");
 		PlayerCardsPathValue ainstead11 = new PlayerCardsPathValue(StartValue.Eleven);
-		ainstead11.addCard(notACardvalue);
+		ainstead11.addCard(playernotACardvalue);
 		Collection<PlayerCardsPathValue>  a11all = GenerateCardsUtil.hitPlayerOneMoreCard(ainstead11);
 		for(PlayerCardsPathValue one : a11all){
 			if(one.getValue() <= BlackJackInfo.BlackJack){
 				oneHitCards.add(one);
 			}
 		}
-		HelloWorld.print(oneHitCards);
+//		HelloWorld.print(oneHitCards);
 		
 		return calcPlayerCollectionsProb(oneHitCards, dealerCard);
 	}
 	
+	public static void analyzeAllAXCards(){
+		for(Card playercard : Card.values()){
+			for(Card dealercard : Card.values()){
+				System.out.println("Player A+"+playercard.name() + "  vs  "+dealercard.name());
+				HelloWorld.printDoubleWDL(playerAX1moreCvsDealer(playercard,dealercard));
+//				HelloWorld.printDoubleWDL(playerChanceOneMoreCard(StartValue.Two,Card.Six6));
+//				HelloWorld.printDoubleWDL(playerNowVSDealerChance(StartValue.Two,Card.Six6));
+			}
+		}
+	}
+	
 	public static void main(String[] args) {
 		
-		HelloWorld.printDoubleWDL(playerAX1moreCvsDealer(Card.Two2,Card.Six6));
-		HelloWorld.printDoubleWDL(playerChanceOneMoreCard(StartValue.Two,Card.Six6));
-		HelloWorld.printDoubleWDL(playerNowVSDealerChance(StartValue.Two,Card.Six6));
+		analyzeAllAXCards();
+
 		
 		
 //		for(StartValue startValue : StartValue.values()){

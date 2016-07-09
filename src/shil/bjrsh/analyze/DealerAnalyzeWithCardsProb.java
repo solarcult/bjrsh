@@ -39,18 +39,18 @@ public class DealerAnalyzeWithCardsProb {
 	
 	public static void main(String[] args){
 		
-		for(Card card : Card.values()){
-			for(StartValue startValue : StartValue.values()){
-				System.out.println("== Dealer:"+ card +"  vs  " + "Player:"+startValue.getValue() +"==");
-				HelloWorld.printDoubleWDL(dealerResultChance(card, startValue.getValue()));
-			}
-		}
+//		for(Card card : Card.values()){
+//			for(StartValue startValue : StartValue.values()){
+//				System.out.println("== Dealer:"+ card +"  vs  " + "Player:"+startValue.getValue() +"==");
+//				HelloWorld.printDoubleWDL(dealerResultChance(card, startValue.getValue()));
+//			}
+//		}
 		
-//		HelloWorld.printDoubleWDL(dealerResultChance(Card.Ten, 12));
-//		HelloWorld.printDoubleWDL(dealerResultChance(Card.Ten, 19));
-//		HelloWorld.printDoubleWDL(dealerResultChance(Card.Six6, 12));
-//		HelloWorld.printDoubleWDL(dealerResultChance(Card.Six6, 5));
-//		HelloWorld.printDoubleWDL(dealerResultChance(Card.Five5, 12));
-//		HelloWorld.printDoubleWDL(dealerResultChance(Card.Five5, 18));
+		HelloWorld.printDoubleWDL(dealerResultChance(Card.Ten, 12));
+		HelloWorld.printDoubleWDL(dealerResultChance(Card.Ten, 19));
+		HelloWorld.printDoubleWDL(dealerResultChance(Card.Six6, 12));
+		HelloWorld.printDoubleWDL(dealerResultChance(Card.Six6, 5));
+		HelloWorld.printDoubleWDL(dealerResultChance(Card.Five5, 12));
+		HelloWorld.printDoubleWDL(dealerResultChance(Card.Five5, 18));
 	}
 }

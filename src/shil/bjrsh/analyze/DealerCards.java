@@ -2,6 +2,7 @@ package shil.bjrsh.analyze;
 
 import java.util.Collection;
 
+import shil.bjrsh.HelloWorld;
 import shil.bjrsh.core.Card;
 import shil.bjrsh.core.DealerCardsPathValue;
 import shil.bjrsh.core.GenerateCardsUtil;
@@ -56,5 +57,9 @@ public class DealerCards {
 			default:
 				return null;
 		}
+	}
+	
+	public static void main(String[] args){
+		HelloWorld.print(DealerCards.StartSix);
 	}
 }
