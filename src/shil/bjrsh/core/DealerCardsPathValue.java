@@ -52,7 +52,7 @@ public class DealerCardsPathValue{
 		boolean notOutofCards = notOutofCards();
 		//规定,庄家如果到17点必须停止,所以当A为11时,庄家必须停止.当A本来当做1但当做11时需停止时,这种情况在A=11时,枚举已经包含,所以这里表现为不合法.
 		boolean isAbe11Conitnue = isAbe11Conitnue();
-		return isElevenOk && notOutofCards &&isAbe11Conitnue; 
+		return isElevenOk && notOutofCards && isAbe11Conitnue; 
 	}
 	
 	private boolean isAbe11Conitnue(){

@@ -30,10 +30,16 @@ public class HelloWorld {
 	}
 	
 	public static void printDoubleWDL(double[] result){
-		System.out.println("w:"+result[0]+"  $d:"+result[1]+"  $l:"+result[2]);
+		System.out.println("w:"+result[0]*100+"  $d:"+result[1]*100+"  $l:"+result[2]*100);
 	}
 	
 	public static String builderDoubleWDL(double[] result){
 		return "w:"+result[0]*100+"  $d:"+result[1]*100+"  $l:"+result[2]*100;
+	}
+	
+	public static void print2DoubleWDL(double[] advanced , double[] origin){
+		System.out.println("w:"+advanced[0]*100 + "->" + origin[0]*100+"  \t$d:"+advanced[1]*100 + "->" + origin[1]*100+"  \t$l:"+advanced[2]*100 + "->" + origin[2]*100);
+		System.out.println(" \timprove value x$w(high is good):"+(advanced[0]*100 - origin[0]*100)+"  \tx$d:"+(advanced[1]*100 - origin[1]*100)+"  \t x$l(negative is good):"+(advanced[2]*100 - origin[2]*100));
+
 	}
 }

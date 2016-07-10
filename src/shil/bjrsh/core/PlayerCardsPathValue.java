@@ -92,8 +92,10 @@ public class PlayerCardsPathValue {
 		result = prime * result + 
 				//定制化的
 				+ ((cards == null) ? 0 : replaceEleven2One().hashCode());
+		//特意处理AX类型的牌,去掉重复的情况
+		StartValue tempStartValue = (StartValue.Eleven == startValue) ? StartValue.One : startValue;
 		result = prime * result
-				+ ((startValue == null) ? 0 : startValue.hashCode());
+				+ ((tempStartValue == null) ? 0 : tempStartValue.hashCode());
 		result = prime * result + value;
 		return result;
 	}
@@ -125,7 +127,10 @@ public class PlayerCardsPathValue {
 				return false;
 		} else if (!replaceEleven2One().equals(other.replaceEleven2One()))
 			return false;
-		if(startValue != other.startValue)
+		//特意处理AX类型的牌,去掉重复的情况
+		StartValue myStartValue = (StartValue.Eleven == startValue) ? StartValue.One : startValue;
+		StartValue otherStartValue = (StartValue.Eleven == other.startValue) ? StartValue.One : other.startValue;
+		if(myStartValue != otherStartValue)
 			return false;
 		if (value != other.value)
 			return false;

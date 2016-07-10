@@ -90,21 +90,52 @@ public class PlayerAnalyzeWithCardsProb {
 	
 	public static void analyzeAllAXCards(){
 		for(Card playercard : Card.values()){
+			System.out.println("\n\r\t\t~~~~~~~~~~"+playercard.name()+"~~~~~~~~~~~~~");
 			for(Card dealercard : Card.values()){
-				System.out.println("Player A+"+playercard.name() + "  vs  "+dealercard.name());
-				HelloWorld.printDoubleWDL(playerAX1moreCvsDealer(playercard,dealercard));
-//				HelloWorld.printDoubleWDL(playerChanceOneMoreCard(StartValue.Two,Card.Six6));
-//				HelloWorld.printDoubleWDL(playerNowVSDealerChance(StartValue.Two,Card.Six6));
+				System.out.println("\nPlayer A+"+playercard.name() + "  vs  "+dealercard.name());
+				double[] advanced = playerAX1moreCvsDealer(playercard,dealercard);
+//				HelloWorld.printDoubleWDL(playerAX1moreCvsDealer(playercard,dealercard));
+				
+				//这里的目的是打印出AX组合原来最大的组合是多少,用()?:三元符更简单但不宜读
+				int playervalue = playercard.getValue();
+				if((playercard.getValue()+11)<=BlackJackInfo.BlackJack){
+					playervalue = (playercard.getValue()+11);
+				}else{
+					playervalue = (playercard.getValue()+1);
+				}
+				System.out.println("decide value:"+playervalue);
+				
+				//这里打印出如果不多hit一张时,现有牌的胜率,不比不知道,一比吓一跳
+				double[] origin = playerNowVSDealerChance(StartValue.getOne(playervalue),dealercard);
+//				HelloWorld.printDoubleWDL(playerNowVSDealerChance(StartValue.getOne(playervalue),dealercard));
+				
+				HelloWorld.print2DoubleWDL(advanced,origin);
 			}
+		}
+	}
+	
+	/**
+	 * 看分牌后的单A的概率方法
+	 * 必须注释掉
+	 * playerAX1moreCvsDealer ainstead1.addCard(playernotACardvalue) and ainstead11.addCard(playernotACardvalue);这两个方法
+	 * @deprecated
+	 */
+	public static void anlayzeAvsDealerAllTypeCards(){
+		//should comment ainstead1.addCard(playernotACardvalue) and ainstead11.addCard(playernotACardvalue);;
+		for(Card dealercard : Card.values()){
+			System.out.println("Player A Split" + "  vs  "+dealercard.name());
+			HelloWorld.printDoubleWDL(playerAX1moreCvsDealer(Card.Eight8,dealercard));
+//			HelloWorld.printDoubleWDL(playerNowVSDealerChance(StartValue.Twelve,dealercard));
 		}
 	}
 	
 	public static void main(String[] args) {
 		
 		analyzeAllAXCards();
+		
+//		anlayzeAvsDealerAllTypeCards();
 
-		
-		
+//		HelloWorld.printDoubleWDL(playerAX1moreCvsDealer(Card.Six6,Card.Seven7));
 //		for(StartValue startValue : StartValue.values()){
 //			System.out.println(" * Player:"+startValue +" *");
 //			for(Card card : Card.values()){
