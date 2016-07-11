@@ -1,0 +1,573 @@
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Two2, 	playerStartValue=6	
+org->adv	$w:34.876649522593304->34.87664952259421  	$d:0.0->1.0038506837101713  	$l:65.1233504774045->64.11949979369562
+	improve value x$w(high is good):9.023892744153272E-13  	x$d:1.0038506837101713  	 x$l(negative is good):-1.003850683708876
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Two2, 	playerStartValue=7	
+org->adv	$w:34.876649522593304->35.88050020630536  	$d:0.0->4.98487278628631  	$l:65.1233504774045->59.134627007408334
+	improve value x$w(high is good):1.0038506837120593  	x$d:4.98487278628631  	 x$l(negative is good):-5.988723469996167
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Two2, 	playerStartValue=8	
+org->adv	$w:34.876649522593304->40.8653729925938  	$d:0.0->5.818161731799613  	$l:65.1233504774045->53.31646527560658
+	improve value x$w(high is good):5.988723470000494  	x$d:5.818161731799613  	 x$l(negative is good):-11.806885201797918
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Two2, 	playerStartValue=9	
+org->adv	$w:34.876649522593304->46.683534724395344  	$d:0.0->6.611074951629605  	$l:65.1233504774045->46.70539032397507
+	improve value x$w(high is good):11.80688520180204  	x$d:6.611074951629605  	 x$l(negative is good):-18.417960153429433
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Two2, 	playerStartValue=10	
+org->adv	$w:34.876649522593304->53.294609676026624  	$d:0.0->7.327760432978107  	$l:65.1233504774045->39.377629890995266
+	improve value x$w(high is good):18.41796015343332  	x$d:7.327760432978107  	 x$l(negative is good):-25.745720586409234
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Two2, 	playerStartValue=11	
+org->adv	$w:34.876649522593304->57.593321655851724  	$d:0.0->7.755272313218484  	$l:65.1233504774045->34.65140603092979
+	improve value x$w(high is good):22.71667213325842  	x$d:7.755272313218484  	 x$l(negative is good):-30.47194444647471
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Two2, 	playerStartValue=12	
+org->adv	$w:34.876649522593304->34.57936319983964  	$d:0.0->5.0094884982611765  	$l:65.1233504774045->60.41114830189919
+	improve value x$w(high is good):-0.2972863227536635  	x$d:5.0094884982611765  	 x$l(negative is good):-4.712202175505311
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Two2, 	playerStartValue=13	
+org->adv	$w:34.876649522593304->31.89654400579395  	$d:0.0->5.009488498261168  	$l:65.1233504774045->63.09396749594488
+	improve value x$w(high is good):-2.9801055167993553  	x$d:5.009488498261168  	 x$l(negative is good):-2.0293829814596194
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Two2, 	playerStartValue=14	
+org->adv	$w:34.876649522593304->29.213724811748254  	$d:0.0->5.00948849826116  	$l:65.1233504774045->65.7767866899906
+	improve value x$w(high is good):-5.662924710845051  	x$d:5.00948849826116  	 x$l(negative is good):0.6534362125861009
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Two2, 	playerStartValue=15	
+org->adv	$w:34.876649522593304->26.530905617702572  	$d:0.0->5.00948849826115  	$l:65.1233504774045->68.45960588403628
+	improve value x$w(high is good):-8.345743904890732  	x$d:5.00948849826115  	 x$l(negative is good):3.3362554066317784
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Two2, 	playerStartValue=16	
+org->adv	$w:34.876649522593304->23.848086423656902  	$d:0.0->5.009488498261142  	$l:65.1233504774045->71.14242507808196
+	improve value x$w(high is good):-11.028563098936402  	x$d:5.009488498261142  	 x$l(negative is good):6.019074600677456
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Three3, 	playerStartValue=6	
+org->adv	$w:36.929991888331145->36.92999188833127  	$d:0.0->0.9659159059081076  	$l:63.07000811166873->62.10409220576063
+	improve value x$w(high is good):1.2789769243681803E-13  	x$d:0.9659159059081076  	 x$l(negative is good):-0.9659159059080977
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Three3, 	playerStartValue=7	
+org->adv	$w:36.929991888331145->37.89590779423998  	$d:0.0->4.805335425621621  	$l:63.07000811166873->57.29875678013838
+	improve value x$w(high is good):0.9659159059088367  	x$d:4.805335425621621  	 x$l(negative is good):-5.771251331530344
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Three3, 	playerStartValue=8	
+org->adv	$w:36.929991888331145->42.70124321986308  	$d:0.0->5.635219139781836  	$l:63.07000811166873->51.663537640355095
+	improve value x$w(high is good):5.771251331531936  	x$d:5.635219139781836  	 x$l(negative is good):-11.406470471313632
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Three3, 	playerStartValue=9	
+org->adv	$w:36.929991888331145->48.336462359646035  	$d:0.0->6.387355358530152  	$l:63.07000811166873->45.2761822818238
+	improve value x$w(high is good):11.40647047131489  	x$d:6.387355358530152  	 x$l(negative is good):-17.793825829844927
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Three3, 	playerStartValue=10	
+org->adv	$w:36.929991888331145->54.723817718176946  	$d:0.0->7.112911220298235  	$l:63.07000811166873->38.16327106152482
+	improve value x$w(high is good):17.7938258298458  	x$d:7.112911220298235  	 x$l(negative is good):-24.90673705014391
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Three3, 	playerStartValue=11	
+org->adv	$w:36.929991888331145->58.90109270297344  	$d:0.0->7.518517434918161  	$l:63.07000811166873->33.5803898621084
+	improve value x$w(high is good):21.9711008146423  	x$d:7.518517434918161  	 x$l(negative is good):-29.48961824956033
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Three3, 	playerStartValue=12	
+org->adv	$w:36.929991888331145->35.65037936866117  	$d:0.0->4.851539085512549  	$l:63.07000811166873->59.498081545826295
+	improve value x$w(high is good):-1.2796125196699748  	x$d:4.851539085512549  	 x$l(negative is good):-3.571926565842432
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Three3, 	playerStartValue=13	
+org->adv	$w:36.929991888331145->32.80961076186649  	$d:0.0->4.851539085512547  	$l:63.07000811166873->62.338850152620964
+	improve value x$w(high is good):-4.1203811264646575  	x$d:4.851539085512547  	 x$l(negative is good):-0.7311579590477635
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Three3, 	playerStartValue=14	
+org->adv	$w:36.929991888331145->29.968842155071812  	$d:0.0->4.851539085512548  	$l:63.07000811166873->65.17961875941563
+	improve value x$w(high is good):-6.961149733259333  	x$d:4.851539085512548  	 x$l(negative is good):2.109610647746905
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Three3, 	playerStartValue=15	
+org->adv	$w:36.929991888331145->27.128073548277126  	$d:0.0->4.851539085512547  	$l:63.07000811166873->68.02038736621031
+	improve value x$w(high is good):-9.80191834005402  	x$d:4.851539085512547  	 x$l(negative is good):4.950379254541588
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Three3, 	playerStartValue=16	
+org->adv	$w:36.929991888331145->24.287304941482454  	$d:0.0->4.851539085512547  	$l:63.07000811166873->70.86115597300501
+	improve value x$w(high is good):-12.642686946848691  	x$d:4.851539085512547  	 x$l(negative is good):7.791147861336285
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Four4, 	playerStartValue=6	
+org->adv	$w:39.083913828723986->39.08391382872548  	$d:0.0->0.9400622858855506  	$l:60.91608617127233->59.97602388538898
+	improve value x$w(high is good):1.4921397450962104E-12  	x$d:0.9400622858855506  	 x$l(negative is good):-0.9400622858833501
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Four4, 	playerStartValue=7	
+org->adv	$w:39.083913828723986->40.023976114611365  	$d:0.0->4.656129425824155  	$l:60.91608617127233->55.319894459564466
+	improve value x$w(high is good):0.9400622858873788  	x$d:4.656129425824155  	 x$l(negative is good):-5.596191711707867
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Four4, 	playerStartValue=8	
+org->adv	$w:39.083913828723986->44.68010554043625  	$d:0.0->5.397233446957729  	$l:60.91608617127233->49.922661012606035
+	improve value x$w(high is good):5.596191711712265  	x$d:5.397233446957729  	 x$l(negative is good):-10.993425158666298
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Four4, 	playerStartValue=9	
+org->adv	$w:39.083913828723986->50.07733898739449  	$d:0.0->6.168508733016835  	$l:60.91608617127233->43.75415227958867
+	improve value x$w(high is good):10.993425158670505  	x$d:6.168508733016835  	 x$l(negative is good):-17.16193389168366
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Four4, 	playerStartValue=10	
+org->adv	$w:39.083913828723986->56.24584772041186  	$d:0.0->6.865047123448531  	$l:60.91608617127233->36.889105156139614
+	improve value x$w(high is good):17.161933891687873  	x$d:6.865047123448531  	 x$l(negative is good):-24.02698101513272
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Four4, 	playerStartValue=11	
+org->adv	$w:39.083913828723986->60.273271370311434  	$d:0.0->7.282067840259786  	$l:60.91608617127233->32.44466078942879
+	improve value x$w(high is good):21.189357541587448  	x$d:7.282067840259786  	 x$l(negative is good):-28.471425381843545
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Four4, 	playerStartValue=12	
+org->adv	$w:39.083913828723986->36.7861084413401  	$d:0.0->4.685852782405465  	$l:60.91608617127233->58.528038776254434
+	improve value x$w(high is good):-2.297805387383889  	x$d:4.685852782405465  	 x$l(negative is good):-2.3880473950178995
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Four4, 	playerStartValue=13	
+org->adv	$w:39.083913828723986->33.7796535314381  	$d:0.0->4.685852782405453  	$l:60.91608617127233->61.534493686156445
+	improve value x$w(high is good):-5.304260297285886  	x$d:4.685852782405453  	 x$l(negative is good):0.6184075148841117
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Four4, 	playerStartValue=14	
+org->adv	$w:39.083913828723986->30.773198621536128  	$d:0.0->4.685852782405439  	$l:60.91608617127233->64.54094859605843
+	improve value x$w(high is good):-8.310715207187858  	x$d:4.685852782405439  	 x$l(negative is good):3.6248624247860946
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Four4, 	playerStartValue=15	
+org->adv	$w:39.083913828723986->27.766743711634177  	$d:0.0->4.685852782405426  	$l:60.91608617127233->67.5474035059604
+	improve value x$w(high is good):-11.317170117089809  	x$d:4.685852782405426  	 x$l(negative is good):6.63131733468807
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Four4, 	playerStartValue=16	
+org->adv	$w:39.083913828723986->24.760288801732237  	$d:0.0->4.685852782405413  	$l:60.91608617127233->70.55385841586235
+	improve value x$w(high is good):-14.323625026991749  	x$d:4.685852782405413  	 x$l(negative is good):9.637772244590018
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Five5, 	playerStartValue=6	
+org->adv	$w:41.39322837497489->41.39322837497556  	$d:0.0->0.869619494857207  	$l:58.60677162502355->57.737152130167246
+	improve value x$w(high is good):6.679101716144942E-13  	x$d:0.869619494857207  	 x$l(negative is good):-0.8696194948563019
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Five5, 	playerStartValue=7	
+org->adv	$w:41.39322837497489->42.26284786983302  	$d:0.0->4.362005207905181  	$l:58.60677162502355->53.375146922261806
+	improve value x$w(high is good):0.869619494858128  	x$d:4.362005207905181  	 x$l(negative is good):-5.231624702761742
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Five5, 	playerStartValue=8	
+org->adv	$w:41.39322837497489->46.624853077738734  	$d:0.0->5.253211448423877  	$l:58.60677162502355->48.1219354738374
+	improve value x$w(high is good):5.231624702763845  	x$d:5.253211448423877  	 x$l(negative is good):-10.484836151186151
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Five5, 	playerStartValue=9	
+org->adv	$w:41.39322837497489->51.878064526162895  	$d:0.0->5.957711970131396  	$l:58.60677162502355->42.16422350370571
+	improve value x$w(high is good):10.484836151188006  	x$d:5.957711970131396  	 x$l(negative is good):-16.442548121317834
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Five5, 	playerStartValue=10	
+org->adv	$w:41.39322837497489->57.835776496294514  	$d:0.0->6.60609723767385  	$l:58.60677162502355->35.55812626603162
+	improve value x$w(high is good):16.442548121319625  	x$d:6.60609723767385  	 x$l(negative is good):-23.048645358991926
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Five5, 	playerStartValue=11	
+org->adv	$w:41.39322837497489->61.706633251966004  	$d:0.0->7.018311288607388  	$l:58.60677162502355->31.275055459426614
+	improve value x$w(high is good):20.313404876991115  	x$d:7.018311288607388  	 x$l(negative is good):-27.331716165596934
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Five5, 	playerStartValue=12	
+org->adv	$w:41.39322837497489->37.95571377134254  	$d:0.0->4.508213201924819  	$l:58.60677162502355->57.53607302673264
+	improve value x$w(high is good):-3.4375146036323514  	x$d:4.508213201924819  	 x$l(negative is good):-1.0706985982909103
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Five5, 	playerStartValue=13	
+org->adv	$w:41.39322837497489->34.771619280959804  	$d:0.0->4.5082132019248125  	$l:58.60677162502355->60.720167517115385
+	improve value x$w(high is good):-6.621609094015085  	x$d:4.5082132019248125  	 x$l(negative is good):2.1133958920918374
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Five5, 	playerStartValue=14	
+org->adv	$w:41.39322837497489->31.58752479057708  	$d:0.0->4.508213201924809  	$l:58.60677162502355->63.904262007498104
+	improve value x$w(high is good):-9.805703584397808  	x$d:4.508213201924809  	 x$l(negative is good):5.297490382474557
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Five5, 	playerStartValue=15	
+org->adv	$w:41.39322837497489->28.403430300194355  	$d:0.0->4.508213201924803  	$l:58.60677162502355->67.08835649788084
+	improve value x$w(high is good):-12.989798074780534  	x$d:4.508213201924803  	 x$l(negative is good):8.48158487285729
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Five5, 	playerStartValue=16	
+org->adv	$w:41.39322837497489->25.219335809811643  	$d:0.0->4.508213201924798  	$l:58.60677162502355->70.27245098826356
+	improve value x$w(high is good):-16.173892565163246  	x$d:4.508213201924798  	 x$l(negative is good):11.66567936324001
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Six6, 	playerStartValue=6	
+org->adv	$w:42.28416043620683->42.28416043620742  	$d:0.0->1.1836186492359846  	$l:57.715839563791825->56.53222091455659
+	improve value x$w(high is good):5.897504706808832E-13  	x$d:1.1836186492359846  	 x$l(negative is good):-1.1836186492352354
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Six6, 	playerStartValue=7	
+org->adv	$w:42.28416043620683->43.46777908544348  	$d:0.0->5.493003484376981  	$l:57.715839563791825->51.03921743017955
+	improve value x$w(high is good):1.1836186492366494  	x$d:5.493003484376981  	 x$l(negative is good):-6.676622133612277
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Six6, 	playerStartValue=8	
+org->adv	$w:42.28416043620683->48.96078256982058  	$d:0.0->4.977957329344829  	$l:57.715839563791825->46.0612601008346
+	improve value x$w(high is good):6.676622133613748  	x$d:4.977957329344829  	 x$l(negative is good):-11.654579462957223
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Six6, 	playerStartValue=9	
+org->adv	$w:42.28416043620683->53.93873989916552  	$d:0.0->5.70840379071625  	$l:57.715839563791825->40.35285631011824
+	improve value x$w(high is good):11.654579462958687  	x$d:5.70840379071625  	 x$l(negative is good):-17.362983253673583
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Six6, 	playerStartValue=10	
+org->adv	$w:42.28416043620683->59.64714368988185  	$d:0.0->6.298651166463687  	$l:57.715839563791825->34.054205143654464
+	improve value x$w(high is good):17.36298325367502  	x$d:6.298651166463687  	 x$l(negative is good):-23.66163442013736
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Six6, 	playerStartValue=11	
+org->adv	$w:42.28416043620683->63.32624061452602  	$d:0.0->6.684501036349897  	$l:57.715839563791825->29.989258349124082
+	improve value x$w(high is good):21.04208017831919  	x$d:6.684501036349897  	 x$l(negative is good):-27.726581214667743
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Six6, 	playerStartValue=12	
+org->adv	$w:42.28416043620683->39.241510881645  	$d:0.0->4.43967996644553  	$l:57.715839563791825->56.31880915190946
+	improve value x$w(high is good):-3.0426495545618337  	x$d:4.43967996644553  	 x$l(negative is good):-1.397030411882362
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Six6, 	playerStartValue=13	
+org->adv	$w:42.28416043620683->35.98888315578287  	$d:0.0->4.439679966445524  	$l:57.715839563791825->59.5714368777716
+	improve value x$w(high is good):-6.29527728042396  	x$d:4.439679966445524  	 x$l(negative is good):1.8555973139797786
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Six6, 	playerStartValue=14	
+org->adv	$w:42.28416043620683->32.736255429920746  	$d:0.0->4.439679966445519  	$l:57.715839563791825->62.82406460363374
+	improve value x$w(high is good):-9.547905006286086  	x$d:4.439679966445519  	 x$l(negative is good):5.108225039841912
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Six6, 	playerStartValue=15	
+org->adv	$w:42.28416043620683->29.48362770405864  	$d:0.0->4.439679966445517  	$l:57.715839563791825->66.07669232949584
+	improve value x$w(high is good):-12.800532732148191  	x$d:4.439679966445517  	 x$l(negative is good):8.360852765704017
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Six6, 	playerStartValue=16	
+org->adv	$w:42.28416043620683->26.23099997819653  	$d:0.0->4.43967996644551  	$l:57.715839563791825->69.32932005535795
+	improve value x$w(high is good):-16.053160458010304  	x$d:4.43967996644551  	 x$l(negative is good):11.61348049156613
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Seven7, 	playerStartValue=6	
+org->adv	$w:26.193567586820578->26.19356758682071  	$d:0.0->2.6372002518609268  	$l:73.8064324131789->71.16923216131835
+	improve value x$w(high is good):1.3145040611561853E-13  	x$d:2.6372002518609268  	 x$l(negative is good):-2.6372002518605484
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Seven7, 	playerStartValue=7	
+org->adv	$w:26.193567586820578->28.83076783868172  	$d:0.0->11.53402188387879  	$l:73.8064324131789->59.63521027743949
+	improve value x$w(high is good):2.6372002518611417  	x$d:11.53402188387879  	 x$l(negative is good):-14.171222135739406
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Seven7, 	playerStartValue=8	
+org->adv	$w:26.193567586820578->40.36478972256069  	$d:0.0->7.138283859250465  	$l:73.8064324131789->52.496926418188835
+	improve value x$w(high is good):14.17122213574011  	x$d:7.138283859250465  	 x$l(negative is good):-21.30950599499006
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Seven7, 	playerStartValue=9	
+org->adv	$w:26.193567586820578->47.503073581811265  	$d:0.0->6.425232794016761  	$l:73.8064324131789->46.071693624171985
+	improve value x$w(high is good):21.309505994990687  	x$d:6.425232794016761  	 x$l(negative is good):-27.73473878900691
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Seven7, 	playerStartValue=10	
+org->adv	$w:26.193567586820578->53.92830637582806  	$d:0.0->6.957921806884004  	$l:73.8064324131789->39.11377181728794
+	improve value x$w(high is good):27.73473878900748  	x$d:6.957921806884004  	 x$l(negative is good):-34.692660595890956
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Seven7, 	playerStartValue=11	
+org->adv	$w:26.193567586820578->57.877476504459146  	$d:0.0->7.380858854755158  	$l:73.8064324131789->34.74166464078569
+	improve value x$w(high is good):31.68390891763857  	x$d:7.380858854755158  	 x$l(negative is good):-39.0647677723932
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Seven7, 	playerStartValue=12	
+org->adv	$w:26.193567586820578->34.48910458998352  	$d:0.0->5.67741787793682  	$l:73.8064324131789->59.83347753207966
+	improve value x$w(high is good):8.295537003162941  	x$d:5.67741787793682  	 x$l(negative is good):-13.972954881099234
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Seven7, 	playerStartValue=13	
+org->adv	$w:26.193567586820578->32.474214775612694  	$d:0.0->5.6774178779368185  	$l:73.8064324131789->61.848367346450495
+	improve value x$w(high is good):6.280647188792116  	x$d:5.6774178779368185  	 x$l(negative is good):-11.958065066728402
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Seven7, 	playerStartValue=14	
+org->adv	$w:26.193567586820578->30.45932496124186  	$d:0.0->5.677417877936814  	$l:73.8064324131789->63.86325716082132
+	improve value x$w(high is good):4.265757374421284  	x$d:5.677417877936814  	 x$l(negative is good):-9.943175252357577
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Seven7, 	playerStartValue=15	
+org->adv	$w:26.193567586820578->28.44443514687104  	$d:0.0->5.677417877936813  	$l:73.8064324131789->65.87814697519215
+	improve value x$w(high is good):2.2508675600504624  	x$d:5.677417877936813  	 x$l(negative is good):-7.9282854379867445
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Seven7, 	playerStartValue=16	
+org->adv	$w:26.193567586820578->26.429545332500215  	$d:0.0->5.677417877936811  	$l:73.8064324131789->67.89303678956298
+	improve value x$w(high is good):0.23597774567963725  	x$d:5.677417877936811  	 x$l(negative is good):-5.913395623615912
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Eight8, 	playerStartValue=6	
+org->adv	$w:24.36928979503635->24.369289795036426  	$d:0.0->0.9209999438584835  	$l:75.63071020496332->74.70971026110509
+	improve value x$w(high is good):7.460698725481052E-14  	x$d:0.9209999438584835  	 x$l(negative is good):-0.9209999438582344
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Eight8, 	playerStartValue=7	
+org->adv	$w:24.36928979503635->25.290289738894927  	$d:0.0->6.255106303038073  	$l:75.63071020496332->68.454603958067
+	improve value x$w(high is good):0.9209999438585754  	x$d:6.255106303038073  	 x$l(negative is good):-7.176106246896325
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Eight8, 	playerStartValue=8	
+org->adv	$w:24.36928979503635->31.54539604193305  	$d:0.0->12.124877252850657  	$l:75.63071020496332->56.329726705216274
+	improve value x$w(high is good):7.176106246896698  	x$d:12.124877252850657  	 x$l(negative is good):-19.300983499747048
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Eight8, 	playerStartValue=9	
+org->adv	$w:24.36928979503635->43.67027329478383  	$d:0.0->7.664331833093081  	$l:75.63071020496332->48.66539487212308
+	improve value x$w(high is good):19.30098349974748  	x$d:7.664331833093081  	 x$l(negative is good):-26.96531533284024
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Eight8, 	playerStartValue=10	
+org->adv	$w:24.36928979503635->51.334605127876934  	$d:0.0->6.885455288052671  	$l:75.63071020496332->41.7799395840704
+	improve value x$w(high is good):26.965315332840582  	x$d:6.885455288052671  	 x$l(negative is good):-33.85077062089292
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Eight8, 	playerStartValue=11	
+org->adv	$w:24.36928979503635->55.00621890946269  	$d:0.0->7.420904219267096  	$l:75.63071020496332->37.572876871270225
+	improve value x$w(high is good):30.636929114426337  	x$d:7.420904219267096  	 x$l(negative is good):-38.0578333336931
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Eight8, 	playerStartValue=12	
+org->adv	$w:24.36928979503635->31.657892359498994  	$d:0.0->5.817746938843318  	$l:75.63071020496332->62.52436070165769
+	improve value x$w(high is good):7.288602564462643  	x$d:5.817746938843318  	 x$l(negative is good):-13.10634950330563
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Eight8, 	playerStartValue=13	
+org->adv	$w:24.36928979503635->29.783331606034647  	$d:0.0->5.817746938843316  	$l:75.63071020496332->64.39892145512204
+	improve value x$w(high is good):5.414041810998295  	x$d:5.817746938843316  	 x$l(negative is good):-11.231788749841286
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Eight8, 	playerStartValue=14	
+org->adv	$w:24.36928979503635->27.908770852570306  	$d:0.0->5.8177469388433165  	$l:75.63071020496332->66.27348220858637
+	improve value x$w(high is good):3.539481057533955  	x$d:5.8177469388433165  	 x$l(negative is good):-9.357227996376949
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Eight8, 	playerStartValue=15	
+org->adv	$w:24.36928979503635->26.034210099105966  	$d:0.0->5.817746938843314  	$l:75.63071020496332->68.14804296205072
+	improve value x$w(high is good):1.6649203040696143  	x$d:5.817746938843314  	 x$l(negative is good):-7.482667242912598
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Eight8, 	playerStartValue=16	
+org->adv	$w:24.36928979503635->24.15964934564162  	$d:0.0->5.817746938843311  	$l:75.63071020496332->70.02260371551507
+	improve value x$w(high is good):-0.20964044939473325  	x$d:5.817746938843311  	 x$l(negative is good):-5.608106489448247
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Nine9, 	playerStartValue=6	
+org->adv	$w:22.92418933219518->22.924189332195255  	$d:0.0->0.8593561055519354  	$l:77.07581066780453->76.2164545622528
+	improve value x$w(high is good):7.460698725481052E-14  	x$d:0.8593561055519354  	 x$l(negative is good):-0.8593561055517256
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Nine9, 	playerStartValue=7	
+org->adv	$w:22.92418933219518->23.78354543774719  	$d:0.0->4.275627824744714  	$l:77.07581066780453->71.94082673750809
+	improve value x$w(high is good):0.8593561055520098  	x$d:4.275627824744714  	 x$l(negative is good):-5.134983930296443
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Nine9, 	playerStartValue=8	
+org->adv	$w:22.92418933219518->28.059173262491914  	$d:0.0->6.725414049860515  	$l:77.07581066780453->65.21541268764757
+	improve value x$w(high is good):5.134983930296734  	x$d:6.725414049860515  	 x$l(negative is good):-11.86039798015696
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Nine9, 	playerStartValue=9	
+org->adv	$w:22.92418933219518->34.78458731235247  	$d:0.0->12.610311078974783  	$l:77.07581066780453->52.605101608672754
+	improve value x$w(high is good):11.860397980157291  	x$d:12.610311078974783  	 x$l(negative is good):-24.470709059131778
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Nine9, 	playerStartValue=10	
+org->adv	$w:22.92418933219518->47.3948983913273  	$d:0.0->8.084737750429722  	$l:77.07581066780453->44.52036385824298
+	improve value x$w(high is good):24.470709059132123  	x$d:8.084737750429722  	 x$l(negative is good):-32.55544680956155
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Nine9, 	playerStartValue=11	
+org->adv	$w:22.92418933219518->52.05499276804601  	$d:0.0->7.333766419886458  	$l:77.07581066780453->40.61124081206752
+	improve value x$w(high is good):29.130803435850833  	x$d:7.333766419886458  	 x$l(negative is good):-36.46456985573701
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Nine9, 	playerStartValue=12	
+org->adv	$w:22.92418933219518->28.61952841870169  	$d:0.0->5.928908512908042  	$l:77.07581066780453->65.45156306839026
+	improve value x$w(high is good):5.695339086506511  	x$d:5.928908512908042  	 x$l(negative is good):-11.624247599414275
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Nine9, 	playerStartValue=13	
+org->adv	$w:22.92418933219518->26.85612923930205  	$d:0.0->5.928908512908041  	$l:77.07581066780453->67.2149622477899
+	improve value x$w(high is good):3.9319399071068695  	x$d:5.928908512908041  	 x$l(negative is good):-9.860848420014634
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Nine9, 	playerStartValue=14	
+org->adv	$w:22.92418933219518->25.09273005990241  	$d:0.0->5.9289085129080386  	$l:77.07581066780453->68.97836142718955
+	improve value x$w(high is good):2.1685407277072315  	x$d:5.9289085129080386  	 x$l(negative is good):-8.097449240614978
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Nine9, 	playerStartValue=15	
+org->adv	$w:22.92418933219518->23.329330880502777  	$d:0.0->5.928908512908039  	$l:77.07581066780453->70.74176060658918
+	improve value x$w(high is good):0.4051415483075971  	x$d:5.928908512908039  	 x$l(negative is good):-6.3340500612153505
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Nine9, 	playerStartValue=16	
+org->adv	$w:22.92418933219518->21.565931701103136  	$d:0.0->5.928908512908037  	$l:77.07581066780453->72.50515978598882
+	improve value x$w(high is good):-1.3582576310920444  	x$d:5.928908512908037  	 x$l(negative is good):-4.570650881815709
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Ten, 	playerStartValue=6	
+org->adv	$w:21.247093531872242->21.247093531872252  	$d:0.0->0.7993857790571811  	$l:78.75290646812768->77.95352068907057
+	improve value x$w(high is good):1.0658141036401503E-14  	x$d:0.7993857790571811  	 x$l(negative is good):-0.7993857790571042
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Ten, 	playerStartValue=7	
+org->adv	$w:21.247093531872242->22.04647931092944  	$d:0.0->3.9951770879932527  	$l:78.75290646812768->73.95834360107732
+	improve value x$w(high is good):0.7993857790571965  	x$d:3.9951770879932527  	 x$l(negative is good):-4.7945628670503595
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Ten, 	playerStartValue=8	
+org->adv	$w:21.247093531872242->26.041656398922697  	$d:0.0->4.789525995229766  	$l:78.75290646812768->69.16881760584755
+	improve value x$w(high is good):4.794562867050455  	x$d:4.789525995229766  	 x$l(negative is good):-9.584088862280126
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Ten, 	playerStartValue=9	
+org->adv	$w:21.247093531872242->30.831182394152478  	$d:0.0->7.224107773901488  	$l:78.75290646812768->61.944709831946035
+	improve value x$w(high is good):9.584088862280236  	x$d:7.224107773901488  	 x$l(negative is good):-16.80819663618164
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Ten, 	playerStartValue=10	
+org->adv	$w:21.247093531872242->38.05529016805397  	$d:0.0->12.911219724731875  	$l:78.75290646812768->49.03349010721415
+	improve value x$w(high is good):16.80819663618173  	x$d:12.911219724731875  	 x$l(negative is good):-29.719416360913527
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Ten, 	playerStartValue=11	
+org->adv	$w:21.247093531872242->47.19470296146171  	$d:0.0->8.642249602851717  	$l:78.75290646812768->44.16304743568657
+	improve value x$w(high is good):25.947609429589466  	x$d:8.642249602851717  	 x$l(negative is good):-34.589859032441105
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Ten, 	playerStartValue=12	
+org->adv	$w:21.247093531872242->25.067721795082644  	$d:0.0->6.057915882163665  	$l:78.75290646812768->68.8743623227537
+	improve value x$w(high is good):3.820628263210402  	x$d:6.057915882163665  	 x$l(negative is good):-9.87854414537398
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Ten, 	playerStartValue=13	
+org->adv	$w:21.247093531872242->23.433329984938624  	$d:0.0->6.057915882163665  	$l:78.75290646812768->70.5087541328977
+	improve value x$w(high is good):2.186236453066382  	x$d:6.057915882163665  	 x$l(negative is good):-8.24415233522997
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Ten, 	playerStartValue=14	
+org->adv	$w:21.247093531872242->21.798938174794603  	$d:0.0->6.057915882163665  	$l:78.75290646812768->72.14314594304173
+	improve value x$w(high is good):0.5518446429223616  	x$d:6.057915882163665  	 x$l(negative is good):-6.609760525085946
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Ten, 	playerStartValue=15	
+org->adv	$w:21.247093531872242->20.164546364650583  	$d:0.0->6.057915882163665  	$l:78.75290646812768->73.77753775318575
+	improve value x$w(high is good):-1.0825471672216587  	x$d:6.057915882163665  	 x$l(negative is good):-4.975368714941922
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Ten, 	playerStartValue=16	
+org->adv	$w:21.247093531872242->18.530154554506563  	$d:0.0->6.057915882163665  	$l:78.75290646812768->75.41192956332978
+	improve value x$w(high is good):-2.716938977365679  	x$d:6.057915882163665  	 x$l(negative is good):-3.3409769047978983
+
+DealerVSPlayerChance [who=Player, 	dealerCard=JJJ, 	playerStartValue=6	
+org->adv	$w:21.24709353187229->21.24709353187228  	$d:0.0->0.799385779057181  	$l:78.75290646812775->77.95352068907053
+	improve value x$w(high is good):-1.0658141036401503E-14  	x$d:0.799385779057181  	 x$l(negative is good):-0.7993857790572179
+
+DealerVSPlayerChance [who=Player, 	dealerCard=JJJ, 	playerStartValue=7	
+org->adv	$w:21.24709353187229->22.046479310929463  	$d:0.0->3.9951770879932513  	$l:78.75290646812775->73.95834360107729
+	improve value x$w(high is good):0.7993857790571717  	x$d:3.9951770879932513  	 x$l(negative is good):-4.794562867050459
+
+DealerVSPlayerChance [who=Player, 	dealerCard=JJJ, 	playerStartValue=8	
+org->adv	$w:21.24709353187229->26.041656398922715  	$d:0.0->4.789525995229765  	$l:78.75290646812775->69.16881760584752
+	improve value x$w(high is good):4.7945628670504234  	x$d:4.789525995229765  	 x$l(negative is good):-9.584088862280225
+
+DealerVSPlayerChance [who=Player, 	dealerCard=JJJ, 	playerStartValue=9	
+org->adv	$w:21.24709353187229->30.83118239415249  	$d:0.0->7.224107773901489  	$l:78.75290646812775->61.94470983194602
+	improve value x$w(high is good):9.584088862280197  	x$d:7.224107773901489  	 x$l(negative is good):-16.808196636181727
+
+DealerVSPlayerChance [who=Player, 	dealerCard=JJJ, 	playerStartValue=10	
+org->adv	$w:21.24709353187229->38.05529016805399  	$d:0.0->12.91121972473187  	$l:78.75290646812775->49.03349010721412
+	improve value x$w(high is good):16.8081966361817  	x$d:12.91121972473187  	 x$l(negative is good):-29.719416360913627
+
+DealerVSPlayerChance [who=Player, 	dealerCard=JJJ, 	playerStartValue=11	
+org->adv	$w:21.24709353187229->47.19470296146171  	$d:0.0->8.642249602851718  	$l:78.75290646812775->44.16304743568657
+	improve value x$w(high is good):25.947609429589416  	x$d:8.642249602851718  	 x$l(negative is good):-34.589859032441176
+
+DealerVSPlayerChance [who=Player, 	dealerCard=JJJ, 	playerStartValue=12	
+org->adv	$w:21.24709353187229->25.067721795082658  	$d:0.0->6.057915882163667  	$l:78.75290646812775->68.87436232275367
+	improve value x$w(high is good):3.8206282632103665  	x$d:6.057915882163667  	 x$l(negative is good):-9.878544145374079
+
+DealerVSPlayerChance [who=Player, 	dealerCard=JJJ, 	playerStartValue=13	
+org->adv	$w:21.24709353187229->23.43332998493864  	$d:0.0->6.057915882163669  	$l:78.75290646812775->70.50875413289768
+	improve value x$w(high is good):2.18623645306635  	x$d:6.057915882163669  	 x$l(negative is good):-8.24415233523007
+
+DealerVSPlayerChance [who=Player, 	dealerCard=JJJ, 	playerStartValue=14	
+org->adv	$w:21.24709353187229->21.79893817479462  	$d:0.0->6.057915882163669  	$l:78.75290646812775->72.1431459430417
+	improve value x$w(high is good):0.5518446429223296  	x$d:6.057915882163669  	 x$l(negative is good):-6.609760525086045
+
+DealerVSPlayerChance [who=Player, 	dealerCard=JJJ, 	playerStartValue=15	
+org->adv	$w:21.24709353187229->20.1645463646506  	$d:0.0->6.05791588216367  	$l:78.75290646812775->73.77753775318573
+	improve value x$w(high is good):-1.0825471672216906  	x$d:6.05791588216367  	 x$l(negative is good):-4.975368714942022
+
+DealerVSPlayerChance [who=Player, 	dealerCard=JJJ, 	playerStartValue=16	
+org->adv	$w:21.24709353187229->18.530154554506577  	$d:0.0->6.057915882163669  	$l:78.75290646812775->75.41192956332975
+	improve value x$w(high is good):-2.7169389773657144  	x$d:6.057915882163669  	 x$l(negative is good):-3.340976904797998
+
+DealerVSPlayerChance [who=Player, 	dealerCard=QQQ, 	playerStartValue=6	
+org->adv	$w:21.24709353187223->21.247093531872252  	$d:0.0->0.7993857790571811  	$l:78.75290646812763->77.95352068907056
+	improve value x$w(high is good):2.1316282072803006E-14  	x$d:0.7993857790571811  	 x$l(negative is good):-0.7993857790570758
+
+DealerVSPlayerChance [who=Player, 	dealerCard=QQQ, 	playerStartValue=7	
+org->adv	$w:21.24709353187223->22.04647931092944  	$d:0.0->3.995177087993252  	$l:78.75290646812763->73.9583436010773
+	improve value x$w(high is good):0.7993857790572072  	x$d:3.995177087993252  	 x$l(negative is good):-4.794562867050331
+
+DealerVSPlayerChance [who=Player, 	dealerCard=QQQ, 	playerStartValue=8	
+org->adv	$w:21.24709353187223->26.041656398922697  	$d:0.0->4.789525995229765  	$l:78.75290646812763->69.16881760584754
+	improve value x$w(high is good):4.794562867050466  	x$d:4.789525995229765  	 x$l(negative is good):-9.584088862280097
+
+DealerVSPlayerChance [who=Player, 	dealerCard=QQQ, 	playerStartValue=9	
+org->adv	$w:21.24709353187223->30.831182394152478  	$d:0.0->7.224107773901488  	$l:78.75290646812763->61.944709831946035
+	improve value x$w(high is good):9.584088862280247  	x$d:7.224107773901488  	 x$l(negative is good):-16.8081966361816
+
+DealerVSPlayerChance [who=Player, 	dealerCard=QQQ, 	playerStartValue=10	
+org->adv	$w:21.24709353187223->38.05529016805397  	$d:0.0->12.911219724731875  	$l:78.75290646812763->49.03349010721415
+	improve value x$w(high is good):16.80819663618174  	x$d:12.911219724731875  	 x$l(negative is good):-29.719416360913485
+
+DealerVSPlayerChance [who=Player, 	dealerCard=QQQ, 	playerStartValue=11	
+org->adv	$w:21.24709353187223->47.1947029614617  	$d:0.0->8.642249602851717  	$l:78.75290646812763->44.16304743568658
+	improve value x$w(high is good):25.94760942958947  	x$d:8.642249602851717  	 x$l(negative is good):-34.589859032441055
+
+DealerVSPlayerChance [who=Player, 	dealerCard=QQQ, 	playerStartValue=12	
+org->adv	$w:21.24709353187223->25.067721795082644  	$d:0.0->6.057915882163666  	$l:78.75290646812763->68.8743623227537
+	improve value x$w(high is good):3.8206282632104127  	x$d:6.057915882163666  	 x$l(negative is good):-9.878544145373937
+
+DealerVSPlayerChance [who=Player, 	dealerCard=QQQ, 	playerStartValue=13	
+org->adv	$w:21.24709353187223->23.433329984938617  	$d:0.0->6.057915882163665  	$l:78.75290646812763->70.50875413289772
+	improve value x$w(high is good):2.1862364530663854  	x$d:6.057915882163665  	 x$l(negative is good):-8.244152335229913
+
+DealerVSPlayerChance [who=Player, 	dealerCard=QQQ, 	playerStartValue=14	
+org->adv	$w:21.24709353187223->21.798938174794596  	$d:0.0->6.057915882163665  	$l:78.75290646812763->72.14314594304174
+	improve value x$w(high is good):0.5518446429223651  	x$d:6.057915882163665  	 x$l(negative is good):-6.609760525085889
+
+DealerVSPlayerChance [who=Player, 	dealerCard=QQQ, 	playerStartValue=15	
+org->adv	$w:21.24709353187223->20.164546364650576  	$d:0.0->6.057915882163665  	$l:78.75290646812763->73.77753775318577
+	improve value x$w(high is good):-1.0825471672216551  	x$d:6.057915882163665  	 x$l(negative is good):-4.975368714941865
+
+DealerVSPlayerChance [who=Player, 	dealerCard=QQQ, 	playerStartValue=16	
+org->adv	$w:21.24709353187223->18.53015455450656  	$d:0.0->6.057915882163665  	$l:78.75290646812763->75.41192956332978
+	improve value x$w(high is good):-2.716938977365672  	x$d:6.057915882163665  	 x$l(negative is good):-3.3409769047978557
+
+DealerVSPlayerChance [who=Player, 	dealerCard=KKK, 	playerStartValue=6	
+org->adv	$w:21.24709353187225->21.24709353187227  	$d:0.0->0.7993857790571811  	$l:78.75290646812768->77.95352068907054
+	improve value x$w(high is good):2.1316282072803006E-14  	x$d:0.7993857790571811  	 x$l(negative is good):-0.7993857790571326
+
+DealerVSPlayerChance [who=Player, 	dealerCard=KKK, 	playerStartValue=7	
+org->adv	$w:21.24709353187225->22.046479310929453  	$d:0.0->3.995177087993252  	$l:78.75290646812768->73.9583436010773
+	improve value x$w(high is good):0.7993857790572036  	x$d:3.995177087993252  	 x$l(negative is good):-4.794562867050374
+
+DealerVSPlayerChance [who=Player, 	dealerCard=KKK, 	playerStartValue=8	
+org->adv	$w:21.24709353187225->26.041656398922715  	$d:0.0->4.789525995229765  	$l:78.75290646812768->69.16881760584752
+	improve value x$w(high is good):4.794562867050466  	x$d:4.789525995229765  	 x$l(negative is good):-9.584088862280154
+
+DealerVSPlayerChance [who=Player, 	dealerCard=KKK, 	playerStartValue=9	
+org->adv	$w:21.24709353187225->30.83118239415249  	$d:0.0->7.224107773901486  	$l:78.75290646812768->61.94470983194602
+	improve value x$w(high is good):9.58408886228024  	x$d:7.224107773901486  	 x$l(negative is good):-16.808196636181655
+
+DealerVSPlayerChance [who=Player, 	dealerCard=KKK, 	playerStartValue=10	
+org->adv	$w:21.24709353187225->38.05529016805398  	$d:0.0->12.911219724731879  	$l:78.75290646812768->49.03349010721415
+	improve value x$w(high is good):16.80819663618173  	x$d:12.911219724731879  	 x$l(negative is good):-29.719416360913527
+
+DealerVSPlayerChance [who=Player, 	dealerCard=KKK, 	playerStartValue=11	
+org->adv	$w:21.24709353187225->47.19470296146171  	$d:0.0->8.642249602851718  	$l:78.75290646812768->44.16304743568657
+	improve value x$w(high is good):25.94760942958946  	x$d:8.642249602851718  	 x$l(negative is good):-34.589859032441105
+
+DealerVSPlayerChance [who=Player, 	dealerCard=KKK, 	playerStartValue=12	
+org->adv	$w:21.24709353187225->25.067721795082647  	$d:0.0->6.057915882163667  	$l:78.75290646812768->68.8743623227537
+	improve value x$w(high is good):3.8206282632103985  	x$d:6.057915882163667  	 x$l(negative is good):-9.87854414537398
+
+DealerVSPlayerChance [who=Player, 	dealerCard=KKK, 	playerStartValue=13	
+org->adv	$w:21.24709353187225->23.433329984938627  	$d:0.0->6.057915882163667  	$l:78.75290646812768->70.5087541328977
+	improve value x$w(high is good):2.1862364530663783  	x$d:6.057915882163667  	 x$l(negative is good):-8.24415233522997
+
+DealerVSPlayerChance [who=Player, 	dealerCard=KKK, 	playerStartValue=14	
+org->adv	$w:21.24709353187225->21.798938174794603  	$d:0.0->6.057915882163667  	$l:78.75290646812768->72.14314594304173
+	improve value x$w(high is good):0.5518446429223545  	x$d:6.057915882163667  	 x$l(negative is good):-6.609760525085946
+
+DealerVSPlayerChance [who=Player, 	dealerCard=KKK, 	playerStartValue=15	
+org->adv	$w:21.24709353187225->20.164546364650583  	$d:0.0->6.057915882163666  	$l:78.75290646812768->73.77753775318575
+	improve value x$w(high is good):-1.0825471672216658  	x$d:6.057915882163666  	 x$l(negative is good):-4.975368714941922
+
+DealerVSPlayerChance [who=Player, 	dealerCard=KKK, 	playerStartValue=16	
+org->adv	$w:21.24709353187225->18.530154554506566  	$d:0.0->6.057915882163665  	$l:78.75290646812768->75.41192956332978
+	improve value x$w(high is good):-2.7169389773656825  	x$d:6.057915882163665  	 x$l(negative is good):-3.3409769047978983
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Eleven, 	playerStartValue=6	
+org->adv	$w:0.0->0.0  	$d:0.0->1.0051968581485615  	$l:100.0->98.99480314185145
+	improve value x$w(high is good):0.0  	x$d:1.0051968581485615  	 x$l(negative is good):-1.005196858148551
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Eleven, 	playerStartValue=7	
+org->adv	$w:0.0->1.0051968581485615  	$d:0.0->5.031322976708812  	$l:100.0->93.96348016514263
+	improve value x$w(high is good):1.0051968581485615  	x$d:5.031322976708812  	 x$l(negative is good):-6.036519834857373
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Eleven, 	playerStartValue=8	
+org->adv	$w:0.0->6.036519834857375  	$d:0.0->6.055996621111638  	$l:100.0->87.907483544031
+	improve value x$w(high is good):6.036519834857375  	x$d:6.055996621111638  	 x$l(negative is good):-12.092516455969005
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Eleven, 	playerStartValue=9	
+org->adv	$w:0.0->12.092516455969013  	$d:0.0->7.061327336178389  	$l:100.0->80.8461562078526
+	improve value x$w(high is good):12.092516455969013  	x$d:7.061327336178389  	 x$l(negative is good):-19.1538437921474
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Eleven, 	playerStartValue=10	
+org->adv	$w:0.0->19.15384379214742  	$d:0.0->10.175750906545225  	$l:100.0->70.67040530130735
+	improve value x$w(high is good):19.15384379214742  	x$d:10.175750906545225  	 x$l(negative is good):-29.329594698692645
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Eleven, 	playerStartValue=11	
+org->adv	$w:0.0->23.893409675515155  	$d:0.0->17.73193136770102  	$l:100.0->58.37465895678383
+	improve value x$w(high is good):23.893409675515155  	x$d:17.73193136770102  	 x$l(negative is good):-41.62534104321617
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Eleven, 	playerStartValue=12	
+org->adv	$w:0.0->10.856110273985413  	$d:0.0->7.692307692307687  	$l:100.0->81.4515820337069
+	improve value x$w(high is good):10.856110273985413  	x$d:7.692307692307687  	 x$l(negative is good):-18.5484179662931
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Eleven, 	playerStartValue=13	
+org->adv	$w:0.0->10.856110273985413  	$d:0.0->7.692307692307687  	$l:100.0->81.4515820337069
+	improve value x$w(high is good):10.856110273985413  	x$d:7.692307692307687  	 x$l(negative is good):-18.5484179662931
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Eleven, 	playerStartValue=14	
+org->adv	$w:0.0->10.85611027398541  	$d:0.0->7.692307692307685  	$l:100.0->81.4515820337069
+	improve value x$w(high is good):10.85611027398541  	x$d:7.692307692307685  	 x$l(negative is good):-18.5484179662931
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Eleven, 	playerStartValue=15	
+org->adv	$w:0.0->10.856110273985413  	$d:0.0->7.692307692307687  	$l:100.0->81.4515820337069
+	improve value x$w(high is good):10.856110273985413  	x$d:7.692307692307687  	 x$l(negative is good):-18.5484179662931
+
+DealerVSPlayerChance [who=Player, 	dealerCard=Eleven, 	playerStartValue=16	
+org->adv	$w:0.0->10.856110273985413  	$d:0.0->7.692307692307687  	$l:100.0->81.4515820337069
+	improve value x$w(high is good):10.856110273985413  	x$d:7.692307692307687  	 x$l(negative is good):-18.5484179662931
+143

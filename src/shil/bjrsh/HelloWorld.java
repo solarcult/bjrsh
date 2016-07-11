@@ -12,7 +12,7 @@ public class HelloWorld {
 //		{
 //			System.out.println(cardsPathValue);
 //		}
-		System.out.println(DealerCards.StartTwo.size());
+		System.out.println(DealerCards.StartEight.size());
 	}
 	
 	public static <T> void print(Collection<T> cs){
@@ -38,8 +38,21 @@ public class HelloWorld {
 	}
 	
 	public static void print2DoubleWDL(double[] advanced , double[] origin){
-		System.out.println("w:"+advanced[0]*100 + "->" + origin[0]*100+"  \t$d:"+advanced[1]*100 + "->" + origin[1]*100+"  \t$l:"+advanced[2]*100 + "->" + origin[2]*100);
+		System.out.println("org->adv $w:"+origin[0]*100 + "->" + advanced[0]*100+"  \t$d:"+origin[1]*100 + "->" + advanced[1]*100+"  \t$l:"+origin[2]*100 + "->" + advanced[2]*100);
 		System.out.println(" \timprove value x$w(high is good):"+(advanced[0]*100 - origin[0]*100)+"  \tx$d:"+(advanced[1]*100 - origin[1]*100)+"  \t x$l(negative is good):"+(advanced[2]*100 - origin[2]*100));
+
+	}
+	
+	public static String builder2DoubleWDL(double[] advanced , double[] origin){
+		
+		StringBuilder sb = new StringBuilder();
+		if(advanced!=null){
+			sb.append("\r\norg->adv\t$w:"+origin[0]*100 + "->" + advanced[0]*100+"  \t$d:"+origin[1]*100 + "->" + advanced[1]*100+"  \t$l:"+origin[2]*100 + "->" + advanced[2]*100);
+			sb.append("\r\n\timprove value x$w(high is good):"+(advanced[0]*100 - origin[0]*100)+"  \tx$d:"+(advanced[1]*100 - origin[1]*100)+"  \t x$l(negative is good):"+(advanced[2]*100 - origin[2]*100));
+		}else{
+			sb.append(builderDoubleWDL(origin));
+		}
+		return sb.toString();
 
 	}
 }

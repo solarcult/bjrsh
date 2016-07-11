@@ -1,7 +1,5 @@
 package shil.bjrsh.analyze;
 
-import java.util.Comparator;
-
 import shil.bjrsh.HelloWorld;
 import shil.bjrsh.core.Card;
 import shil.bjrsh.core.StartValue;
@@ -14,42 +12,26 @@ public class DealerVSPlayerChance{
 	private String who;
 	private Card dealerCard;
 	private StartValue playerStartValue;
-	private double[] WDLMatrix;
+	private double[] origin;
+	private double[] advanced;
 	
-	public DealerVSPlayerChance(String who, Card dealerCard,StartValue playerStartValue,double[] WDLMatrix){
+	public DealerVSPlayerChance(String who, Card dealerCard,StartValue playerStartValue,double[] origin,double[] advanced){
 		this.who = who;
 		this.dealerCard = dealerCard;
 		this.playerStartValue = playerStartValue;
-		this.WDLMatrix = WDLMatrix;
-	}
-	
-	public double winRate(){
-		return WDLMatrix[WinDrawLose.win] * 100;
-	}
-	
-	public double drawRate(){
-		return WDLMatrix[WinDrawLose.draw] * 100;
-	}
-	
-	public double loseRate(){
-		return WDLMatrix[WinDrawLose.lose] * 100;
-	}
-	
-	public double Win4LoseRate(){
-		return winRate() - loseRate();
+		this.origin = origin;
+		this.advanced = advanced;
 	}
 
 	@Override
 	public String toString() {
-		double[] origin = PlayerAnalyzeWithCardsProb.playerNowVSDealerChance(playerStartValue, dealerCard);
-		return "DealerVSPlayerChance [who=" + who + ", \tdealerCard="
-				+ dealerCard + ", \tplayerStartValue=" + playerStartValue.getValue()
-				+ ", \twinRate()=" + winRate() + ", \tdrawRate()=" + drawRate()
-				+ ", \tloseRate()=" + loseRate() + ", \tWin4LoseRate()="
-				+ Win4LoseRate() + "] \t" + HelloWorld.builderDoubleWDL(origin) + "\t OriginLoseRate+@loseRate(onlyOneVsNow):" + (origin[2]*100+loseRate());
+		return "\nDealerVSPlayerChance [who=" + who + ", \tdealerCard="
+				+ dealerCard + ", \tplayerStartValue=" + playerStartValue.getValue() +"\t"
+				+ HelloWorld.builder2DoubleWDL(advanced, origin);
 	}
 }
 
+/*
 class WinComparator implements Comparator<DealerVSPlayerChance>{
 
 	@Override
@@ -88,3 +70,4 @@ class LoseComparator implements Comparator<DealerVSPlayerChance>{
 		return 0;
 	}
 }
+*/
