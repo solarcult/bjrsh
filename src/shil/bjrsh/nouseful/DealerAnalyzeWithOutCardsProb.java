@@ -1,10 +1,11 @@
-package shil.bjrsh.analyze;
+package shil.bjrsh.nouseful;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.apache.commons.math3.stat.Frequency;
 
+import shil.bjrsh.analyze.DealerCards;
 import shil.bjrsh.core.BlackJackInfo;
 import shil.bjrsh.core.Card;
 import shil.bjrsh.core.DealerCardsPathValue;

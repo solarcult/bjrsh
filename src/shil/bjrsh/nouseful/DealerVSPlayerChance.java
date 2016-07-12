@@ -1,4 +1,4 @@
-package shil.bjrsh.analyze;
+package shil.bjrsh.nouseful;
 
 import shil.bjrsh.HelloWorld;
 import shil.bjrsh.core.Card;

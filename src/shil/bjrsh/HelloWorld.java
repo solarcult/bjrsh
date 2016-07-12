@@ -53,6 +53,5 @@ public class HelloWorld {
 			sb.append(builderDoubleWDL(origin));
 		}
 		return sb.toString();
-
 	}
 }

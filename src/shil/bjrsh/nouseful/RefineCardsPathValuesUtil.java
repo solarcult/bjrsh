@@ -1,4 +1,4 @@
-package shil.bjrsh;
+package shil.bjrsh.nouseful;
 
 import java.util.Collection;
 import java.util.HashSet;

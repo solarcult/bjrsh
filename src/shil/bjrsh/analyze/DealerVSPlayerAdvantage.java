@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import shil.bjrsh.HelloWorld;
-import shil.bjrsh.core.BlackJackInfo;
 import shil.bjrsh.core.Card;
 import shil.bjrsh.core.PlayerCardsPathValue;
 import shil.bjrsh.core.StartValue;
+import shil.bjrsh.nouseful.DealerVSPlayerChance;
 
 public class DealerVSPlayerAdvantage {
 	
@@ -72,26 +72,40 @@ public class DealerVSPlayerAdvantage {
 	 * 用户所有牌+再来一张对Dealer的胜率有什么变化
 	 * @return
 	 */
-	public static List<DealerVSPlayerChance> makePlayerOneMoreVSNow(){
+	public static List<DealerVSPlayerChance> makePlayerOneMoreVSNowPlayerChange(){
 		List<DealerVSPlayerChance> diff = new ArrayList<DealerVSPlayerChance>();
 		for (Card card : Card.values()) {
-			
 			if(Card.One1.equals(card)) continue;
 			for (StartValue startValue : StartValue.values()) {	
-				if (startValue.getValue() < StartValue.Six.getValue() || startValue.getValue() >= BlackJackInfo.DealerStop) continue;
+				if (startValue.getValue() < StartValue.Six.getValue()) continue;
 				
 				double[] playerOneMore = PlayerAnalyzeWithCardsProb.playerChanceOneMoreCard(new PlayerCardsPathValue(startValue), card);
 				double[] playerNow = PlayerAnalyzeWithCardsProb.playerNowVSDealerChance(startValue, card);
 				DealerVSPlayerChance dealerVSPlayerChance = new DealerVSPlayerChance(DealerVSPlayerChance.Player,card, startValue, playerNow,playerOneMore);
 				diff.add(dealerVSPlayerChance);
 			}
-		
+		}
+		return diff;
+	}
+	
+	public static List<DealerVSPlayerChance> makePlayerOneMoreVSNowDealerChange(){
+		List<DealerVSPlayerChance> diff = new ArrayList<DealerVSPlayerChance>();
+			for (StartValue startValue : StartValue.values()) {
+				if (startValue.getValue() < StartValue.Six.getValue()) continue;
+				for (Card card : Card.values()) {
+					if(Card.One1.equals(card)) continue;
+				double[] playerOneMore = PlayerAnalyzeWithCardsProb.playerChanceOneMoreCard(new PlayerCardsPathValue(startValue), card);
+				double[] playerNow = PlayerAnalyzeWithCardsProb.playerNowVSDealerChance(startValue, card);
+				DealerVSPlayerChance dealerVSPlayerChance = new DealerVSPlayerChance(DealerVSPlayerChance.Player,card, startValue, playerNow,playerOneMore);
+				diff.add(dealerVSPlayerChance);
+			}
 		}
 		return diff;
 	}
 	
 	public static void main(String[] args){
-		List<DealerVSPlayerChance> ao = makePlayerOneMoreVSNow();
+//		List<DealerVSPlayerChance> ao = makePlayerOneMoreVSNowDealerChange();
+		List<DealerVSPlayerChance> ao = makePlayerOneMoreVSNowPlayerChange();
 //		List<DealerVSPlayerChance> ao = makeDealerNow();
 //		List<DealerVSPlayerChance> ao = makePlayerNow();
 //		Collections.sort(ao, new WinComparator());
