@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import shil.bjrsh.strategy.PlayerAction;
+
 public class PlayerCardsPathValue {
 
 	public static int IllegalCards = -1;
@@ -11,25 +13,30 @@ public class PlayerCardsPathValue {
 	private int value;
 	private List<Card> cards;
 	private StartValue startValue;
+	private PlayerAction result;
 	
 	public PlayerCardsPathValue(StartValue startValue){
 		this.startValue = startValue;
 		value = startValue.getValue();
 		cards = new ArrayList<Card>();
+		result = PlayerAction.Hit;
 	}
 	
+	@Deprecated
 	public PlayerCardsPathValue(Card one,Card two){
 		this.startValue = StartValue.getOne(one.getValue()+two.getValue());
 		this.value = 0;
 		cards = new ArrayList<Card>();
 		cards.add(one);
 		cards.add(two);
+		result = PlayerAction.Hit;
 	}
 	
 	public PlayerCardsPathValue(PlayerCardsPathValue playerCardsPathValue){
 		value = playerCardsPathValue.getValue();
 		cards = new ArrayList<Card>(playerCardsPathValue.getCards());
 		startValue = playerCardsPathValue.getStartValue();
+		result = playerCardsPathValue.getResult();
 	}
 	
 	public void addCard(Card card){
@@ -141,7 +148,16 @@ public class PlayerCardsPathValue {
 	public String toString() {
 		return "PlayerCardsPathValue [startValue=" + startValue + ", cards="
 				+ cards + ", value=" + value + ", getCardsMap()="
-				+ getCardsMap() + ", prob()=" + prob() + "]";
+				+ getCardsMap() + ", prob()=" + prob() + ", result=" + result + "]" ;
 	}
+
 	
+	
+	public PlayerAction getResult() {
+		return result;
+	}
+
+	public void setResult(PlayerAction result) {
+		this.result = result;
+	}
 }

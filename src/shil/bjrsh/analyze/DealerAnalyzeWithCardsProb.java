@@ -17,6 +17,10 @@ public class DealerAnalyzeWithCardsProb {
 	 * @return
 	 */
 	public static double[] dealerResultChance(Card dealerStartCard, int playerValue){
+		if(playerValue > BlackJackInfo.BlackJack){
+			return new double[]{1d,0d,0d};
+		}
+		
 		Collection<DealerCardsPathValue> allCardsChances = DealerCards.fetchDealerCards(dealerStartCard);
 		double winrate = 0;
 		double drawrate = 0;
