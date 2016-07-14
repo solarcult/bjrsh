@@ -8,12 +8,14 @@ public class PlayerStrategy implements Comparable<PlayerStrategy>{
 
 	private StartValue startValue;
 	private Card dealercard;
-	private PlayerAction playerAction;
+	private PlayerAction startAction;
+	private PlayerAction threeCardAction;
 	
-	protected PlayerStrategy(StartValue startValue,Card dealerCard,PlayerAction playerAction){
+	protected PlayerStrategy(StartValue startValue,Card dealerCard,PlayerAction startAction,PlayerAction threeCardAction){
 		this.startValue = startValue;
 		this.dealercard = dealerCard;
-		this.playerAction = playerAction;
+		this.startAction = startAction;
+		this.threeCardAction = threeCardAction;
 	}
 	
 	protected PlayerStrategy(StartValue startValue,Card dealerCard){
@@ -23,14 +25,6 @@ public class PlayerStrategy implements Comparable<PlayerStrategy>{
 	
 	public static PlayerStrategy builderOne(StartValue startValue,Card dealerCard){
 		return new PlayerStrategy(startValue, dealerCard);
-	}
-
-	public PlayerAction getPlayerAction() {
-		return playerAction;
-	}
-
-	public void setPlayerAction(PlayerAction playerAction) {
-		this.playerAction = playerAction;
 	}
 
 	public StartValue getStartValue() {
@@ -69,12 +63,6 @@ public class PlayerStrategy implements Comparable<PlayerStrategy>{
 	}
 
 	@Override
-	public String toString() {
-		return "PlayerStrategy [startValue=" + startValue + ", dealercard="
-				+ dealercard + ", playerAction=" + playerAction + "]";
-	}
-
-	@Override
 	public int compareTo(PlayerStrategy o) {
 		if(this.startValue.getValue() < o.startValue.getValue()) 
 			return -1;
@@ -88,6 +76,21 @@ public class PlayerStrategy implements Comparable<PlayerStrategy>{
 				return 1;
 			return 0;
 		}
+	}
+
+	public PlayerAction getStartAction() {
+		return startAction;
+	}
+
+	public PlayerAction getThreeCardAction() {
+		return threeCardAction;
+	}
+
+	@Override
+	public String toString() {
+		return "PlayerStrategy [startValue=" + startValue + ", dealercard="
+				+ dealercard + ", startAction=" + startAction
+				+ ", threeCardAction=" + threeCardAction + "]";
 	}
 	
 }

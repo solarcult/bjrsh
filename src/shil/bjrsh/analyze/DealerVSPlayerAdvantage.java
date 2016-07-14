@@ -104,8 +104,8 @@ public class DealerVSPlayerAdvantage {
 	}
 	
 	public static void main(String[] args){
-//		List<DealerVSPlayerChance> ao = makePlayerOneMoreVSNowDealerChange();
-		List<DealerVSPlayerChance> ao = makePlayerOneMoreVSNowPlayerChange();
+		List<DealerVSPlayerChance> ao = makePlayerOneMoreVSNowDealerChange();
+//		List<DealerVSPlayerChance> ao = makePlayerOneMoreVSNowPlayerChange();
 //		List<DealerVSPlayerChance> ao = makeDealerNow();
 //		List<DealerVSPlayerChance> ao = makePlayerNow();
 //		Collections.sort(ao, new WinComparator());

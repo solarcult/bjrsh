@@ -1,8 +1,6 @@
 package shil.bjrsh.strategy.two;
 
-import java.util.HashMap;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.TreeMap;
 
 import shil.bjrsh.core.Card;
@@ -11,7 +9,7 @@ import shil.bjrsh.strategy.PlayerAction;
 
 public class PlayerStrategyMatrix {
 
-	private static Map<PlayerStrategy,PlayerAction> strategyMatrix = new TreeMap<PlayerStrategy,PlayerAction>();
+	private static Map<PlayerStrategy,PlayerStrategy> strategyMatrix = new TreeMap<PlayerStrategy,PlayerStrategy>();
 	static{
 		
 		for(StartValue startValue : StartValue.values()){
@@ -20,60 +18,97 @@ public class PlayerStrategyMatrix {
 			else if(startValue.getValue() >=2 && startValue.getValue()<=9){
 				for(Card dealerCard : Card.values()){
 					if(dealerCard == Card.One1) continue;
-					if(dealerCard == Card.Five5 || dealerCard == Card.Six6)
-						strategyMatrix.put(new PlayerStrategy(startValue, dealerCard, PlayerAction.Double),PlayerAction.Double); 
-					else 
-						strategyMatrix.put(new PlayerStrategy(startValue, dealerCard, PlayerAction.Hit),PlayerAction.Hit);
+					if(dealerCard == Card.Five5 || dealerCard == Card.Six6){
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Double,PlayerAction.Double);
+						strategyMatrix.put(playerStrategy,playerStrategy); 
+					}else{
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Hit,PlayerAction.Hit);
+						strategyMatrix.put(playerStrategy,playerStrategy);
+					}
 				}
 			}
 			else if(startValue == StartValue.Ten) {
 				for(Card dealerCard : Card.values()){
 					if(dealerCard == Card.One1) continue;
-					if(dealerCard.getValue() <=8)
-						strategyMatrix.put(new PlayerStrategy(startValue, dealerCard, PlayerAction.Double),PlayerAction.Double);
-					else 
-						strategyMatrix.put(new PlayerStrategy(startValue, dealerCard, PlayerAction.Hit),PlayerAction.Hit);
+					if(dealerCard.getValue() <=8){
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Double,PlayerAction.Double);
+						strategyMatrix.put(playerStrategy,playerStrategy);
+					}else{
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Hit,PlayerAction.Hit);
+						strategyMatrix.put(playerStrategy,playerStrategy);
+					}
 				}
 			}
 			else if(startValue == StartValue.Eleven){
 				for(Card dealerCard : Card.values()){
 					if(dealerCard == Card.One1) continue;
-					if(dealerCard.getValue() <=9)
-						strategyMatrix.put(new PlayerStrategy(startValue, dealerCard, PlayerAction.Double),PlayerAction.Double);
-					else 
-						strategyMatrix.put(new PlayerStrategy(startValue, dealerCard, PlayerAction.Hit),PlayerAction.Hit);
+					if(dealerCard.getValue() <=9){
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Double,PlayerAction.Double);
+						strategyMatrix.put(playerStrategy,playerStrategy);
+					}else{
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Hit,PlayerAction.Hit);
+						strategyMatrix.put(playerStrategy,playerStrategy);
+					}
 				}
 			}
-			else if(startValue.getValue()>=12 && startValue.getValue()<=16){
+			else if(startValue == StartValue.Twelve){// && startValue.getValue()<=16){
 				for(Card dealerCard : Card.values()){
 					if(dealerCard == Card.One1) continue;
-					if(dealerCard.getValue() <=6)
-						strategyMatrix.put(new PlayerStrategy(startValue, dealerCard, PlayerAction.Stand),PlayerAction.Stand);
-					else{
-						//this is complex part
-						
+					if(dealerCard.getValue() <=6){
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Stand,PlayerAction.Stand);
+						strategyMatrix.put(playerStrategy,playerStrategy);
+					}else{
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Hit,PlayerAction.Hit);
+						strategyMatrix.put(playerStrategy,playerStrategy);
+					}
+				}
+			}else if(startValue==StartValue.Thirteen){
+				for(Card dealerCard : Card.values()){
+					if(dealerCard == Card.One1) continue;
+					if(dealerCard.getValue() <=6){
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Stand,PlayerAction.Stand);
+						strategyMatrix.put(playerStrategy,playerStrategy);
+					}else{
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Hit,PlayerAction.Hit);
+						strategyMatrix.put(playerStrategy,playerStrategy);
+					}
+				}
+			}else if(startValue==StartValue.Fourteen){
+				//very hard choose
+				for(Card dealerCard : Card.values()){
+					if(dealerCard == Card.One1) continue;
+					if(dealerCard.getValue() <=6){
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Stand,PlayerAction.Stand);
+						strategyMatrix.put(playerStrategy,playerStrategy);
+					}else if(dealerCard == Card.Ten){
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Stand);
+						strategyMatrix.put(playerStrategy,playerStrategy);
+					}else{
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Hit,PlayerAction.Hit);
+						strategyMatrix.put(playerStrategy,playerStrategy);
 					}
 				}
 			}
 			else{
-				// start >= 17 just wait and watch and pray
+				// start >= 17 just wait , watch and pray
 				for(Card dealerCard : Card.values()){
 					if(dealerCard == Card.One1) continue;
-					strategyMatrix.put(new PlayerStrategy(startValue, dealerCard, PlayerAction.Stand),PlayerAction.Stand);
+					PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Stand,PlayerAction.Stand);
+					strategyMatrix.put(playerStrategy,playerStrategy);
 				}
 			}
 		}
 	}
 	
-	public static PlayerAction getPlayerAction(StartValue startValue,Card dealerCard){
+	public static PlayerStrategy getPlayerAction(StartValue startValue,Card dealerCard){
 		return strategyMatrix.get(PlayerStrategy.builderOne(startValue, dealerCard));
 	}
 	
-	public static PlayerAction getPlayerAction(PlayerStrategy playerStrategy){
+	public static PlayerStrategy getPlayerAction(PlayerStrategy playerStrategy){
 		return strategyMatrix.get(playerStrategy);
 	}
 	
-	public static Map<PlayerStrategy,PlayerAction> getStrategyMatrix(){
+	public static Map<PlayerStrategy,PlayerStrategy> getStrategyMatrix(){
 		return strategyMatrix;
 	}
 	

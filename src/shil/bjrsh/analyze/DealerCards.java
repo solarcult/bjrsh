@@ -22,7 +22,7 @@ public class DealerCards {
 	public static Collection<DealerCardsPathValue> StartJ = GenerateCardsUtil.generateDealerCards(new DealerCardsPathValue(Card.JJJ));
 	public static Collection<DealerCardsPathValue> StartQ = GenerateCardsUtil.generateDealerCards(new DealerCardsPathValue(Card.QQQ));
 	public static Collection<DealerCardsPathValue> StartK = GenerateCardsUtil.generateDealerCards(new DealerCardsPathValue(Card.KKK));
-	public static Collection<DealerCardsPathValue> StartEleven = GenerateCardsUtil.generateDealerCards(new DealerCardsPathValue(Card.Eleven));
+	public static Collection<DealerCardsPathValue> StartEleven = GenerateCardsUtil.generateDealerACards();
 	
 	public static Collection<DealerCardsPathValue> fetchDealerCards(Card card){
 		switch(card){

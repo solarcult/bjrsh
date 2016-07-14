@@ -36,6 +36,13 @@ public class GenerateCardsUtil {
 		return cardsPathValues;
 	}
 	
+	public static Collection<DealerCardsPathValue> generateDealerACards(){
+		Collection<DealerCardsPathValue> cardsPathValues = new HashSet<DealerCardsPathValue>();
+		cardsPathValues.addAll(GenerateCardsUtil.generateDealerCards(new DealerCardsPathValue(Card.One1)));
+		cardsPathValues.addAll(GenerateCardsUtil.generateDealerCards(new DealerCardsPathValue(Card.Eleven)));
+		return cardsPathValues;
+	}
+	
 	/**
 	 * 玩家的所有组合牌,根据enableHitOneMoreCardNumber决定还有几张出牌时进行抓牌
 	 * @param playerCardsPathValue
