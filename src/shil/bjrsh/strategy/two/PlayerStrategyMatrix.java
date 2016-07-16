@@ -71,10 +71,14 @@ public class PlayerStrategyMatrix {
 					}else if(dealerCard.getValue() == 7){
 						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Hit,PlayerAction.Hit);
 						strategyMatrix.put(playerStrategy,playerStrategy);
-					}else{
-						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Hit);
+					}else {//if(dealerCard.getValue() == 8){
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Hit,PlayerAction.Hit);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}
+//					else{
+//						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Hit);
+//						strategyMatrix.put(playerStrategy,playerStrategy);
+//					}
 				}
 			}else if(startValue==StartValue.Fourteen){
 				//very hard choose
@@ -83,8 +87,8 @@ public class PlayerStrategyMatrix {
 					if(dealerCard.getValue() <=6){
 						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Stand,PlayerAction.Stand);
 						strategyMatrix.put(playerStrategy,playerStrategy);
-					}else if(dealerCard.getValue() == 7 ){
-						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Stand,PlayerAction.Stand);
+					}else if(dealerCard.getValue() >=7 && dealerCard.getValue() <=9 ){
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Hit,PlayerAction.Stand);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}else{
 						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Stand);
