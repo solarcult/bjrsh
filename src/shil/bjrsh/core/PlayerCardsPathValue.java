@@ -25,10 +25,9 @@ public class PlayerCardsPathValue {
 	@Deprecated
 	public PlayerCardsPathValue(Card one,Card two){
 		this.startValue = StartValue.getOne(one.getValue()+two.getValue());
-		this.value = 0;
 		cards = new ArrayList<Card>();
-		cards.add(one);
-		cards.add(two);
+		addCard(one);
+		addCard(two);
 		result = PlayerAction.Hit;
 	}
 	
@@ -60,7 +59,8 @@ public class PlayerCardsPathValue {
 	public boolean isValid(){
 		boolean isElevenOk = getValue() != IllegalCards;
 		boolean notOutofCards = notOutofCards();
-		return isElevenOk && notOutofCards; 
+		boolean isAbe11Conitnue = isAbe11Conitnue();
+		return isElevenOk && notOutofCards && isAbe11Conitnue; 
 	}
 	
 	private boolean notOutofCards(){
@@ -74,6 +74,23 @@ public class PlayerCardsPathValue {
 			}
 		}
 		return notOutofCards;
+	}
+	
+	private boolean isAbe11Conitnue(){
+		//规定,庄家如果到17点必须停止,所以当A为11时,庄家必须停止.
+		boolean isAbe11Conitnue = true;
+		int tempValue = startValue.getValue();
+		for(Card card : this.cards){
+			if(Card.One1.equals(card)){
+				int test = tempValue + Card.Eleven.getValue();
+				if(test >= BlackJackInfo.DealerStop && test <= BlackJackInfo.BlackJack){
+					isAbe11Conitnue = false;
+					break;
+				}
+			}
+			tempValue += card.getValue();
+		}
+		return isAbe11Conitnue;
 	}
 	
 	public StartValue getStartValue(){

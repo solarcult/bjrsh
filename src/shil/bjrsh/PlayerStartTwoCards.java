@@ -1,8 +1,7 @@
 package shil.bjrsh;
 
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
+import java.util.HashSet;
 
 import org.apache.commons.math3.stat.Frequency;
 
@@ -14,20 +13,20 @@ import shil.bjrsh.core.StartValue;
 public class PlayerStartTwoCards {
 	
 	public static Collection<PlayerCardsPathValue> generatePlayerStartValues(){
-		List<PlayerCardsPathValue> allType = new ArrayList<PlayerCardsPathValue>();
+		Collection<PlayerCardsPathValue> allType = new HashSet<PlayerCardsPathValue>();
 		for(StartValue startValue : StartValue.values()){
 			allType.add(new PlayerCardsPathValue(startValue));
 		}
 		return allType;
 	}
 	
-	public static Collection<DealerCardsPathValue> generatePlayerTwoStartCards(){
-		List<DealerCardsPathValue> allCombination = new ArrayList<DealerCardsPathValue>();
+	public static Collection<PlayerCardsPathValue> generatePlayerTwoStartCards(){
+		Collection<PlayerCardsPathValue> allCombination = new HashSet<PlayerCardsPathValue>();
 		for(Card one: Card.values()){
+			if(one == Card.One1 || one == Card.Eleven) continue;
 			for(Card two : Card.values()){
-				DealerCardsPathValue cardsPathValue = new DealerCardsPathValue();
-				cardsPathValue.addCard(one);
-				cardsPathValue.addCard(two);
+				if(two == Card.One1 || two == Card.Eleven) continue;
+				PlayerCardsPathValue cardsPathValue = new PlayerCardsPathValue(one,two);
 				if(cardsPathValue.isValid())
 					allCombination.add(cardsPathValue);
 			}
@@ -36,9 +35,9 @@ public class PlayerStartTwoCards {
 	}
 	
 	public static void analyzeStartTwoCardsPercent(){
-		Collection<DealerCardsPathValue> twocards = generatePlayerTwoStartCards();
+		Collection<PlayerCardsPathValue> twocards = generatePlayerTwoStartCards();
 		Frequency frequency = new Frequency();
-		for(DealerCardsPathValue cardsPathValue : twocards){
+		for(PlayerCardsPathValue cardsPathValue : twocards){
 			frequency.addValue(cardsPathValue.getValue());
 		}
 		System.out.println(frequency);

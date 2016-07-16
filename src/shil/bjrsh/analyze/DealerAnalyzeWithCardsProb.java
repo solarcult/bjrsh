@@ -17,7 +17,8 @@ public class DealerAnalyzeWithCardsProb {
 	 */
 	public static double[] dealerResultChance(Card dealerStartCard, int playerValue){
 		if(playerValue > BlackJackInfo.BlackJack){
-			return new double[]{1d,0d,0d};
+			throw new RuntimeException("no way");
+//			return new double[]{1d,0d,0d};
 		}
 		
 		Collection<DealerCardsPathValue> allCardsChances = DealerCards.fetchDealerCards(dealerStartCard);
