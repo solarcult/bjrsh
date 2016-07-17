@@ -13,29 +13,28 @@ public class PlayerCardsPathValue {
 	private int value;
 	private List<Card> cards;
 	private StartValue startValue;
-	private PlayerAction result;
+	private PlayerAction action;
 	
 	public PlayerCardsPathValue(StartValue startValue){
 		this.startValue = startValue;
 		value = startValue.getValue();
 		cards = new ArrayList<Card>();
-		result = PlayerAction.Hit;
+		action = PlayerAction.Init;
 	}
 	
-	@Deprecated
 	public PlayerCardsPathValue(Card one,Card two){
 		this.startValue = StartValue.getOne(one.getValue()+two.getValue());
 		cards = new ArrayList<Card>();
 		addCard(one);
 		addCard(two);
-		result = PlayerAction.Hit;
+		action = PlayerAction.Init;
 	}
 	
 	public PlayerCardsPathValue(PlayerCardsPathValue playerCardsPathValue){
 		value = playerCardsPathValue.getValue();
 		cards = new ArrayList<Card>(playerCardsPathValue.getCards());
 		startValue = playerCardsPathValue.getStartValue();
-		result = playerCardsPathValue.getResult();
+		action = playerCardsPathValue.getAction();
 	}
 	
 	public void addCard(Card card){
@@ -165,16 +164,16 @@ public class PlayerCardsPathValue {
 	public String toString() {
 		return "PlayerCardsPathValue [startValue=" + startValue + ", cards="
 				+ cards + ", value=" + value + ", getCardsMap()="
-				+ getCardsMap() + ", prob()=" + prob() + ", result=" + result + "]" ;
+				+ getCardsMap() + ", prob()=" + prob() + ", action=" + action + "]" ;
 	}
 
 	
 	
-	public PlayerAction getResult() {
-		return result;
+	public PlayerAction getAction() {
+		return action;
 	}
 
-	public void setResult(PlayerAction result) {
-		this.result = result;
+	public void setAction(PlayerAction result) {
+		this.action = result;
 	}
 }

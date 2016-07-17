@@ -1,5 +1,5 @@
 package shil.bjrsh.strategy;
 
 public enum PlayerAction {
-	Stand,Hit,Double,Giveup;
+	Init,Stand,Hit,Double,Giveup,DoubleDone;
 }
