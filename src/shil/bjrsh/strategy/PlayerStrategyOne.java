@@ -12,6 +12,7 @@ import shil.bjrsh.core.StartValue;
 
 public class PlayerStrategyOne {
 	
+	//根据多摸一张牌提高的好处来是否要牌的策略
 	public static double benefit = 0.09; 
 
 	public static void play(StartValue startValue, Card dealerCard){

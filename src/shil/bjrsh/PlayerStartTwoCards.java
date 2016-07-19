@@ -22,9 +22,11 @@ public class PlayerStartTwoCards {
 	public static Collection<PlayerCardsPathValue> generatePlayerTwoStartCards(){
 		Collection<PlayerCardsPathValue> allCombination = new HashSet<PlayerCardsPathValue>();
 		for(Card one: Card.values()){
+			//TODO 没有考虑AX牌的概率
 			if(one == Card.One1 || one == Card.Eleven) continue;
 			for(Card two : Card.values()){
 				if(two == Card.One1 || two == Card.Eleven) continue;
+				//TODO 没有考虑两张一样牌的概率
 				if(one == two) continue;
 //				if(one.getValue()+two.getValue()==10){
 				PlayerCardsPathValue cardsPathValue = new PlayerCardsPathValue(one,two);

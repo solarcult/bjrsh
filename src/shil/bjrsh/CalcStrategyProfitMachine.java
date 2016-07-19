@@ -14,6 +14,11 @@ import shil.bjrsh.core.ProfitUtil;
 import shil.bjrsh.core.StartValue;
 import shil.bjrsh.strategy.Strategy;
 
+/**
+ * 并行计算接口,使用所有CPU计算
+ * @author LiangJingJing
+ * @date 2016年7月20日 上午12:53:23
+ */
 public class CalcStrategyProfitMachine {
 	
 	private static int cores = Runtime.getRuntime().availableProcessors();

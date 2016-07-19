@@ -34,6 +34,7 @@ public class GenerateCardsUtil {
 		return cardsPathValues;
 	}
 	
+	//生成所有A代表1和代表11的组合,将重复的数据过滤掉,如果A在相同位置,并且值相同,则过滤掉比如说11,8,1代表20点,则1,8,11也是相同的组合,则过滤掉
 	public static Collection<DealerCardsPathValue> generateDealerACards(){
 		Collection<DealerCardsPathValue> cardsPathValues = new HashSet<DealerCardsPathValue>();
 		cardsPathValues.addAll(GenerateCardsUtil.generateDealerCards(new DealerCardsPathValue(Card.One1)));

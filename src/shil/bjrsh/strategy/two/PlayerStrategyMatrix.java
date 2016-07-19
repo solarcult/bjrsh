@@ -11,7 +11,7 @@ public class PlayerStrategyMatrix {
 
 	private static Map<PlayerStrategy,PlayerStrategy> strategyMatrix = new TreeMap<PlayerStrategy,PlayerStrategy>();
 	static{
-		
+		//TODO 用户策略,没有考虑到Ax的情况 和 split的情况
 		for(StartValue startValue : StartValue.values()){
 			if(startValue== StartValue.One) continue;
 			//startvalue 2~9 hit

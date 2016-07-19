@@ -11,22 +11,25 @@ public class DealerAnalyzeWithCardsProb {
 	
 	/**
 	 * 真.算Dealer概率方法,更科学.
+	 * 玩家的总值是固定的,这时该Dealer发牌了,穷举所有Dealer发牌的情况
 	 * @param dealerStartCard
 	 * @param playerValue
 	 * @return
 	 */
 	public static double[] dealerResultChance(Card dealerStartCard, int playerValue){
 		if(playerValue > BlackJackInfo.BlackJack){
-			throw new RuntimeException("no way");
+			throw new RuntimeException("should not any condiation be here");
 //			return new double[]{1d,0d,0d};
 		}
 		
+		//穷举所有情况
 		Collection<DealerCardsPathValue> allCardsChances = DealerCards.fetchDealerCards(dealerStartCard);
 		double winrate = 0;
 		double drawrate = 0;
 		double loserate = 0;
 		double totalrate = 0;
 		for(DealerCardsPathValue cardsPathValue : allCardsChances){
+			//计算这一手牌产生的概率
 			double rate = cardsPathValue.prob();
 			if(cardsPathValue.getValue() > playerValue && cardsPathValue.getValue() <= BlackJackInfo.BlackJack){
 				winrate += rate;

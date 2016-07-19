@@ -16,6 +16,7 @@ public class ProbUtil {
 	public static int TotalOneSameCards = Ndeck * OneSameCardInOneDeck;
 	public static int TotalCards = Ndeck * DeckCards;
 
+	//计算出现这副牌组合的概率
 	public static double calcProb(List<Card> cards){
 		double prob = 1, usedcard = 0;
 		Map<Card,Integer> cardsMap = convertList2Map(cards);
@@ -28,6 +29,7 @@ public class ProbUtil {
 		return prob;
 	}
 	
+	//将1和11转换为相同的A(1),并映射成map
 	public static Map<Card,Integer> convertList2Map(List<Card> cards){
 		Map<Card,Integer> cardsMap = new HashMap<Card, Integer>();
 		for(Card card : cards){

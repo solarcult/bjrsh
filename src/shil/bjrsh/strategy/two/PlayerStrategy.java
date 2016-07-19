@@ -4,6 +4,11 @@ import shil.bjrsh.core.Card;
 import shil.bjrsh.core.StartValue;
 import shil.bjrsh.strategy.PlayerAction;
 
+/**
+ * 用户的策略,开始牌可以double或giveup或split,当摸了一张以后就没有机会这么做了
+ * @author LiangJingJing
+ * @date 2016年7月20日 上午12:49:21
+ */
 public class PlayerStrategy implements Comparable<PlayerStrategy>{
 
 	private StartValue startValue;

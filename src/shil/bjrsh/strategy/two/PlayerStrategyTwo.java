@@ -25,6 +25,10 @@ public class PlayerStrategyTwo implements Strategy{
 		return playerStrategyTwo;
 	}
 	
+	/**
+	 * 根据用户策略来抓牌
+	 * TODO 其实可以抽象成一个abstract方法
+	 */
 	@Override
 	public Collection<PlayerCardsPathValue> generatePlayerCardsPaths(PlayerCardsPathValue playerCardsPathValue,Card dealerCard){
 		Collection<PlayerCardsPathValue> playerCardsPathValues = new HashSet<PlayerCardsPathValue>();
@@ -54,7 +58,7 @@ public class PlayerStrategyTwo implements Strategy{
 				if(aNewPath.isValid()) playerCardsPathValues.addAll(generatePlayerCardsPaths(aNewPath,dealerCard));
 			}
 		}else if(playerCardsPathValue.getAction() == PlayerAction.Hit){
-			System.out.println(playerCardsPathValue);
+//			System.out.println(playerCardsPathValue);
 			// hit me hardly
 			for (Card card : Card.values()) {
 				PlayerCardsPathValue aNewPath = new PlayerCardsPathValue(playerCardsPathValue);

@@ -24,7 +24,7 @@ public class PlayerAnalyzeWithCardsProb {
 	}
 	
 	/**
-	 * 用户在发一张牌的胜平负概率
+	 * 用户再发一张牌的胜平负概率
 	 * @param startValue
 	 * @param dealerCard
 	 * @return
@@ -34,7 +34,7 @@ public class PlayerAnalyzeWithCardsProb {
 	}
 	
 	/**
-	 * 用户在发一张牌的胜平负概率
+	 * 用户再发一张牌的胜平负概率
 	 * @param playerCardsPathValue
 	 * @param dealerCard
 	 * @return
@@ -44,6 +44,12 @@ public class PlayerAnalyzeWithCardsProb {
 		return calcPlayerCollectionsProb(oneHitCards, dealerCard);
 	}
 	
+	/**
+	 * 计算用户的胜平负率 = 卡牌出现的概率*对阵的胜平负率
+	 * @param playerCards
+	 * @param dealerCard
+	 * @return
+	 */
 	public static double[] calcPlayerCollectionsProb(Collection<PlayerCardsPathValue> playerCards,Card dealerCard){
 		double winrate = 0;
 		double drawrate = 0;
@@ -53,6 +59,7 @@ public class PlayerAnalyzeWithCardsProb {
 				loserate += onehit.prob();
 			}else{
 				double[] dealerwdl = DealerAnalyzeWithCardsProb.dealerResultChance(dealerCard, onehit.getValue());
+				//dealer的负率就是用户的胜率
 				winrate += onehit.prob() * dealerwdl[WinDrawLose.lose];
 				drawrate += onehit.prob() * dealerwdl[WinDrawLose.draw];
 				loserate += onehit.prob() * dealerwdl[WinDrawLose.win];
@@ -63,6 +70,12 @@ public class PlayerAnalyzeWithCardsProb {
 		return new double[]{winrate/totalrate,drawrate/totalrate,loserate/totalrate};
 	}
 	
+	/**
+	 * FIXME 这个方法有问题,没有考虑playernotAcard是TJQK的情况,也没有考虑到如果再来一张A的情况,需要好好思考重写
+	 * @param playernotACardvalue
+	 * @param dealerCard
+	 * @return
+	 */
 	public static double[] playerAX1moreCvsDealer(Card playernotACardvalue,Card dealerCard){
 		Collection<PlayerCardsPathValue> oneHitCards = new HashSet<PlayerCardsPathValue>();
 		PlayerCardsPathValue ainstead1 = new PlayerCardsPathValue(StartValue.One);
@@ -75,6 +88,7 @@ public class PlayerAnalyzeWithCardsProb {
 		}
 //		HelloWorld.print(oneHitCards);
 //		System.out.println("s");
+		//一下是正经的生成11的牌 ,A 2~9
 		PlayerCardsPathValue ainstead11 = new PlayerCardsPathValue(StartValue.Eleven);
 		ainstead11.addCard(playernotACardvalue);
 		Collection<PlayerCardsPathValue>  a11all = GenerateCardsUtil.hitPlayerOneMoreCard(ainstead11);
@@ -131,7 +145,7 @@ public class PlayerAnalyzeWithCardsProb {
 	
 	public static void main(String[] args) {
 		
-		analyzeAllAXCards();
+//		analyzeAllAXCards();
 		
 //		anlayzeAvsDealerAllTypeCards();
 
