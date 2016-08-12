@@ -48,6 +48,7 @@ public class CalcStrategyProfitMachine {
 			});
 		}
 		
+		System.out.println("da baba gan ma?");
 		//this for just want to number of package
 		for(int i=0; i<oneCalcPackages.size(); i++){
 			try {

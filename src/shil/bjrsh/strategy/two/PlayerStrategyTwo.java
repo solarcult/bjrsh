@@ -78,7 +78,8 @@ public class PlayerStrategyTwo implements Strategy{
 		return playerCardsPathValues;
 }
 	
-	@Deprecated
+	@Deprecated 
+	//replace by printReallyTwoCardsVSDealer
 	public static void printAllStartValueVSDealer(){
 		double big = 0;
 		for (StartValue startValue : StartValue.values()) {
@@ -137,6 +138,7 @@ public class PlayerStrategyTwo implements Strategy{
 		List<OneCalcPackage> oneCalcPackages = new ArrayList<OneCalcPackage>();
 		Collection<PlayerCardsPathValue> ptcs =  PlayerStartTwoCards.generatePlayerTwoStartCards();
 		for (PlayerCardsPathValue ptc : ptcs) {
+//			ptc.getCards().clear();
 			for (Card dealerCard : Card.values()) {
 				if(dealerCard == Card.One1) continue;
 				oneCalcPackages.add(new OneCalcPackage(ptc, dealerCard));
@@ -154,9 +156,9 @@ public class PlayerStrategyTwo implements Strategy{
 //		printAllStartValueVSDealer();
 //		printReallyTwoCardsVSDealer();
 		
-//		printStrategyROI();
+		printStrategyROI();
 		
-		printPairSplitROI();
+//		printPairSplitROI();
 	}
 	
 }

@@ -23,15 +23,14 @@ public class PlayerStartTwoCards {
 		Collection<PlayerCardsPathValue> allCombination = new HashSet<PlayerCardsPathValue>();
 		for(Card one: Card.values()){
 			//TODO 没有考虑AX牌的概率
-			if(one == Card.One1 || one == Card.Eleven) continue;
+//			if(one == Card.One1 || one == Card.Eleven) continue;
+			if(one == Card.One1) continue;
 			for(Card two : Card.values()){
-				if(two == Card.One1 || two == Card.Eleven) continue;
+				if(two == Card.Eleven) continue;
 				//TODO 没有考虑两张一样牌的概率
-				if(one == two) continue;
-//				if(one.getValue()+two.getValue()==10){
+//				if(one == two) {System.out.println(one+" "+two); continue;}
 				PlayerCardsPathValue cardsPathValue = new PlayerCardsPathValue(one,two);
-				if(cardsPathValue.isValid()) allCombination.add(cardsPathValue);
-//				}
+				if(cardsPathValue.isValid()) {System.out.println(one+" "+two);allCombination.add(cardsPathValue);}
 			}
 		}
 		return allCombination;
@@ -50,7 +49,8 @@ public class PlayerStartTwoCards {
 	public static void main(String[] args) {
 //		HelloWorld.printCollection(RefineCardsPathValuesUtil.refineSameCardsPathValues(generatePlayerStartValues()));
 //		HelloWorld.printCollection(generatePlayerTwoStartCards());
-		analyzeStartTwoCardsPercent();
+//		analyzeStartTwoCardsPercent();
+		System.out.println(generatePlayerTwoStartCards().size());
 	}
 
 }
