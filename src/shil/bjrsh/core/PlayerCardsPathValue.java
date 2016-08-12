@@ -22,11 +22,14 @@ public class PlayerCardsPathValue {
 		action = PlayerAction.Init;
 	}
 	
-	public PlayerCardsPathValue(Card one,Card two){
-		this.startValue = StartValue.getOne(one.getValue()+two.getValue());
+	public PlayerCardsPathValue(Card ... _cards){
+		int _startvalue = 0;
 		cards = new ArrayList<Card>();
-		addCard(one);
-		addCard(two);
+		for(Card card : _cards){
+			_startvalue += card.getValue();
+			addCard(card);
+		}
+		this.startValue = StartValue.getOne(_startvalue);
 		action = PlayerAction.Init;
 	}
 	

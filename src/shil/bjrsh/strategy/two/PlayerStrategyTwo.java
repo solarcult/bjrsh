@@ -96,6 +96,21 @@ public class PlayerStrategyTwo implements Strategy{
 		System.out.println(big);
 	}
 	
+	public static void printPairSplitROI(){
+		double roi = 0d;
+		for(Card splitCard : Card.values()){
+			if(splitCard.getValue()>=2 && splitCard.getValue()<=11){
+				for(Card dealerCard : Card.values()){
+					if(dealerCard == Card.One1) continue;
+					double result = ProfitUtil.calcStarthandPossibleFuturesVSDealerCardInReturn(PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(new PlayerCardsPathValue(splitCard), dealerCard), dealerCard);
+					roi +=result;
+					System.out.println("playercard :" + splitCard +" vs DealerCard : "+dealerCard +"\tROI: "+ result);
+				}
+			}
+		}
+		System.out.println("ROI: " + roi);
+	}
+	
 	public static void printReallyTwoCardsVSDealer(){
 		CalcROIMap calcROIMap = new CalcROIMap();
 		double big = 0;
@@ -139,7 +154,9 @@ public class PlayerStrategyTwo implements Strategy{
 //		printAllStartValueVSDealer();
 //		printReallyTwoCardsVSDealer();
 		
-		printStrategyROI();
+//		printStrategyROI();
+		
+		printPairSplitROI();
 	}
 	
 }
