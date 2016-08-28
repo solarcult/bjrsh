@@ -41,6 +41,7 @@ public class PlayerAnalyzeWithCardsProb {
 	 */
 	public static double[] playerChanceOneMoreCard(PlayerCardsPathValue playerCardsPathValue,Card dealerCard){
 		Collection<PlayerCardsPathValue> oneHitCards = GenerateCardsUtil.hitPlayerOneMoreCard(playerCardsPathValue);
+		if(oneHitCards.size()!=13){throw new RuntimeException("should 13 combine. "+oneHitCards.size());}
 		return calcPlayerCollectionsProb(oneHitCards, dealerCard);
 	}
 	
@@ -145,19 +146,23 @@ public class PlayerAnalyzeWithCardsProb {
 	
 	public static void main(String[] args) {
 		
-//		analyzeAllAXCards();
+		analyzeAllAXCards();
 		
 //		anlayzeAvsDealerAllTypeCards();
 
-//		HelloWorld.printDoubleWDL(playerAX1moreCvsDealer(Card.Six6,Card.Seven7));
-//		for(StartValue startValue : StartValue.values()){
-//			System.out.println(" * Player:"+startValue +" *");
-//			for(Card card : Card.values()){
-//				System.out.println(" == Player:"+startValue+" vs Dealer:"+card+" == ");
-////				HelloWorld.printDoubleWDL(playerChanceOneMoreCard(startValue,card));
-//				HelloWorld.printDoubleWDL(playerNowVSDealerChance(new PlayerCardsPathValue(startValue),card));
-//			}
-//		}
+		/*
+		HelloWorld.printDoubleWDL(playerAX1moreCvsDealer(Card.Six6,Card.Seven7));
+		for(StartValue startValue : StartValue.values()){
+			System.out.println(" * Player:"+startValue +" *");
+			for(Card card : Card.values()){
+				System.out.println(" == Player:"+startValue+" vs Dealer:"+card+" == ");
+//				HelloWorld.printDoubleWDL(playerChanceOneMoreCard(startValue,card));
+				HelloWorld.printDoubleWDL(playerNowVSDealerChance(startValue,card));
+			}
+		}
+		*/
+		
+//		HelloWorld.printDoubleWDL(playerAX1moreCvsDealer(Card.Two2,Card.Two2));
 	}
 
 }

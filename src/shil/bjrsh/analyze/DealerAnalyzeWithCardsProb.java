@@ -29,6 +29,7 @@ public class DealerAnalyzeWithCardsProb {
 		double loserate = 0;
 		double totalrate = 0;
 		for(DealerCardsPathValue cardsPathValue : allCardsChances){
+			if(!cardsPathValue.isValid()){throw new RuntimeException("should not any condiation be here");}
 			//计算这一手牌产生的概率
 			double rate = cardsPathValue.prob();
 			if(cardsPathValue.getValue() > playerValue && cardsPathValue.getValue() <= BlackJackInfo.BlackJack){

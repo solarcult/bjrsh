@@ -90,11 +90,14 @@ public class PlayerStrategyMatrix {
 					if(dealerCard.getValue() <=6){
 						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Stand,PlayerAction.Stand);
 						strategyMatrix.put(playerStrategy,playerStrategy);
-					}else if(dealerCard.getValue() == 7 ){
+					}else if(dealerCard.getValue() == 7){
 						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Stand,PlayerAction.Stand);
 						strategyMatrix.put(playerStrategy,playerStrategy);
-					}else{
+					}else if(dealerCard.getValue() == 8){
 						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Stand);
+						strategyMatrix.put(playerStrategy,playerStrategy);
+					}else{//9,T,J,Q,K
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Hit);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}
 				}

@@ -54,7 +54,7 @@ public class ProfitUtil {
 	public static void main(String[] args){
 //		System.out.println(MoneyCalcInReturn(STGeneratePlayerUtil.generatePlayerCardsPaths(new PlayerCardsPathValue(StartValue.Five), Card.Six6), Card.Six6));
 //		System.out.println(MoneyCalcInReturn(STGeneratePlayerUtil.generatePlayerCardsPaths(new PlayerCardsPathValue(StartValue.Five), Card.Seven7), Card.Seven7));
-		double x = calcStarthandPossibleFuturesVSDealerCardInReturn(PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(new PlayerCardsPathValue(StartValue.Ten), Card.Six6), Card.Six6);
+		double x = calcStarthandPossibleFuturesVSDealerCardInReturn(PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(new PlayerCardsPathValue(StartValue.Fourteen), Card.Eight8), Card.Eight8);
 		System.out.println(x);
 	}
 }

@@ -9,6 +9,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import shil.bjrsh.core.CalcROIMap;
+import shil.bjrsh.core.Card;
 import shil.bjrsh.core.PlayerCardsPathValue;
 import shil.bjrsh.core.ProfitUtil;
 import shil.bjrsh.core.StartValue;
@@ -42,8 +43,7 @@ public class CalcStrategyProfitMachine {
 				public OnePackageResult call() throws Exception {
 					Collection<PlayerCardsPathValue> allPossibleHandsCombine = strategy.generatePlayerCardsPaths(oneCalcPackage.getPlayerStartTwoCards(), oneCalcPackage.getDealerCard());
 					double oneHandROI = ProfitUtil.calcStarthandPossibleFuturesVSDealerCardInReturn(allPossibleHandsCombine, oneCalcPackage.getDealerCard());
-//					System.out.println(oneCalcPackage + " roi "+oneHandROI);
-					return new OnePackageResult(oneCalcPackage.getPlayerStartTwoCards().getStartValue(), oneHandROI);
+					return new OnePackageResult(oneCalcPackage.getPlayerStartTwoCards().getStartValue(),oneCalcPackage.getDealerCard(), oneHandROI);
 				}
 			});
 		}
@@ -53,6 +53,7 @@ public class CalcStrategyProfitMachine {
 		for(int i=0; i<oneCalcPackages.size(); i++){
 			try {
 				OnePackageResult oneResult = completionService.take().get();
+				System.out.println(i+"/"+oneCalcPackages.size()+" job done. "+oneResult);
 				calcROIMap.addValue(oneResult.getStartValue(), oneResult.getRoi());
 			} catch (InterruptedException e) {
 				e.printStackTrace();
@@ -68,10 +69,12 @@ public class CalcStrategyProfitMachine {
 
 class OnePackageResult{
 	private StartValue startValue;
+	private Card dealerCard;
 	private Double roi;
 	
-	public OnePackageResult(StartValue startValue, Double roi){
+	public OnePackageResult(StartValue startValue,Card dealercard, Double roi){
 		this.startValue = startValue;
+		this.dealerCard = dealercard;
 		this.roi = roi;
 	}
 	
@@ -87,15 +90,27 @@ class OnePackageResult{
 	public void setRoi(Double roi) {
 		this.roi = roi;
 	}
+
+	public Card getDealerCard() {
+		return dealerCard;
+	}
+
+	public void setDealerCard(Card dealerCard) {
+		this.dealerCard = dealerCard;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
+		result = prime * result
+				+ ((dealerCard == null) ? 0 : dealerCard.hashCode());
 		result = prime * result + ((roi == null) ? 0 : roi.hashCode());
 		result = prime * result
 				+ ((startValue == null) ? 0 : startValue.hashCode());
 		return result;
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -105,6 +120,8 @@ class OnePackageResult{
 		if (getClass() != obj.getClass())
 			return false;
 		OnePackageResult other = (OnePackageResult) obj;
+		if (dealerCard != other.dealerCard)
+			return false;
 		if (roi == null) {
 			if (other.roi != null)
 				return false;
@@ -114,9 +131,11 @@ class OnePackageResult{
 			return false;
 		return true;
 	}
+
 	@Override
 	public String toString() {
-		return "OnePackageResult [startValue=" + startValue + ", roi=" + roi
-				+ "]";
+		return "OnePackageResult [startValue=" + startValue + ", dealerCard="
+				+ dealerCard + ", roi=" + roi + "]";
 	}
+
 }

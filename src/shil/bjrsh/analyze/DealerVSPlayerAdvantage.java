@@ -77,7 +77,7 @@ public class DealerVSPlayerAdvantage {
 		for (Card card : Card.values()) {
 			if(Card.One1.equals(card)) continue;
 			for (StartValue startValue : StartValue.values()) {	
-				if (startValue.getValue() < StartValue.Six.getValue()) continue;
+				if (startValue.getValue() < StartValue.Six.getValue() || startValue == StartValue.TwentyOne) continue;
 				
 				double[] playerOneMore = PlayerAnalyzeWithCardsProb.playerChanceOneMoreCard(new PlayerCardsPathValue(startValue), card);
 				double[] playerNow = PlayerAnalyzeWithCardsProb.playerNowVSDealerChance(startValue, card);
@@ -90,10 +90,10 @@ public class DealerVSPlayerAdvantage {
 	
 	public static List<DealerVSPlayerChance> makePlayerOneMoreVSNowDealerChange(){
 		List<DealerVSPlayerChance> diff = new ArrayList<DealerVSPlayerChance>();
-			for (StartValue startValue : StartValue.values()) {
-				if (startValue.getValue() < StartValue.Six.getValue()) continue;
-				for (Card card : Card.values()) {
-					if(Card.One1.equals(card)) continue;
+		for (StartValue startValue : StartValue.values()) {
+			if (startValue.getValue() < StartValue.Six.getValue()|| startValue == StartValue.TwentyOne) continue;
+			for (Card card : Card.values()) {
+				if(Card.One1.equals(card)) continue;
 				double[] playerOneMore = PlayerAnalyzeWithCardsProb.playerChanceOneMoreCard(new PlayerCardsPathValue(startValue), card);
 				double[] playerNow = PlayerAnalyzeWithCardsProb.playerNowVSDealerChance(startValue, card);
 				DealerVSPlayerChance dealerVSPlayerChance = new DealerVSPlayerChance(DealerVSPlayerChance.Player,card, startValue, playerNow,playerOneMore);
@@ -104,13 +104,8 @@ public class DealerVSPlayerAdvantage {
 	}
 	
 	public static void main(String[] args){
-		List<DealerVSPlayerChance> ao = makePlayerOneMoreVSNowDealerChange();
-//		List<DealerVSPlayerChance> ao = makePlayerOneMoreVSNowPlayerChange();
-//		List<DealerVSPlayerChance> ao = makeDealerNow();
-//		List<DealerVSPlayerChance> ao = makePlayerNow();
-//		Collections.sort(ao, new WinComparator());
-//		Collections.sort(ao, new LoseComparator());
-//		Collections.sort(ao, new Win4LoseComparator());
+//		List<DealerVSPlayerChance> ao = makePlayerOneMoreVSNowDealerChange();
+		List<DealerVSPlayerChance> ao = makePlayerOneMoreVSNowPlayerChange();
 		HelloWorld.print(ao);
 	}
 }

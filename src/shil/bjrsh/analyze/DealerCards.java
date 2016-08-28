@@ -1,8 +1,11 @@
 package shil.bjrsh.analyze;
 
 import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map.Entry;
 
-import shil.bjrsh.HelloWorld;
+import org.apache.commons.math3.stat.Frequency;
+
 import shil.bjrsh.core.Card;
 import shil.bjrsh.core.DealerCardsPathValue;
 import shil.bjrsh.core.GenerateCardsUtil;
@@ -59,7 +62,50 @@ public class DealerCards {
 		}
 	}
 	
+	@Deprecated 
+	// replace by moreAccurateRate
+	public static void printFrequency(Collection<DealerCardsPathValue> dealerPackage){
+		Frequency frequency = new Frequency();
+		for(DealerCardsPathValue onepath : dealerPackage){
+			frequency.addValue(onepath.getValue());
+		}
+		System.out.println(frequency);
+	}
+	
+	public static void moreAccurateRate(Collection<DealerCardsPathValue> dealerPackage){
+		HashMap<Integer, Double> amap = new HashMap<Integer, Double>();
+		for(DealerCardsPathValue onepath : dealerPackage){
+			Double t = amap.get(onepath.getValue());
+			if(t!=null){
+				t+=onepath.prob();
+				amap.put(onepath.getValue(), t);
+			}else{
+				amap.put(onepath.getValue(), onepath.prob());
+			}
+		}
+		
+		Frequency frequency = new Frequency();
+		for(Entry<Integer, Double> e : amap.entrySet()){
+			String x = String.valueOf(e.getValue()*100000);
+			x = x.substring(0, x.indexOf("."));
+			frequency.incrementValue(e.getKey(), Long.parseLong(x));
+		}
+		
+		System.out.println(frequency);
+	}
+	
+	public static void printAll(){
+		for(Card card: Card.values()){
+			if(card.getValue()>=2 && card.getValue()<=11 && card!=Card.JJJ && card!=Card.QQQ && card!=Card.KKK){
+				System.out.println("Card:" + card.getValue());
+				moreAccurateRate(fetchDealerCards(card));
+			}
+		}
+	}
+	
 	public static void main(String[] args){
-		HelloWorld.print(DealerCards.StartSix);
+//		HelloWorld.print(DealerCards.StartSix);
+//		printFrequency(StartTwo);
+		printAll();
 	}
 }
