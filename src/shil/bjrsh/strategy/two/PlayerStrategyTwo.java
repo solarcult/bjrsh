@@ -6,10 +6,8 @@ import java.util.HashSet;
 import java.util.List;
 
 import shil.bjrsh.CalcStrategyProfitMachine;
-import shil.bjrsh.HelloWorld;
 import shil.bjrsh.OneCalcPackage;
 import shil.bjrsh.PlayerStartTwoCards;
-import shil.bjrsh.analyze.PlayerAnalyzeWithCardsProb;
 import shil.bjrsh.core.BlackJackInfo;
 import shil.bjrsh.core.CalcROIMap;
 import shil.bjrsh.core.Card;
@@ -99,21 +97,6 @@ public class PlayerStrategyTwo implements Strategy{
 		System.out.println(big);
 	}
 	
-	public static void printPairSplitROI(){
-		double roi = 0d;
-		for(Card splitCard : Card.values()){
-			if(splitCard.getValue()>=2 && splitCard.getValue()<=11){
-				for(Card dealerCard : Card.values()){
-					if(dealerCard == Card.One1) continue;
-					double result = ProfitUtil.calcStarthandPossibleFuturesVSDealerCardInReturn(PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(new PlayerCardsPathValue(splitCard), dealerCard), dealerCard);
-					roi +=result;
-					System.out.println("playercard :" + splitCard +" vs DealerCard : "+dealerCard +"\tROI: "+ result);
-				}
-			}
-		}
-		System.out.println("ROI: " + roi);
-	}
-	
 	public static void printReallyTwoCardsVSDealer(){
 		CalcROIMap calcROIMap = new CalcROIMap();
 		double big = 0;
@@ -135,9 +118,7 @@ public class PlayerStrategyTwo implements Strategy{
 		System.out.println(big);
 		calcROIMap.printSelf();
 	}
-	
-	@Deprecated
-	//更直观的方法详见splitCardChanceCompare()
+
 	public static void printStrategyROI(){
 		List<OneCalcPackage> oneCalcPackages = new ArrayList<OneCalcPackage>();
 		Collection<PlayerCardsPathValue> ptcs =  PlayerStartTwoCards.generatePlayerTwoStartCards();
@@ -152,17 +133,6 @@ public class PlayerStrategyTwo implements Strategy{
 		calcROIMap.printSelf();
 	}
 	
-	//TODO fix tommorrow
-	public static void splitCardChanceCompare(){
-		for(Card playercard: Card.values()){
-			Collection<PlayerCardsPathValue> two1 =  PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(new PlayerCardsPathValue(Card.Two2), Card.Six6);
-			Collection<PlayerCardsPathValue> two2 =  PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(new PlayerCardsPathValue(Card.Two2,Card.Two2), Card.Six6);
-			double[] after = PlayerAnalyzeWithCardsProb.calcPlayerCollectionsProb(two1, Card.Six6);
-			double[] before = PlayerAnalyzeWithCardsProb.calcPlayerCollectionsProb(two2, Card.Six6);
-			HelloWorld.print2DoubleWDL(after,before);
-		}
-	}
-	
 	public static void main(String[] args){
 //		Collection<PlayerCardsPathValue> x = generatePlayerCardsPaths(new PlayerCardsPathValue(StartValue.Seventeen), Card.Seven7);
 //		HelloWorld.print(x) ;
@@ -170,11 +140,7 @@ public class PlayerStrategyTwo implements Strategy{
 //		printAllStartValueVSDealer();
 //		printReallyTwoCardsVSDealer();
 		
-//		printStrategyROI();
-		
-//		printPairSplitROI();
-		
-		splitCardChanceCompare();
+		printStrategyROI();
 	}
 	
 }

@@ -9,6 +9,11 @@ import shil.bjrsh.core.PlayerCardsPathValue;
 import shil.bjrsh.core.StartValue;
 import shil.bjrsh.nouseful.DealerVSPlayerChance;
 
+/**
+ * 计算玩家和庄家对决胜率的类,输出结果.
+ * @author LiangJingJing
+ * @date 2016年8月30日 上午12:14:03
+ */
 public class DealerVSPlayerAdvantage {
 	
 	/**

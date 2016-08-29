@@ -21,18 +21,24 @@ public class PlayerStartTwoCards {
 	
 	public static Collection<PlayerCardsPathValue> generatePlayerTwoStartCards(){
 		Collection<PlayerCardsPathValue> allCombination = new HashSet<PlayerCardsPathValue>();
+		int same =0;
 		for(Card one: Card.values()){
 			//TODO 没有考虑AX牌的概率
-//			if(one == Card.One1 || one == Card.Eleven) continue;
-			if(one == Card.One1) continue;
+			if(one == Card.One1 || one == Card.Eleven) continue;
+//			if(one == Card.One1) continue;
 			for(Card two : Card.values()){
-				if(two == Card.Eleven) continue;
+				if(two == Card.One1 || two == Card.Eleven) continue;
+//				if(two == Card.Eleven) continue;
 				//TODO 没有考虑两张一样牌的概率
-//				if(one == two) {System.out.println(one+" "+two); continue;}
+				if(one == two) {
+//					System.out.println(one+" "+two);
+					continue;
+				}
 				PlayerCardsPathValue cardsPathValue = new PlayerCardsPathValue(one,two);
 				if(cardsPathValue.isValid()) {System.out.println(one+" "+two);allCombination.add(cardsPathValue);}
 			}
 		}
+		System.out.println(same);
 		return allCombination;
 	}
 	
@@ -42,15 +48,16 @@ public class PlayerStartTwoCards {
 		for(PlayerCardsPathValue cardsPathValue : twocards){
 			frequency.addValue(cardsPathValue.getValue());
 		}
-		frequency.incrementValue(1, 20);
+		frequency.incrementValue(1, 20);//AX牌
+		frequency.incrementValue(0, 12);//成对出现
 		System.out.println(frequency);
 	}
 
 	public static void main(String[] args) {
 //		HelloWorld.printCollection(RefineCardsPathValuesUtil.refineSameCardsPathValues(generatePlayerStartValues()));
 //		HelloWorld.printCollection(generatePlayerTwoStartCards());
-//		analyzeStartTwoCardsPercent();
-		System.out.println(generatePlayerTwoStartCards().size());
+		analyzeStartTwoCardsPercent();
+//		System.out.println(generatePlayerTwoStartCards().size());
 	}
 
 }
