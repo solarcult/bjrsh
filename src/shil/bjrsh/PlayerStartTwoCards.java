@@ -52,7 +52,7 @@ public class PlayerStartTwoCards {
 		frequency.incrementValue(0, 12);//成对出现
 		System.out.println(frequency);
 	}
-
+	
 	public static void main(String[] args) {
 //		HelloWorld.printCollection(RefineCardsPathValuesUtil.refineSameCardsPathValues(generatePlayerStartValues()));
 //		HelloWorld.printCollection(generatePlayerTwoStartCards());

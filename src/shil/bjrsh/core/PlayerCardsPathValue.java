@@ -61,7 +61,8 @@ public class PlayerCardsPathValue {
 	public boolean isValid(){
 		boolean isElevenOk = getValue() != IllegalCards;
 		boolean notOutofCards = notOutofCards();
-		boolean isAbe11Conitnue = isAbe11Conitnue();
+		//这一条是为庄家制定的规则，为什么普通用户也需要？是不是之前的什么原因？过滤相同数据的原因吗？我在分析about13时，发现的这个bug? 暂时去掉试试。2016-Sep-06
+		boolean isAbe11Conitnue = true;//isAbe11Conitnue();
 		return isElevenOk && notOutofCards && isAbe11Conitnue; 
 	}
 	
