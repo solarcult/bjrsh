@@ -1,4 +1,4 @@
-package shil.bjrsh;
+package shil.bjrsh.about13;
 
 import org.apache.commons.math3.stat.Frequency;
 
@@ -7,7 +7,7 @@ import shil.bjrsh.core.PlayerCardsPathValue;
 
 public class About13 {
 
-	public static void about13(){
+	public static void standardAnaylze13(){
 		Frequency tfrequency = new Frequency();
 		Frequency less13 = new Frequency();
 		Frequency is13 = new Frequency();
@@ -44,7 +44,7 @@ public class About13 {
 	}
 	
 	public static void main(String[] args) {
-		about13();
+		standardAnaylze13();
 	}
 
 }

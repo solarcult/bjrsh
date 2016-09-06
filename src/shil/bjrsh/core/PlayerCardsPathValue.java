@@ -61,9 +61,7 @@ public class PlayerCardsPathValue {
 	public boolean isValid(){
 		boolean isElevenOk = getValue() != IllegalCards;
 		boolean notOutofCards = notOutofCards();
-		//这一条是为庄家制定的规则，为什么普通用户也需要？是不是之前的什么原因？过滤相同数据的原因吗？我在分析about13时，发现的这个bug? 暂时去掉试试。2016-Sep-06
-		boolean isAbe11Conitnue = true;//isAbe11Conitnue();
-		return isElevenOk && notOutofCards && isAbe11Conitnue; 
+		return isElevenOk && notOutofCards; 
 	}
 	
 	private boolean notOutofCards(){
@@ -77,23 +75,6 @@ public class PlayerCardsPathValue {
 			}
 		}
 		return notOutofCards;
-	}
-	
-	private boolean isAbe11Conitnue(){
-		//规定,庄家如果到17点必须停止,所以当A为11时,庄家必须停止.
-		boolean isAbe11Conitnue = true;
-		int tempValue = startValue.getValue();
-		for(Card card : this.cards){
-			if(Card.One1.equals(card)){
-				int test = tempValue + Card.Eleven.getValue();
-				if(test >= BlackJackInfo.DealerStop && test <= BlackJackInfo.BlackJack){
-					isAbe11Conitnue = false;
-					break;
-				}
-			}
-			tempValue += card.getValue();
-		}
-		return isAbe11Conitnue;
 	}
 	
 	public StartValue getStartValue(){

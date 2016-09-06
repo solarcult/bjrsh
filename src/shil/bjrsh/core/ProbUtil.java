@@ -7,14 +7,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import shil.bjrsh.about13.DeckSet;
+
 public class ProbUtil {
 	
 	public static int Ndeck = 6;
-	public static int OneSameCardInOneDeck = 4;
-	public static int DeckCards = 52;
-	
-	public static int TotalOneSameCards = Ndeck * OneSameCardInOneDeck;
-	public static int TotalCards = Ndeck * DeckCards;
+	public static int TotalOneSameCards = Ndeck * DeckSet.OneSameCardInOneDeck;
+	public static int TotalCards = Ndeck * DeckSet.DeckCards;
 
 	//计算出现这副牌组合的概率
 	public static double calcProb(List<Card> cards){
