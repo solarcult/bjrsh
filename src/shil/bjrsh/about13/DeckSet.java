@@ -1,7 +1,6 @@
 package shil.bjrsh.about13;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import shil.bjrsh.core.Card;
@@ -25,6 +24,14 @@ public class DeckSet {
 			cardsLeftNumberMap.put(card, oneSameCards);
 		}
 	}
+	
+	public static DeckSet buildXDeckSet(int x){
+		return new DeckSet(x);
+	}
+	
+	public static DeckSet build6DeckSet(){
+		return buildXDeckSet(6);
+	}
 
 	public int getNdeck() {
 		return ndeck;
@@ -38,14 +45,22 @@ public class DeckSet {
 		return cardsLeftNumberMap;
 	}
 	
-	public void used(Card card,int times){
+	public void usedCards(Card card,int times){
 		if(Card.Eleven == card) card = Card.One1;
 		int leftCardNumber = this.cardsLeftNumberMap.get(card) - times;
 		if(leftCardNumber < 0) throw new RuntimeException(card +" Out of Cards in Decks");
 		this.cardsLeftNumberMap.put(card, leftCardNumber);
+		totalCards -= times;
 	}
 	
-	public double calcProb(List<Card> cards){
-		return 0;
+	public double getOneCardProb(Card card){
+		return (double) 10 * cardsLeftNumberMap.get(card) / totalCards;
+	}
+	
+	public static void main(String[] args){
+		DeckSet decks = DeckSet.build6DeckSet();
+		decks.usedCards(Card.Eight8, 2);
+		System.out.println(decks.getOneCardProb(Card.Eight8));
+		System.out.println((double)(4*6-2)/(52*6-2));
 	}
 }

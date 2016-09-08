@@ -1,7 +1,9 @@
 package shil.bjrsh.core;
 
+import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
@@ -31,12 +33,24 @@ public class CalcROIMap {
 		return calcROIMap.entrySet();
 	}
 	
-	public void printSelf(){
+	public void printROI(){
 		double tROI = 0d;
 		for(Entry<StartValue, Double> e : calcROIMap.entrySet()){
 			System.out.println("StartValue: \t"+e.getKey() +"\t roi: "+e.getValue());
 			tROI += e.getValue();
 		}
 		System.out.println("tROI: \t"+tROI);
+	}
+	
+	public void print13Staff(){
+		double totalRate = 0d;
+		for(Entry<StartValue, Double> e : calcROIMap.entrySet()){
+			totalRate += e.getValue();
+		}
+		System.out.println("totalRate: " + totalRate);
+		Map<StartValue,Double> treeMap = new TreeMap<StartValue,Double>(calcROIMap);
+		for(Entry<StartValue, Double> e : treeMap.entrySet()){
+			System.out.println("StartValue: \t"+e.getKey().getValue() +"\t prob: "+e.getValue() +"\t rate: " + 100*e.getValue()/totalRate);
+		}
 	}
 }

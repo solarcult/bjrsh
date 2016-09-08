@@ -116,7 +116,7 @@ public class PlayerStrategyTwo implements Strategy{
 			calcROIMap.addValue(ptc.getStartValue(), total);
 		}
 		System.out.println(big);
-		calcROIMap.printSelf();
+		calcROIMap.printROI();
 	}
 
 	public static void printStrategyROI(){
@@ -130,7 +130,7 @@ public class PlayerStrategyTwo implements Strategy{
 		}
 		CalcStrategyProfitMachine calcStrategyProfitMachine = new CalcStrategyProfitMachine(PlayerStrategyTwo.getInstance());
 		CalcROIMap calcROIMap = calcStrategyProfitMachine.calcROIofPlayerHands(oneCalcPackages);
-		calcROIMap.printSelf();
+		calcROIMap.printROI();
 	}
 	
 	public static void main(String[] args){
