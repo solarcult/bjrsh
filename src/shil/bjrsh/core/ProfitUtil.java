@@ -9,7 +9,7 @@ import shil.bjrsh.strategy.two.PlayerStrategyTwo;
 
 public class ProfitUtil {
 
-	public static double baseMoney = 300d;
+	public static double baseMoney = 1d;
 	
 	//计算投资回报
 	public static double calcStarthandPossibleFuturesVSDealerCardInReturn(Collection<PlayerCardsPathValue> playerCardsPathValues,Card dealerCard){

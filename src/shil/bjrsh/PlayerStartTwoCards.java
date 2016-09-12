@@ -21,7 +21,6 @@ public class PlayerStartTwoCards {
 	
 	public static Collection<PlayerCardsPathValue> generatePlayerTwoStartCards(){
 		Collection<PlayerCardsPathValue> allCombination = new HashSet<PlayerCardsPathValue>();
-		int same =0;
 		for(Card one: Card.values()){
 			//TODO 没有考虑AX牌的概率
 			if(one == Card.One1 || one == Card.Eleven) continue;
@@ -35,10 +34,13 @@ public class PlayerStartTwoCards {
 					continue;
 				}
 				PlayerCardsPathValue cardsPathValue = new PlayerCardsPathValue(one,two);
-				if(cardsPathValue.isValid()) {System.out.println(one+" "+two);allCombination.add(cardsPathValue);}
+				if(cardsPathValue.isValid()) {
+					System.out.println(one+" "+two);
+					allCombination.add(cardsPathValue);
+				}
 			}
 		}
-		System.out.println(same);
+		System.out.println(allCombination.size());
 		return allCombination;
 	}
 	

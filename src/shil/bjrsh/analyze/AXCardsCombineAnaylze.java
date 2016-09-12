@@ -49,9 +49,14 @@ public class AXCardsCombineAnaylze {
 	}
 	
 	public static void analyzeAllAXCards(){
+		double aroi = 0d;
 		for(Card playercard : Card.values()){
+			//use should split A A
+			if(playercard == Card.One1) continue;
 			System.out.println("\n\r\t\t~~~~~~~~~~"+playercard.name()+"~~~~~~~~~~~~~");
 			for(Card dealercard : Card.values()){
+				//dealer one1 card including eleven cards
+				if(dealercard == Card.One1) continue;
 				System.out.println("\nPlayer A+"+playercard.name() + "  vs  "+dealercard.name());
 				double[] advanced = playerAX1moreCvsDealer(playercard,dealercard);
 				
@@ -68,8 +73,28 @@ public class AXCardsCombineAnaylze {
 				double[] origin = PlayerAnalyzeWithCardsProb.playerNowVSDealerChance(StartValue.getOne(playervalue),dealercard);
 				
 				HelloWorld.print2DoubleWDL(advanced,origin);
+				
+				//hit
+				if(playercard.getValue() <=6){
+					int drate = 1;
+					//use advanced matrix
+					if(dealercard.getValue()==6 && 
+							(playercard.getValue()==5||playercard.getValue()==6)){
+						//double
+						drate = 2;
+					}else if(dealercard.getValue()==5 && playercard.getValue() ==6){
+						drate = 2;
+					}
+					aroi += advanced[WinDrawLose.win]*drate;
+					aroi -= advanced[WinDrawLose.lose]*drate;
+				}else{
+					//use origin matrix
+					aroi += origin[WinDrawLose.win];
+					aroi -= origin[WinDrawLose.lose];
+				}
 			}
 		}
+		System.out.println("aroi: "+aroi);
 	}
 	
 	/**

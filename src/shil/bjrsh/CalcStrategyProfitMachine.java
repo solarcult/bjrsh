@@ -7,6 +7,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorCompletionService;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import shil.bjrsh.core.CalcROIMap;
 import shil.bjrsh.core.Card;
@@ -36,12 +37,13 @@ public class CalcStrategyProfitMachine {
 	
 	public CalcROIMap calcROIofPlayerHands(Collection<OneCalcPackage> oneCalcPackages){
 		CalcROIMap calcROIMap = new CalcROIMap();
-		
+		AtomicInteger playerPossibleHands = new AtomicInteger(0);
 		for(OneCalcPackage oneCalcPackage : oneCalcPackages){
 			this.completionService.submit(new Callable<OnePackageResult>() {
 				@Override
 				public OnePackageResult call() throws Exception {
 					Collection<PlayerCardsPathValue> allPossibleHandsCombine = strategy.generatePlayerCardsPaths(oneCalcPackage.getPlayerStartTwoCards(), oneCalcPackage.getDealerCard());
+					playerPossibleHands.addAndGet(allPossibleHandsCombine.size());
 					double oneHandROI = ProfitUtil.calcStarthandPossibleFuturesVSDealerCardInReturn(allPossibleHandsCombine, oneCalcPackage.getDealerCard());
 					return new OnePackageResult(oneCalcPackage.getPlayerStartTwoCards().getStartValue(),oneCalcPackage.getDealerCard(), oneHandROI);
 				}
@@ -62,6 +64,7 @@ public class CalcStrategyProfitMachine {
 			}
 		}
 		
+		System.out.println("how many :" + playerPossibleHands.get());
 		machines.shutdown();
 		return calcROIMap;
 	}
