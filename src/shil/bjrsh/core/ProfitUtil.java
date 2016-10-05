@@ -2,7 +2,7 @@ package shil.bjrsh.core;
 
 import java.util.Collection;
 
-import shil.bjrsh.analyze.PlayerAnalyzeWithCardsProb;
+import shil.bjrsh.analyze.PlayersVSDealersResultChanceProb;
 import shil.bjrsh.analyze.WinDrawLose;
 import shil.bjrsh.strategy.PlayerAction;
 import shil.bjrsh.strategy.two.PlayerStrategyTwo;
@@ -44,7 +44,8 @@ public class ProfitUtil {
 		}
 		
 		//最终计算投资收益率
-		double[] playerchance = PlayerAnalyzeWithCardsProb.playerNowVSDealerChance(StartValue.getOne(playerCardsPathValue.getValue()), dealerCard);
+//		double[] playerchance = PlayerAnalyzeWithCardsProb.playerNowVSDealerChance(StartValue.getOne(playerCardsPathValue.getValue()), dealerCard);
+		double[] playerchance = PlayersVSDealersResultChanceProb.calcPlayerdVSDealerProbs(playerCardsPathValue,dealerCard);
 		ROI += baseMoney * playerchance[WinDrawLose.win] * winrate * playerCardsPathValue.prob();
 		ROI -= baseMoney * playerchance[WinDrawLose.lose] * loserate * playerCardsPathValue.prob();
 		

@@ -45,7 +45,8 @@ public class AXCardsCombineAnaylze {
 		}
 //		HelloWorld.print(oneHitCards);
 		
-		return PlayerAnalyzeWithCardsProb.calcPlayerCollectionsProb(oneHitCards, dealerCard);
+//		return PlayerAnalyzeWithCardsProb.calcPlayerCollectionsProb(oneHitCards, dealerCard);
+		return PlayersVSDealersResultChanceProb.calcPlayerdVSDealerProbs(oneHitCards, dealerCard);
 	}
 	
 	public static void analyzeAllAXCards(){
@@ -70,8 +71,8 @@ public class AXCardsCombineAnaylze {
 				System.out.println("decide value:"+playervalue);
 				
 				//这里打印出如果不多hit一张时,现有牌的胜率,不比不知道,一比吓一跳
-				double[] origin = PlayerAnalyzeWithCardsProb.playerNowVSDealerChance(StartValue.getOne(playervalue),dealercard);
-				
+//				double[] origin = PlayerAnalyzeWithCardsProb.playerNowVSDealerChance(StartValue.getOne(playervalue),dealercard);
+				double[] origin = PlayersVSDealersResultChanceProb.calcPlayerdVSDealerProbs(new PlayerCardsPathValue(StartValue.getOne(playervalue)),dealercard);
 				HelloWorld.print2DoubleWDL(advanced,origin);
 				
 				//hit

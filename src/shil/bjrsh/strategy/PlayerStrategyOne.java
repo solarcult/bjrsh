@@ -3,7 +3,7 @@ package shil.bjrsh.strategy;
 import java.util.ArrayList;
 import java.util.Collection;
 
-import shil.bjrsh.analyze.PlayerAnalyzeWithCardsProb;
+import shil.bjrsh.analyze.PlayersVSDealersResultChanceProb;
 import shil.bjrsh.analyze.WinDrawLose;
 import shil.bjrsh.core.Card;
 import shil.bjrsh.core.GenerateCardsUtil;
@@ -24,8 +24,10 @@ public class PlayerStrategyOne {
 	
 	public static Collection<PlayerCardsPathValue> hitMeOneMoreTillBad(PlayerCardsPathValue playerCardsPathValue, Card dealerCard){
 		Collection<PlayerCardsPathValue> decidePackage = new ArrayList<PlayerCardsPathValue>(); 
-		double[] nowChance = PlayerAnalyzeWithCardsProb.playerNowVSDealerChance(StartValue.getOne(playerCardsPathValue.getValue()), dealerCard);
-		double[] oneMoreCardChance = PlayerAnalyzeWithCardsProb.playerChanceOneMoreCard(playerCardsPathValue, dealerCard);
+//		double[] nowChance = PlayerAnalyzeWithCardsProb.playerNowVSDealerChance(StartValue.getOne(playerCardsPathValue.getValue()), dealerCard);
+//		double[] oneMoreCardChance = PlayerAnalyzeWithCardsProb.playerChanceOneMoreCard(playerCardsPathValue, dealerCard);
+		double[] nowChance = PlayersVSDealersResultChanceProb.calcPlayerdVSDealerProbs(playerCardsPathValue,dealerCard);
+		double[] oneMoreCardChance = PlayersVSDealersResultChanceProb.calcPlayerdVSDealerProbs(GenerateCardsUtil.hitPlayerOneMoreCard(playerCardsPathValue),dealerCard);
 		//如果多发一张牌,输的可能性会更小,则发牌
 		if(nowChance[WinDrawLose.lose] > oneMoreCardChance[WinDrawLose.lose] + benefit){
 			System.out.println(playerCardsPathValue +" will hit one more.");

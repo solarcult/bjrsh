@@ -7,31 +7,31 @@ public class GenerateCardsUtil {
 	
 	/**
 	 * 产生Dealer的所有可能牌的组合
-	 * @param cardsPathValue
+	 * @param dealerCardsPathValue
 	 * @return Collection<CardsPathValue> 未过滤,有重复cards数据,但顺序不同
 	 */
-	public static Collection<DealerCardsPathValue> generateDealerCards(DealerCardsPathValue cardsPathValue){
-		Collection<DealerCardsPathValue> cardsPathValues = new HashSet<DealerCardsPathValue>();
+	public static Collection<DealerCardsPathValue> generateDealerCards(DealerCardsPathValue dealerCardsPathValue){
+		Collection<DealerCardsPathValue> dealerCardsPathValues = new HashSet<DealerCardsPathValue>();
 		
 		//这个组合不合理的,也就是A当做11爆掉,出口之一
-		if(!cardsPathValue.isValid()) return cardsPathValues;
+		if(!dealerCardsPathValue.isValid()) return dealerCardsPathValues;
 		
 		//如果达到了Deal停止要牌的点数,返回,这是递归的出口之一
-		if(cardsPathValue.getValue() >= BlackJackInfo.DealerStop){
-			cardsPathValues.add(cardsPathValue);
-			return cardsPathValues;
+		if(dealerCardsPathValue.getValue() >= BlackJackInfo.DealerStop){
+			dealerCardsPathValues.add(dealerCardsPathValue);
+			return dealerCardsPathValues;
 		}
 		//如果没有达到点数,则再发一张牌,所有13中组合,继续递归
-		if(cardsPathValue.getValue() < BlackJackInfo.DealerStop ){
+		if(dealerCardsPathValue.getValue() < BlackJackInfo.DealerStop ){
 			for(Card card : Card.values()){
 				//这里要深拷贝一个副本,因为要产生不同的13条链路,不能用同一个实例
-				DealerCardsPathValue aNewPath = new DealerCardsPathValue(cardsPathValue);
+				DealerCardsPathValue aNewPath = new DealerCardsPathValue(dealerCardsPathValue);
 				aNewPath.addCard(card);
-				cardsPathValues.addAll(generateDealerCards(aNewPath));
+				dealerCardsPathValues.addAll(generateDealerCards(aNewPath));
 			}
 		}
 		
-		return cardsPathValues;
+		return dealerCardsPathValues;
 	}
 	
 	//生成所有A代表1和代表11的组合,将重复的数据过滤掉,如果A在相同位置,并且值相同,则过滤掉比如说11,8,1代表20点,则1,8,11也是相同的组合,则过滤掉

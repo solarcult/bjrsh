@@ -1,13 +1,20 @@
-package shil.bjrsh.analyze;
+package shil.bjrsh.nouseful;
 
 import java.util.Collection;
 
+import shil.bjrsh.analyze.WinDrawLose;
 import shil.bjrsh.core.BlackJackInfo;
 import shil.bjrsh.core.Card;
 import shil.bjrsh.core.GenerateCardsUtil;
 import shil.bjrsh.core.PlayerCardsPathValue;
 import shil.bjrsh.core.StartValue;
 
+/**
+ * this method calc chance has issue, had been replaced by PlayersVSDealersResultChanceProb
+ * @author LiangJingJing
+ * @date 2016年10月6日 上午12:49:13
+ * @deprecated
+ */
 public class PlayerAnalyzeWithCardsProb {
 	
 	/**
@@ -39,7 +46,7 @@ public class PlayerAnalyzeWithCardsProb {
 	 */
 	public static double[] playerChanceOneMoreCard(PlayerCardsPathValue playerCardsPathValue,Card dealerCard){
 		Collection<PlayerCardsPathValue> oneHitCards = GenerateCardsUtil.hitPlayerOneMoreCard(playerCardsPathValue);
-		if(oneHitCards.size()!=13){throw new RuntimeException("should 13 combine. "+oneHitCards.size());}
+//		if(oneHitCards.size()!=13){throw new RuntimeException("should 13 combine. "+oneHitCards.size());}
 		return calcPlayerCollectionsProb(oneHitCards, dealerCard);
 	}
 	

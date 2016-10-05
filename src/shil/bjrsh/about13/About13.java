@@ -85,7 +85,7 @@ public class About13 {
 	public static void missXSmallCard(int times){
 		DeckSet deckSet = DeckSet.build6DeckSet();
 		for(Card card : Card.values()){
-			if(card.getValue()<=6){
+			if(card.getValue()<=6 && card.getValue()>=2){
 				deckSet.usedCards(card, times);
 			}
 		}
@@ -95,7 +95,7 @@ public class About13 {
 	public static void missXBigCard(int times){
 		DeckSet deckSet = DeckSet.build6DeckSet();
 		for(Card card : Card.values()){
-			if(card.getValue()>=8){
+			if(card.getValue()==10){
 				deckSet.usedCards(card, times);
 			}
 		}
@@ -105,7 +105,7 @@ public class About13 {
 	public static void main(String[] args) {
 //		standardAnaylze13();
 		missXSmallCard(4);
-		missXBigCard(4);
+//		missXBigCard(4);
 	}
 
 }

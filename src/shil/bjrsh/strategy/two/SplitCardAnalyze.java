@@ -2,7 +2,7 @@ package shil.bjrsh.strategy.two;
 
 import java.util.Collection;
 
-import shil.bjrsh.analyze.PlayerAnalyzeWithCardsProb;
+import shil.bjrsh.analyze.PlayersVSDealersResultChanceProb;
 import shil.bjrsh.core.Card;
 import shil.bjrsh.core.PlayerCardsPathValue;
 import shil.bjrsh.core.ProfitUtil;
@@ -22,8 +22,10 @@ public class SplitCardAnalyze {
 					if(dealerCard.getValue() >= 2 && dealerCard.getValue()<=10){
 						Collection<PlayerCardsPathValue> origin =  PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(new PlayerCardsPathValue(playercard), dealerCard);
 						Collection<PlayerCardsPathValue> doubleOrigin =  PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(new PlayerCardsPathValue(playercard,playercard),dealerCard);
-						double[] splitafter = PlayerAnalyzeWithCardsProb.calcPlayerCollectionsProb(origin, dealerCard);
-						double[] duborg = PlayerAnalyzeWithCardsProb.calcPlayerCollectionsProb(doubleOrigin, dealerCard);
+//						double[] splitafter = PlayerAnalyzeWithCardsProb.calcPlayerCollectionsProb(origin, dealerCard);
+//						double[] duborg = PlayerAnalyzeWithCardsProb.calcPlayerCollectionsProb(doubleOrigin, dealerCard);
+						double[] splitafter = PlayersVSDealersResultChanceProb.calcPlayerdVSDealerProbs(origin,dealerCard);
+						double[] duborg = PlayersVSDealersResultChanceProb.calcPlayerdVSDealerProbs(doubleOrigin,dealerCard);
 						DealerVSPlayerChance dealerVSPlayerChance = new DealerVSPlayerChance(DealerVSPlayerChance.Player, dealerCard, StartValue.getOne(playercard.getValue()*2),duborg,splitafter);
 						System.out.println(dealerVSPlayerChance);
 					}

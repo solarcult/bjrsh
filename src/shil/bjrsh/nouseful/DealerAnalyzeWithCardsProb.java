@@ -1,12 +1,19 @@
-package shil.bjrsh.analyze;
+package shil.bjrsh.nouseful;
 
 import java.util.Collection;
 
 import shil.bjrsh.HelloWorld;
+import shil.bjrsh.analyze.DealerCards;
 import shil.bjrsh.core.BlackJackInfo;
 import shil.bjrsh.core.Card;
 import shil.bjrsh.core.DealerCardsPathValue;
 
+/**
+ * this method calc chance has issue, had been replaced by PlayersVSDealersResultChanceProb
+ * @author LiangJingJing
+ * @date 2016年10月6日 上午12:49:13
+ * @deprecated
+ */
 public class DealerAnalyzeWithCardsProb {
 	
 	/**
