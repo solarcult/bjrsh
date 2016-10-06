@@ -17,9 +17,9 @@ public class SplitCardAnalyze {
 
 	public static void splitCardChanceCompare(){
 		for(Card playercard: Card.values()){
-			if(playercard.getValue() >= 2 && playercard.getValue()<=10){
+			if(playercard.getValue() >= 2 && playercard.getValue()<=10 && playercard != Card.JJJ && playercard != Card.QQQ && playercard != Card.KKK){
 				for(Card dealerCard : Card.values()){
-					if(dealerCard.getValue() >= 2 && dealerCard.getValue()<=10){
+					if(dealerCard.getValue() >= 2 && dealerCard.getValue()<=10 && dealerCard != Card.JJJ && dealerCard != Card.QQQ && dealerCard != Card.KKK){
 						Collection<PlayerCardsPathValue> origin =  PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(new PlayerCardsPathValue(playercard), dealerCard);
 						Collection<PlayerCardsPathValue> doubleOrigin =  PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(new PlayerCardsPathValue(playercard,playercard),dealerCard);
 //						double[] splitafter = PlayerAnalyzeWithCardsProb.calcPlayerCollectionsProb(origin, dealerCard);

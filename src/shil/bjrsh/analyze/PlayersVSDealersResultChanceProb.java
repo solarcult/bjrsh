@@ -58,7 +58,7 @@ public class PlayersVSDealersResultChanceProb {
 		}
 		
 		double totalrate = winrate + drawrate + loserate;
-//		System.out.println(totalrate);
+		
 		return new double[]{winrate/totalrate,drawrate/totalrate,loserate/totalrate};
 	}
 	

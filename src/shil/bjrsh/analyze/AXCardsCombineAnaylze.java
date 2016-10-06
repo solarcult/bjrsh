@@ -53,11 +53,11 @@ public class AXCardsCombineAnaylze {
 		double aroi = 0d;
 		for(Card playercard : Card.values()){
 			//use should split A A
-			if(playercard == Card.One1) continue;
+			if(playercard == Card.One1 || playercard == Card.JJJ || playercard == Card.QQQ || playercard == Card.KKK) continue;
 			System.out.println("\n\r\t\t~~~~~~~~~~"+playercard.name()+"~~~~~~~~~~~~~");
 			for(Card dealercard : Card.values()){
 				//dealer one1 card including eleven cards
-				if(dealercard == Card.One1) continue;
+				if(dealercard == Card.One1 || dealercard == Card.JJJ || dealercard == Card.QQQ || dealercard == Card.KKK) continue;
 				System.out.println("\nPlayer A+"+playercard.name() + "  vs  "+dealercard.name());
 				double[] advanced = playerAX1moreCvsDealer(playercard,dealercard);
 				

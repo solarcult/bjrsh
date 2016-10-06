@@ -98,9 +98,9 @@ public class DealerVSPlayerAdvantage {
 	public static List<DealerVSPlayerChance> makePlayerOneMoreVSNowDealerChange(){
 		List<DealerVSPlayerChance> diff = new ArrayList<DealerVSPlayerChance>();
 		for (StartValue startValue : StartValue.values()) {
-			if (startValue.getValue() < StartValue.Six.getValue()|| startValue == StartValue.TwentyOne) continue;
+			if (startValue.getValue() < StartValue.Six.getValue() || startValue == StartValue.TwentyOne) continue;
 			for (Card dealerCard : Card.values()) {
-				if(Card.One1.equals(dealerCard)) continue;
+				if(Card.One1 == dealerCard || dealerCard == Card.JJJ || dealerCard == Card.QQQ || dealerCard == Card.KKK) continue;
 				PlayerCardsPathValue playerCardsPathValue = new PlayerCardsPathValue(startValue); 
 				Collection<PlayerCardsPathValue> playerOneMoreCards = GenerateCardsUtil.hitPlayerOneMoreCard(playerCardsPathValue);
 //				double[] playerOneMore = PlayerAnalyzeWithCardsProb.playerChanceOneMoreCard(new PlayerCardsPathValue(startValue), dealerCard);
