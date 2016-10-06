@@ -44,6 +44,23 @@ public class PlayerStartTwoCards {
 		return allCombination;
 	}
 	
+	public static Collection<PlayerCardsPathValue> generatePlayerTwoStartCardsWithoutA(){
+		Collection<PlayerCardsPathValue> allCombination = new HashSet<PlayerCardsPathValue>();
+		for(Card one: Card.values()){
+			//TODO 没有考虑AX牌的概率
+			if(one == Card.One1 || one == Card.Eleven) continue;
+			for(Card two : Card.values()){
+				if(two == Card.One1 || two == Card.Eleven) continue;
+				PlayerCardsPathValue cardsPathValue = new PlayerCardsPathValue(one,two);
+				if(cardsPathValue.isValid()) {
+					allCombination.add(cardsPathValue);
+				}
+			}
+		}
+		System.out.println(allCombination.size());
+		return allCombination;
+	}
+	
 	public static void analyzeStartTwoCardsPercent(){
 		Collection<PlayerCardsPathValue> twocards = generatePlayerTwoStartCards();
 		Frequency frequency = new Frequency();

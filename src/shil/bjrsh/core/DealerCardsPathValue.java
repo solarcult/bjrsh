@@ -143,7 +143,7 @@ public class DealerCardsPathValue{
 	@Override
 	public String toString() {
 		return "CardsPathValue [cards=" + cards + ", value=" + value
-				+ ", getCardsMap()=" + getCardsMap() + ", prob()=" + prob()
+				+ ", isValid()=" + isValid() + ", getCardsMap()=" + getCardsMap() + ", prob()=" + prob()
 				+ "]";
 	}
 	

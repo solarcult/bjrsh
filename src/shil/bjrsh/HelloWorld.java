@@ -33,6 +33,19 @@ public class HelloWorld {
 		System.out.println("w:"+result[0]*100+"  $d:"+result[1]*100+"  $l:"+result[2]*100);
 	}
 	
+	public static void printDoubleMatrix(double[] result){
+		System.out.println(builderDoubleMatrix(result));
+	}
+	
+	public static String builderDoubleMatrix(double[] result){
+		StringBuilder sb = new StringBuilder();
+		for(int i=0;i<result.length;i++){
+			sb.append(i).append(" : "+result[i] +" , ");
+		}
+		
+		return sb.substring(0, sb.length()-2);
+	}
+	
 	public static String builderDoubleWDL(double[] result){
 		return "w:"+result[0]*100+"  $d:"+result[1]*100+"  $l:"+result[2]*100;
 	}

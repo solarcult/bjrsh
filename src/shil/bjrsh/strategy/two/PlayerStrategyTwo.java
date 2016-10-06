@@ -85,11 +85,11 @@ public class PlayerStrategyTwo implements Strategy{
 		for (StartValue startValue : StartValue.values()) {
 			if(startValue.getValue() < 4) continue;
 			double total = 0;
-			for (Card card : Card.values()) {
-				if(card == Card.One1) continue;
-				double result = ProfitUtil.calcStarthandPossibleFuturesVSDealerCardInReturn(PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(new PlayerCardsPathValue(startValue), card), card);
+			for (Card dealerCard : Card.values()) {
+				if(dealerCard == Card.One1) continue;
+				double result = ProfitUtil.calcStarthandPossibleFuturesVSDealerCardInReturn(PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(new PlayerCardsPathValue(startValue), dealerCard), dealerCard);
 				total +=result;
-				System.out.println("StartValue :" + startValue +" vs DealerCard : "+card +"\tROI: "+ result);
+				System.out.println("StartValue :" + startValue +" vs DealerCard : "+dealerCard +"\tROI: "+ result);
 			}
 			System.out.println("T: " +total);
 			big += total;
@@ -133,6 +133,20 @@ public class PlayerStrategyTwo implements Strategy{
 		calcROIMap.printROI();
 	}
 	
+	public static void printStrategyROIwithoutA(){
+		List<OneCalcPackage> oneCalcPackages = new ArrayList<OneCalcPackage>();
+		Collection<PlayerCardsPathValue> ptcs =  PlayerStartTwoCards.generatePlayerTwoStartCardsWithoutA();
+		for (PlayerCardsPathValue ptc : ptcs) {
+			for (Card dealerCard : Card.values()) {
+				if(dealerCard == Card.One1) continue;
+				oneCalcPackages.add(new OneCalcPackage(ptc, dealerCard));
+			}
+		}
+		CalcStrategyProfitMachine calcStrategyProfitMachine = new CalcStrategyProfitMachine(PlayerStrategyTwo.getInstance());
+		CalcROIMap calcROIMap = calcStrategyProfitMachine.calcROIofPlayerHands(oneCalcPackages);
+		calcROIMap.printROI();
+	}
+	
 	public static void main(String[] args){
 //		Collection<PlayerCardsPathValue> x = generatePlayerCardsPaths(new PlayerCardsPathValue(StartValue.Seventeen), Card.Seven7);
 //		HelloWorld.print(x) ;
@@ -140,7 +154,9 @@ public class PlayerStrategyTwo implements Strategy{
 //		printAllStartValueVSDealer();
 //		printReallyTwoCardsVSDealer();
 		
-		printStrategyROI();
+//		printStrategyROI();
+		
+		printStrategyROIwithoutA();
 	}
 	
 }

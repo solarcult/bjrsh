@@ -97,19 +97,4 @@ public class AXCardsCombineAnaylze {
 		}
 		System.out.println("aroi: "+aroi);
 	}
-	
-	/**
-	 * 看分牌后的单A的概率方法
-	 * 必须注释掉
-	 * playerAX1moreCvsDealer ainstead1.addCard(playernotACardvalue) and ainstead11.addCard(playernotACardvalue);这两个方法
-	 * @deprecated
-	 */
-	public static void anlayzeAvsDealerAllTypeCards(){
-		//should comment ainstead1.addCard(playernotACardvalue) and ainstead11.addCard(playernotACardvalue);;
-		for(Card dealercard : Card.values()){
-			System.out.println("Player A Split" + "  vs  "+dealercard.name());
-			HelloWorld.printDoubleWDL(playerAX1moreCvsDealer(Card.Eight8,dealercard));
-//			HelloWorld.printDoubleWDL(playerNowVSDealerChance(StartValue.Twelve,dealercard));
-		}
-	}
 }

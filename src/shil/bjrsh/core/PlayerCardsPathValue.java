@@ -148,7 +148,7 @@ public class PlayerCardsPathValue {
 	@Override
 	public String toString() {
 		return "PlayerCardsPathValue [startValue=" + startValue + ", cards="
-				+ cards + ", value=" + value + ", getCardsMap()="
+				+ cards + ", value=" + value  + ", isValid()=" + isValid() + ", getCardsMap()="
 				+ getCardsMap() + ", prob()=" + prob() + ", action=" + action + "]" ;
 	}
 

@@ -13,10 +13,13 @@ public class ProfitUtil {
 	
 	//计算投资回报
 	public static double calcStarthandPossibleFuturesVSDealerCardInReturn(Collection<PlayerCardsPathValue> playerCardsPathValues,Card dealerCard){
-		double ROI = 0;
-		for(PlayerCardsPathValue oneWay : playerCardsPathValues)
-			ROI += moneyCalcOneHandInReturn(oneWay,dealerCard);
-		return ROI;
+		double roi = 0;
+		for(PlayerCardsPathValue oneWay : playerCardsPathValues){
+			double x = moneyCalcOneHandInReturn(oneWay,dealerCard);
+			roi += x;
+//			System.out.println(oneWay.getValue() +" "+dealerCard +" \t: " + x+" \tt: "+roi);
+		}
+		return roi;
 	}
 	
 	//计算用户的本次组合与庄家起手牌的最终概率组合值,看看回报率是如何
@@ -43,6 +46,8 @@ public class ProfitUtil {
 			throw new RuntimeException(playerCardsPathValue.getAction() + " ? wtf");
 		}
 		
+		//Stand come here:
+		
 		//最终计算投资收益率
 //		double[] playerchance = PlayerAnalyzeWithCardsProb.playerNowVSDealerChance(StartValue.getOne(playerCardsPathValue.getValue()), dealerCard);
 		double[] playerchance = PlayersVSDealersResultChanceProb.calcPlayerdVSDealerProbs(playerCardsPathValue,dealerCard);
@@ -55,7 +60,13 @@ public class ProfitUtil {
 	public static void main(String[] args){
 //		System.out.println(MoneyCalcInReturn(STGeneratePlayerUtil.generatePlayerCardsPaths(new PlayerCardsPathValue(StartValue.Five), Card.Six6), Card.Six6));
 //		System.out.println(MoneyCalcInReturn(STGeneratePlayerUtil.generatePlayerCardsPaths(new PlayerCardsPathValue(StartValue.Five), Card.Seven7), Card.Seven7));
-		double x = calcStarthandPossibleFuturesVSDealerCardInReturn(PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(new PlayerCardsPathValue(StartValue.Fourteen), Card.Eight8), Card.Eight8);
+//		double x = calcStarthandPossibleFuturesVSDealerCardInReturn(PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(new PlayerCardsPathValue(Card.Five5,Card.Six6), Card.Eight8), Card.Eight8);
+		
+		PlayerCardsPathValue playerCardsPathValue = new PlayerCardsPathValue(Card.Two2); 
+		playerCardsPathValue.addCard(Card.Four4); 
+		double x = calcStarthandPossibleFuturesVSDealerCardInReturn(PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(playerCardsPathValue, Card.Eight8), Card.Eight8);
 		System.out.println(x);
+				
+		
 	}
 }
