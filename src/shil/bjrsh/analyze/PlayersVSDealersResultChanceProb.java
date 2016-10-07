@@ -124,7 +124,7 @@ public class PlayersVSDealersResultChanceProb {
 		return new double[]{winrate,drawrate,loserate};
 	}
 	
-	public static double[] handCardDetectInProcess(PlayerCardsPathValue originPlayerCards, PlayerCardsPathValue hitPlayerCards, DealerCardsPathValue hitDealerCards){
+	public static double[] hitPlayerOneMore(PlayerCardsPathValue originPlayerCards, PlayerCardsPathValue hitPlayerCards, DealerCardsPathValue hitDealerCards){
 		double win = 0;
 		double draw = 0;
 		double lose =0;
@@ -137,16 +137,16 @@ public class PlayersVSDealersResultChanceProb {
 			lose ++;
 			if(hitDealerCards.getValue() >= BlackJackInfo.DealerStop && hitDealerCards.getValue() <= BlackJackInfo.BlackJack){
 				//如果我加了以后爆了,庄家成牌了,则算好牌,因为对结局没有影响.
-				better++;
-				System.out.println(" better : " + hitPlayerCards.getValue()  + " dealer: " + hitDealerCards.getValue());
+				normal++;
+				System.out.println(hitPlayerCards.getCards().get(hitPlayerCards.getCards().size()-1).getValue() +" normal (i bust and dealer make 17+) : " + hitPlayerCards.getValue()  + " dealer: " + hitDealerCards.getValue());
 			}else if(hitDealerCards.getValue() > BlackJackInfo.BlackJack){
 				//如果我加以后爆了,庄家也爆了,不算好牌,应该留给庄家.
 				worse++;
-				System.out.println(" worse : " + originPlayerCards.getValue() +"->" + hitPlayerCards.getValue() + " dealer: " +hitDealerCards.getValue());
+				System.out.println(hitPlayerCards.getCards().get(hitPlayerCards.getCards().size()-1).getValue() +" worse (i bust dealer bust either, SHOULD NEVER HAPPEN): " + originPlayerCards.getValue() +"->" + hitPlayerCards.getValue() + " dealer: " +hitDealerCards.getValue());
 			}else if(hitDealerCards.getValue() < BlackJackInfo.DealerStop){
 				//如果我加了以后爆了,庄家没爆,应该留给庄家,让他有更多爆的几率
 				worse++;
-				System.out.println(" worse : " + originPlayerCards.getValue() +"->"+ hitPlayerCards.getValue() + " dealer: " +hitDealerCards.getValue());
+				System.out.println(hitPlayerCards.getCards().get(hitPlayerCards.getCards().size()-1).getValue() +" worse (i bust, dealer near bust): " + originPlayerCards.getValue() +"->"+ hitPlayerCards.getValue() + " dealer: " +hitDealerCards.getValue());
 
 			}
 		}else if(hitPlayerCards.getValue() >= BlackJackInfo.DealerStop){
@@ -154,15 +154,21 @@ public class PlayersVSDealersResultChanceProb {
 			if(hitDealerCards.getValue()>= BlackJackInfo.DealerStop){
 				//如果玩家成了,对方也成了,这是一步好棋
 				better++;
-				System.out.println(" better : " + hitPlayerCards.getValue() + " dealer: " +hitDealerCards.getValue());
+				System.out.println(hitPlayerCards.getCards().get(hitPlayerCards.getCards().size()-1).getValue() +" better (i make 17+, dealer either 17+): " + hitPlayerCards.getValue() + " dealer: " +hitDealerCards.getValue());
 			}else{
 				//如果玩家成了,对方没有成,算是一步good?
 				better++;
-				System.out.println(" better : " + hitPlayerCards.getValue() + " dealer: " +hitDealerCards.getValue());
+				System.out.println(hitPlayerCards.getCards().get(hitPlayerCards.getCards().size()-1).getValue() +" better (i make 17+ , dealer near): " + hitPlayerCards.getValue() + " dealer: " +hitDealerCards.getValue());
 			}
 		}else{
-			normal++;
-			System.out.println(" normal : " + hitPlayerCards.getValue() + " dealer: " +hitDealerCards.getValue());
+			//not bust is good either
+			if(hitDealerCards.getValue() >= BlackJackInfo.DealerStop && hitDealerCards.getValue() <= BlackJackInfo.BlackJack){
+				better++;
+				System.out.println(hitPlayerCards.getCards().get(hitPlayerCards.getCards().size()-1).getValue() +" better (i lived , dealer make 17+): " + hitPlayerCards.getValue() + " dealer: " +hitDealerCards.getValue());
+			}else{
+				normal++;
+				System.out.println(hitPlayerCards.getCards().get(hitPlayerCards.getCards().size()-1).getValue() +" normal (i live here, nice): " + hitPlayerCards.getValue() + " dealer: " +hitDealerCards.getValue());
+			}
 		}
 		
 		return new double[]{win,draw,lose,better,normal,worse};

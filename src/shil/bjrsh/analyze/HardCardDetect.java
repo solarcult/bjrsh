@@ -19,7 +19,7 @@ public class HardCardDetect {
 //			System.out.println("detect cards has error: "+hitPlayerCards +"<-p , d->"+hitDealerCards);
 			return new double[]{0,0,0,0,0};
 		}
-		return PlayersVSDealersResultChanceProb.handCardDetectInProcess(originPlayerCards,hitPlayerCards, hitDealerCards);
+		return PlayersVSDealersResultChanceProb.hitPlayerOneMore(originPlayerCards,hitPlayerCards, hitDealerCards);
 	}
 	
 	public static double[] detectNextCardsAdvProb(StartValue startValue,Card dealerCard){
@@ -116,12 +116,27 @@ public class HardCardDetect {
 		return true;
 	}
 	
+	public static void showHardDecideAllHands(){
+		for(StartValue startValue : StartValue.values()){
+			if(startValue.getValue()>=12 && startValue.getValue() <20){
+				System.out.println("\n \t\t-------- "+startValue.getValue()+" --------");
+				for(Card dealerCard : Card.values()){
+					if(dealerCard == Card.One1 || dealerCard == Card.JJJ || dealerCard == Card.QQQ || dealerCard == Card.KKK) continue;
+					System.out.println("\n \tplayer value: "+startValue.getValue() +" dealerCard: "+ dealerCard +":");
+					HelloWorld.printDoubleMatrix(detectNextCardsAdvProb(startValue, dealerCard));
+				}
+			}
+		}
+	}
+	
 	
 	public static void main(String[] args) {
-//		HelloWorld.printDoubleMatrix(detectNextCardsAdvProb(StartValue.Sixteen, Card.Four4));
+//		HelloWorld.printDoubleMatrix(detectNextCardsAdvProb(StartValue.Fifteen, Card.Two2));
 //		HelloWorld.printDoubleMatrix(detectNextCardsAdvProb(StartValue.Twelve, Card.Two2));
 //		according2Prob(StartValue.Fourteen, Card.Ten, Card.Six6, Card.Six6);
-		according2FullProb(StartValue.Fourteen, Card.Eight8);
+//		according2FullProb(StartValue.Fourteen, Card.Eight8);
+		
+		showHardDecideAllHands();
 	}
 
 }

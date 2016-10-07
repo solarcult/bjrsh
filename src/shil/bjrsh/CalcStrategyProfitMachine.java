@@ -36,6 +36,7 @@ public class CalcStrategyProfitMachine {
 	}
 	
 	public CalcROIMap calcROIofPlayerHands(Collection<OneCalcPackage> oneCalcPackages){
+		long startTime = System.currentTimeMillis();
 		CalcROIMap calcROIMap = new CalcROIMap();
 		AtomicInteger playerPossibleHands = new AtomicInteger(0);
 		for(OneCalcPackage oneCalcPackage : oneCalcPackages){
@@ -66,6 +67,7 @@ public class CalcStrategyProfitMachine {
 		
 		System.out.println("how many :" + playerPossibleHands.get());
 		machines.shutdown();
+		System.out.println("CalcStrategyProfitMachine used total seconds :" + (System.currentTimeMillis()-startTime)/1000);
 		return calcROIMap;
 	}
 }
