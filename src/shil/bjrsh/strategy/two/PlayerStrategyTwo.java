@@ -147,6 +147,21 @@ public class PlayerStrategyTwo implements Strategy{
 		calcROIMap.printROI();
 	}
 	
+	public static void printStrategyROIwithoutAStartingOn(StartValue startValue){
+		List<OneCalcPackage> oneCalcPackages = new ArrayList<OneCalcPackage>();
+		Collection<PlayerCardsPathValue> ptcs =  PlayerStartTwoCards.generatePlayerTwoStartCardsWithoutA();
+		for (PlayerCardsPathValue ptc : ptcs) {
+			if(startValue.getValue() != ptc.getValue()) continue;
+			for (Card dealerCard : Card.values()) {
+				if(dealerCard == Card.One1) continue;
+				oneCalcPackages.add(new OneCalcPackage(ptc, dealerCard));
+			}
+		}
+		CalcStrategyProfitMachine calcStrategyProfitMachine = new CalcStrategyProfitMachine(PlayerStrategyTwo.getInstance());
+		CalcROIMap calcROIMap = calcStrategyProfitMachine.calcROIofPlayerHands(oneCalcPackages);
+		calcROIMap.printROI();
+	}
+	
 	public static void main(String[] args){
 //		Collection<PlayerCardsPathValue> x = generatePlayerCardsPaths(new PlayerCardsPathValue(StartValue.Seventeen), Card.Seven7);
 //		HelloWorld.print(x) ;
@@ -156,7 +171,8 @@ public class PlayerStrategyTwo implements Strategy{
 		
 //		printStrategyROI();
 		
-		printStrategyROIwithoutA();
+//		printStrategyROIwithoutA();
+		printStrategyROIwithoutAStartingOn(StartValue.Six);
 	}
 	
 }

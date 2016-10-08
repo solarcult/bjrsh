@@ -1,0 +1,1385 @@
+
+ 		-------- 12 --------
+
+ 	player value: 12 dealerCard: Two2:
+1 normal (i live here, nice): 13 dealer: 3
+2 normal (i live here, nice): 14 dealer: 4
+3 normal (i live here, nice): 15 dealer: 5
+4 normal (i live here, nice): 16 dealer: 6
+5 better (i make 17+ , dealer near): 17 dealer: 7
+6 better (i make 17+ , dealer near): 18 dealer: 8
+7 better (i make 17+ , dealer near): 19 dealer: 9
+8 better (i make 17+ , dealer near): 20 dealer: 10
+9 better (i make 17+ , dealer near): 21 dealer: 11
+10 worse (i bust, dealer near bust): 12->22 dealer: 12
+10 worse (i bust, dealer near bust): 12->22 dealer: 12
+10 worse (i bust, dealer near bust): 12->22 dealer: 12
+10 worse (i bust, dealer near bust): 12->22 dealer: 12
+1 normal (i live here, nice): 13 dealer: 13
+0 : 0.0 , 1 : 0.0 , 2 : 4.0 , 3 : 5.0 , 4 : 5.0 , 5 : 4.0 
+
+ 	player value: 12 dealerCard: Three3:
+1 normal (i live here, nice): 13 dealer: 4
+2 normal (i live here, nice): 14 dealer: 5
+3 normal (i live here, nice): 15 dealer: 6
+4 normal (i live here, nice): 16 dealer: 7
+5 better (i make 17+ , dealer near): 17 dealer: 8
+6 better (i make 17+ , dealer near): 18 dealer: 9
+7 better (i make 17+ , dealer near): 19 dealer: 10
+8 better (i make 17+ , dealer near): 20 dealer: 11
+9 better (i make 17+ , dealer near): 21 dealer: 12
+10 worse (i bust, dealer near bust): 12->22 dealer: 13
+10 worse (i bust, dealer near bust): 12->22 dealer: 13
+10 worse (i bust, dealer near bust): 12->22 dealer: 13
+10 worse (i bust, dealer near bust): 12->22 dealer: 13
+1 normal (i live here, nice): 13 dealer: 14
+0 : 0.0 , 1 : 0.0 , 2 : 4.0 , 3 : 5.0 , 4 : 5.0 , 5 : 4.0 
+
+ 	player value: 12 dealerCard: Four4:
+1 normal (i live here, nice): 13 dealer: 5
+2 normal (i live here, nice): 14 dealer: 6
+3 normal (i live here, nice): 15 dealer: 7
+4 normal (i live here, nice): 16 dealer: 8
+5 better (i make 17+ , dealer near): 17 dealer: 9
+6 better (i make 17+ , dealer near): 18 dealer: 10
+7 better (i make 17+ , dealer near): 19 dealer: 11
+8 better (i make 17+ , dealer near): 20 dealer: 12
+9 better (i make 17+ , dealer near): 21 dealer: 13
+10 worse (i bust, dealer near bust): 12->22 dealer: 14
+10 worse (i bust, dealer near bust): 12->22 dealer: 14
+10 worse (i bust, dealer near bust): 12->22 dealer: 14
+10 worse (i bust, dealer near bust): 12->22 dealer: 14
+1 normal (i live here, nice): 13 dealer: 15
+0 : 0.0 , 1 : 0.0 , 2 : 4.0 , 3 : 5.0 , 4 : 5.0 , 5 : 4.0 
+
+ 	player value: 12 dealerCard: Five5:
+1 normal (i live here, nice): 13 dealer: 6
+2 normal (i live here, nice): 14 dealer: 7
+3 normal (i live here, nice): 15 dealer: 8
+4 normal (i live here, nice): 16 dealer: 9
+5 better (i make 17+ , dealer near): 17 dealer: 10
+6 better (i make 17+ , dealer near): 18 dealer: 11
+7 better (i make 17+ , dealer near): 19 dealer: 12
+8 better (i make 17+ , dealer near): 20 dealer: 13
+9 better (i make 17+ , dealer near): 21 dealer: 14
+10 worse (i bust, dealer near bust): 12->22 dealer: 15
+10 worse (i bust, dealer near bust): 12->22 dealer: 15
+10 worse (i bust, dealer near bust): 12->22 dealer: 15
+10 worse (i bust, dealer near bust): 12->22 dealer: 15
+1 normal (i live here, nice): 13 dealer: 16
+0 : 0.0 , 1 : 0.0 , 2 : 4.0 , 3 : 5.0 , 4 : 5.0 , 5 : 4.0 
+
+ 	player value: 12 dealerCard: Six6:
+2 normal (i live here, nice): 14 dealer: 8
+3 normal (i live here, nice): 15 dealer: 9
+4 normal (i live here, nice): 16 dealer: 10
+5 better (i make 17+ , dealer near): 17 dealer: 11
+6 better (i make 17+ , dealer near): 18 dealer: 12
+7 better (i make 17+ , dealer near): 19 dealer: 13
+8 better (i make 17+ , dealer near): 20 dealer: 14
+9 better (i make 17+ , dealer near): 21 dealer: 15
+10 worse (i bust, dealer near bust): 12->22 dealer: 16
+10 worse (i bust, dealer near bust): 12->22 dealer: 16
+10 worse (i bust, dealer near bust): 12->22 dealer: 16
+10 worse (i bust, dealer near bust): 12->22 dealer: 16
+1 better (i lived , dealer make 17+): 13 dealer: 17
+0 : 0.0 , 1 : 1.0 , 2 : 4.0 , 3 : 6.0 , 4 : 3.0 , 5 : 4.0 
+
+ 	player value: 12 dealerCard: Seven7:
+2 normal (i live here, nice): 14 dealer: 9
+3 normal (i live here, nice): 15 dealer: 10
+4 normal (i live here, nice): 16 dealer: 11
+5 better (i make 17+ , dealer near): 17 dealer: 12
+6 better (i make 17+ , dealer near): 18 dealer: 13
+7 better (i make 17+ , dealer near): 19 dealer: 14
+8 better (i make 17+ , dealer near): 20 dealer: 15
+9 better (i make 17+ , dealer near): 21 dealer: 16
+10 normal (i bust and dealer make 17+) : 22 dealer: 17
+10 normal (i bust and dealer make 17+) : 22 dealer: 17
+10 normal (i bust and dealer make 17+) : 22 dealer: 17
+10 normal (i bust and dealer make 17+) : 22 dealer: 17
+1 better (i lived , dealer make 17+): 13 dealer: 18
+ ---  
+	hit me please , hit me ! 
+ --- 
+0 : 0.0 , 1 : 5.0 , 2 : 4.0 , 3 : 6.0 , 4 : 7.0 , 5 : 0.0 
+
+ 	player value: 12 dealerCard: Eight8:
+2 normal (i live here, nice): 14 dealer: 10
+3 normal (i live here, nice): 15 dealer: 11
+4 normal (i live here, nice): 16 dealer: 12
+5 better (i make 17+ , dealer near): 17 dealer: 13
+6 better (i make 17+ , dealer near): 18 dealer: 14
+7 better (i make 17+ , dealer near): 19 dealer: 15
+8 better (i make 17+ , dealer near): 20 dealer: 16
+9 better (i make 17+, dealer either 17+): 21 dealer: 17
+10 normal (i bust and dealer make 17+) : 22 dealer: 18
+10 normal (i bust and dealer make 17+) : 22 dealer: 18
+10 normal (i bust and dealer make 17+) : 22 dealer: 18
+10 normal (i bust and dealer make 17+) : 22 dealer: 18
+1 better (i lived , dealer make 17+): 13 dealer: 19
+ ---  
+	hit me please , hit me ! 
+ --- 
+0 : 0.0 , 1 : 6.0 , 2 : 4.0 , 3 : 6.0 , 4 : 7.0 , 5 : 0.0 
+
+ 	player value: 12 dealerCard: Nine9:
+2 normal (i live here, nice): 14 dealer: 11
+3 normal (i live here, nice): 15 dealer: 12
+4 normal (i live here, nice): 16 dealer: 13
+5 better (i make 17+ , dealer near): 17 dealer: 14
+6 better (i make 17+ , dealer near): 18 dealer: 15
+7 better (i make 17+ , dealer near): 19 dealer: 16
+8 better (i make 17+, dealer either 17+): 20 dealer: 17
+9 better (i make 17+, dealer either 17+): 21 dealer: 18
+10 normal (i bust and dealer make 17+) : 22 dealer: 19
+10 normal (i bust and dealer make 17+) : 22 dealer: 19
+10 normal (i bust and dealer make 17+) : 22 dealer: 19
+10 normal (i bust and dealer make 17+) : 22 dealer: 19
+1 better (i lived , dealer make 17+): 13 dealer: 20
+ ---  
+	hit me please , hit me ! 
+ --- 
+0 : 0.0 , 1 : 7.0 , 2 : 4.0 , 3 : 6.0 , 4 : 7.0 , 5 : 0.0 
+
+ 	player value: 12 dealerCard: Ten:
+2 normal (i live here, nice): 14 dealer: 12
+3 normal (i live here, nice): 15 dealer: 13
+4 normal (i live here, nice): 16 dealer: 14
+5 better (i make 17+ , dealer near): 17 dealer: 15
+6 better (i make 17+ , dealer near): 18 dealer: 16
+7 better (i make 17+, dealer either 17+): 19 dealer: 17
+8 better (i make 17+, dealer either 17+): 20 dealer: 18
+9 better (i make 17+, dealer either 17+): 21 dealer: 19
+10 normal (i bust and dealer make 17+) : 22 dealer: 20
+10 normal (i bust and dealer make 17+) : 22 dealer: 20
+10 normal (i bust and dealer make 17+) : 22 dealer: 20
+10 normal (i bust and dealer make 17+) : 22 dealer: 20
+1 better (i lived , dealer make 17+): 13 dealer: 21
+ ---  
+	hit me please , hit me ! 
+ --- 
+0 : 0.0 , 1 : 8.0 , 2 : 4.0 , 3 : 6.0 , 4 : 7.0 , 5 : 0.0 
+
+ 	player value: 12 dealerCard: Eleven:
+1 normal (i live here, nice): 13 dealer: 12
+2 normal (i live here, nice): 14 dealer: 13
+3 normal (i live here, nice): 15 dealer: 14
+4 normal (i live here, nice): 16 dealer: 15
+5 better (i make 17+ , dealer near): 17 dealer: 16
+6 better (i make 17+, dealer either 17+): 18 dealer: 17
+7 better (i make 17+, dealer either 17+): 19 dealer: 18
+8 better (i make 17+, dealer either 17+): 20 dealer: 19
+9 better (i make 17+, dealer either 17+): 21 dealer: 20
+10 normal (i bust and dealer make 17+) : 22 dealer: 21
+10 normal (i bust and dealer make 17+) : 22 dealer: 21
+10 normal (i bust and dealer make 17+) : 22 dealer: 21
+10 normal (i bust and dealer make 17+) : 22 dealer: 21
+ ---  
+	hit me please , hit me ! 
+ --- 
+0 : 0.0 , 1 : 8.0 , 2 : 4.0 , 3 : 5.0 , 4 : 8.0 , 5 : 0.0 
+
+ 		-------- 13 --------
+
+ 	player value: 13 dealerCard: Two2:
+1 normal (i live here, nice): 14 dealer: 3
+2 normal (i live here, nice): 15 dealer: 4
+3 normal (i live here, nice): 16 dealer: 5
+4 better (i make 17+ , dealer near): 17 dealer: 6
+5 better (i make 17+ , dealer near): 18 dealer: 7
+6 better (i make 17+ , dealer near): 19 dealer: 8
+7 better (i make 17+ , dealer near): 20 dealer: 9
+8 better (i make 17+ , dealer near): 21 dealer: 10
+9 worse (i bust, dealer near bust): 13->22 dealer: 11
+10 worse (i bust, dealer near bust): 13->23 dealer: 12
+10 worse (i bust, dealer near bust): 13->23 dealer: 12
+10 worse (i bust, dealer near bust): 13->23 dealer: 12
+10 worse (i bust, dealer near bust): 13->23 dealer: 12
+1 normal (i live here, nice): 14 dealer: 13
+0 : 0.0 , 1 : 0.0 , 2 : 5.0 , 3 : 5.0 , 4 : 4.0 , 5 : 5.0 
+
+ 	player value: 13 dealerCard: Three3:
+1 normal (i live here, nice): 14 dealer: 4
+2 normal (i live here, nice): 15 dealer: 5
+3 normal (i live here, nice): 16 dealer: 6
+4 better (i make 17+ , dealer near): 17 dealer: 7
+5 better (i make 17+ , dealer near): 18 dealer: 8
+6 better (i make 17+ , dealer near): 19 dealer: 9
+7 better (i make 17+ , dealer near): 20 dealer: 10
+8 better (i make 17+ , dealer near): 21 dealer: 11
+9 worse (i bust, dealer near bust): 13->22 dealer: 12
+10 worse (i bust, dealer near bust): 13->23 dealer: 13
+10 worse (i bust, dealer near bust): 13->23 dealer: 13
+10 worse (i bust, dealer near bust): 13->23 dealer: 13
+10 worse (i bust, dealer near bust): 13->23 dealer: 13
+1 normal (i live here, nice): 14 dealer: 14
+0 : 0.0 , 1 : 0.0 , 2 : 5.0 , 3 : 5.0 , 4 : 4.0 , 5 : 5.0 
+
+ 	player value: 13 dealerCard: Four4:
+1 normal (i live here, nice): 14 dealer: 5
+2 normal (i live here, nice): 15 dealer: 6
+3 normal (i live here, nice): 16 dealer: 7
+4 better (i make 17+ , dealer near): 17 dealer: 8
+5 better (i make 17+ , dealer near): 18 dealer: 9
+6 better (i make 17+ , dealer near): 19 dealer: 10
+7 better (i make 17+ , dealer near): 20 dealer: 11
+8 better (i make 17+ , dealer near): 21 dealer: 12
+9 worse (i bust, dealer near bust): 13->22 dealer: 13
+10 worse (i bust, dealer near bust): 13->23 dealer: 14
+10 worse (i bust, dealer near bust): 13->23 dealer: 14
+10 worse (i bust, dealer near bust): 13->23 dealer: 14
+10 worse (i bust, dealer near bust): 13->23 dealer: 14
+1 normal (i live here, nice): 14 dealer: 15
+0 : 0.0 , 1 : 0.0 , 2 : 5.0 , 3 : 5.0 , 4 : 4.0 , 5 : 5.0 
+
+ 	player value: 13 dealerCard: Five5:
+1 normal (i live here, nice): 14 dealer: 6
+2 normal (i live here, nice): 15 dealer: 7
+3 normal (i live here, nice): 16 dealer: 8
+4 better (i make 17+ , dealer near): 17 dealer: 9
+5 better (i make 17+ , dealer near): 18 dealer: 10
+6 better (i make 17+ , dealer near): 19 dealer: 11
+7 better (i make 17+ , dealer near): 20 dealer: 12
+8 better (i make 17+ , dealer near): 21 dealer: 13
+9 worse (i bust, dealer near bust): 13->22 dealer: 14
+10 worse (i bust, dealer near bust): 13->23 dealer: 15
+10 worse (i bust, dealer near bust): 13->23 dealer: 15
+10 worse (i bust, dealer near bust): 13->23 dealer: 15
+10 worse (i bust, dealer near bust): 13->23 dealer: 15
+1 normal (i live here, nice): 14 dealer: 16
+0 : 0.0 , 1 : 0.0 , 2 : 5.0 , 3 : 5.0 , 4 : 4.0 , 5 : 5.0 
+
+ 	player value: 13 dealerCard: Six6:
+2 normal (i live here, nice): 15 dealer: 8
+3 normal (i live here, nice): 16 dealer: 9
+4 better (i make 17+ , dealer near): 17 dealer: 10
+5 better (i make 17+ , dealer near): 18 dealer: 11
+6 better (i make 17+ , dealer near): 19 dealer: 12
+7 better (i make 17+ , dealer near): 20 dealer: 13
+8 better (i make 17+ , dealer near): 21 dealer: 14
+9 worse (i bust, dealer near bust): 13->22 dealer: 15
+10 worse (i bust, dealer near bust): 13->23 dealer: 16
+10 worse (i bust, dealer near bust): 13->23 dealer: 16
+10 worse (i bust, dealer near bust): 13->23 dealer: 16
+10 worse (i bust, dealer near bust): 13->23 dealer: 16
+1 better (i lived , dealer make 17+): 14 dealer: 17
+0 : 0.0 , 1 : 1.0 , 2 : 5.0 , 3 : 6.0 , 4 : 2.0 , 5 : 5.0 
+
+ 	player value: 13 dealerCard: Seven7:
+2 normal (i live here, nice): 15 dealer: 9
+3 normal (i live here, nice): 16 dealer: 10
+4 better (i make 17+ , dealer near): 17 dealer: 11
+5 better (i make 17+ , dealer near): 18 dealer: 12
+6 better (i make 17+ , dealer near): 19 dealer: 13
+7 better (i make 17+ , dealer near): 20 dealer: 14
+8 better (i make 17+ , dealer near): 21 dealer: 15
+9 worse (i bust, dealer near bust): 13->22 dealer: 16
+10 normal (i bust and dealer make 17+) : 23 dealer: 17
+10 normal (i bust and dealer make 17+) : 23 dealer: 17
+10 normal (i bust and dealer make 17+) : 23 dealer: 17
+10 normal (i bust and dealer make 17+) : 23 dealer: 17
+1 better (i lived , dealer make 17+): 14 dealer: 18
+ ---  
+	hit me please , hit me ! 
+ --- 
+0 : 0.0 , 1 : 5.0 , 2 : 5.0 , 3 : 6.0 , 4 : 6.0 , 5 : 1.0 
+
+ 	player value: 13 dealerCard: Eight8:
+2 normal (i live here, nice): 15 dealer: 10
+3 normal (i live here, nice): 16 dealer: 11
+4 better (i make 17+ , dealer near): 17 dealer: 12
+5 better (i make 17+ , dealer near): 18 dealer: 13
+6 better (i make 17+ , dealer near): 19 dealer: 14
+7 better (i make 17+ , dealer near): 20 dealer: 15
+8 better (i make 17+ , dealer near): 21 dealer: 16
+9 normal (i bust and dealer make 17+) : 22 dealer: 17
+10 normal (i bust and dealer make 17+) : 23 dealer: 18
+10 normal (i bust and dealer make 17+) : 23 dealer: 18
+10 normal (i bust and dealer make 17+) : 23 dealer: 18
+10 normal (i bust and dealer make 17+) : 23 dealer: 18
+1 better (i lived , dealer make 17+): 14 dealer: 19
+ ---  
+	hit me please , hit me ! 
+ --- 
+0 : 0.0 , 1 : 6.0 , 2 : 5.0 , 3 : 6.0 , 4 : 7.0 , 5 : 0.0 
+
+ 	player value: 13 dealerCard: Nine9:
+2 normal (i live here, nice): 15 dealer: 11
+3 normal (i live here, nice): 16 dealer: 12
+4 better (i make 17+ , dealer near): 17 dealer: 13
+5 better (i make 17+ , dealer near): 18 dealer: 14
+6 better (i make 17+ , dealer near): 19 dealer: 15
+7 better (i make 17+ , dealer near): 20 dealer: 16
+8 better (i make 17+, dealer either 17+): 21 dealer: 17
+9 normal (i bust and dealer make 17+) : 22 dealer: 18
+10 normal (i bust and dealer make 17+) : 23 dealer: 19
+10 normal (i bust and dealer make 17+) : 23 dealer: 19
+10 normal (i bust and dealer make 17+) : 23 dealer: 19
+10 normal (i bust and dealer make 17+) : 23 dealer: 19
+1 better (i lived , dealer make 17+): 14 dealer: 20
+ ---  
+	hit me please , hit me ! 
+ --- 
+0 : 0.0 , 1 : 7.0 , 2 : 5.0 , 3 : 6.0 , 4 : 7.0 , 5 : 0.0 
+
+ 	player value: 13 dealerCard: Ten:
+2 normal (i live here, nice): 15 dealer: 12
+3 normal (i live here, nice): 16 dealer: 13
+4 better (i make 17+ , dealer near): 17 dealer: 14
+5 better (i make 17+ , dealer near): 18 dealer: 15
+6 better (i make 17+ , dealer near): 19 dealer: 16
+7 better (i make 17+, dealer either 17+): 20 dealer: 17
+8 better (i make 17+, dealer either 17+): 21 dealer: 18
+9 normal (i bust and dealer make 17+) : 22 dealer: 19
+10 normal (i bust and dealer make 17+) : 23 dealer: 20
+10 normal (i bust and dealer make 17+) : 23 dealer: 20
+10 normal (i bust and dealer make 17+) : 23 dealer: 20
+10 normal (i bust and dealer make 17+) : 23 dealer: 20
+1 better (i lived , dealer make 17+): 14 dealer: 21
+ ---  
+	hit me please , hit me ! 
+ --- 
+0 : 0.0 , 1 : 8.0 , 2 : 5.0 , 3 : 6.0 , 4 : 7.0 , 5 : 0.0 
+
+ 	player value: 13 dealerCard: Eleven:
+1 normal (i live here, nice): 14 dealer: 12
+2 normal (i live here, nice): 15 dealer: 13
+3 normal (i live here, nice): 16 dealer: 14
+4 better (i make 17+ , dealer near): 17 dealer: 15
+5 better (i make 17+ , dealer near): 18 dealer: 16
+6 better (i make 17+, dealer either 17+): 19 dealer: 17
+7 better (i make 17+, dealer either 17+): 20 dealer: 18
+8 better (i make 17+, dealer either 17+): 21 dealer: 19
+9 normal (i bust and dealer make 17+) : 22 dealer: 20
+10 normal (i bust and dealer make 17+) : 23 dealer: 21
+10 normal (i bust and dealer make 17+) : 23 dealer: 21
+10 normal (i bust and dealer make 17+) : 23 dealer: 21
+10 normal (i bust and dealer make 17+) : 23 dealer: 21
+ ---  
+	hit me please , hit me ! 
+ --- 
+0 : 0.0 , 1 : 8.0 , 2 : 5.0 , 3 : 5.0 , 4 : 8.0 , 5 : 0.0 
+
+ 		-------- 14 --------
+
+ 	player value: 14 dealerCard: Two2:
+1 normal (i live here, nice): 15 dealer: 3
+2 normal (i live here, nice): 16 dealer: 4
+3 better (i make 17+ , dealer near): 17 dealer: 5
+4 better (i make 17+ , dealer near): 18 dealer: 6
+5 better (i make 17+ , dealer near): 19 dealer: 7
+6 better (i make 17+ , dealer near): 20 dealer: 8
+7 better (i make 17+ , dealer near): 21 dealer: 9
+8 worse (i bust, dealer near bust): 14->22 dealer: 10
+9 worse (i bust, dealer near bust): 14->23 dealer: 11
+10 worse (i bust, dealer near bust): 14->24 dealer: 12
+10 worse (i bust, dealer near bust): 14->24 dealer: 12
+10 worse (i bust, dealer near bust): 14->24 dealer: 12
+10 worse (i bust, dealer near bust): 14->24 dealer: 12
+1 normal (i live here, nice): 15 dealer: 13
+0 : 0.0 , 1 : 0.0 , 2 : 6.0 , 3 : 5.0 , 4 : 3.0 , 5 : 6.0 
+
+ 	player value: 14 dealerCard: Three3:
+1 normal (i live here, nice): 15 dealer: 4
+2 normal (i live here, nice): 16 dealer: 5
+3 better (i make 17+ , dealer near): 17 dealer: 6
+4 better (i make 17+ , dealer near): 18 dealer: 7
+5 better (i make 17+ , dealer near): 19 dealer: 8
+6 better (i make 17+ , dealer near): 20 dealer: 9
+7 better (i make 17+ , dealer near): 21 dealer: 10
+8 worse (i bust, dealer near bust): 14->22 dealer: 11
+9 worse (i bust, dealer near bust): 14->23 dealer: 12
+10 worse (i bust, dealer near bust): 14->24 dealer: 13
+10 worse (i bust, dealer near bust): 14->24 dealer: 13
+10 worse (i bust, dealer near bust): 14->24 dealer: 13
+10 worse (i bust, dealer near bust): 14->24 dealer: 13
+1 normal (i live here, nice): 15 dealer: 14
+0 : 0.0 , 1 : 0.0 , 2 : 6.0 , 3 : 5.0 , 4 : 3.0 , 5 : 6.0 
+
+ 	player value: 14 dealerCard: Four4:
+1 normal (i live here, nice): 15 dealer: 5
+2 normal (i live here, nice): 16 dealer: 6
+3 better (i make 17+ , dealer near): 17 dealer: 7
+4 better (i make 17+ , dealer near): 18 dealer: 8
+5 better (i make 17+ , dealer near): 19 dealer: 9
+6 better (i make 17+ , dealer near): 20 dealer: 10
+7 better (i make 17+ , dealer near): 21 dealer: 11
+8 worse (i bust, dealer near bust): 14->22 dealer: 12
+9 worse (i bust, dealer near bust): 14->23 dealer: 13
+10 worse (i bust, dealer near bust): 14->24 dealer: 14
+10 worse (i bust, dealer near bust): 14->24 dealer: 14
+10 worse (i bust, dealer near bust): 14->24 dealer: 14
+10 worse (i bust, dealer near bust): 14->24 dealer: 14
+1 normal (i live here, nice): 15 dealer: 15
+0 : 0.0 , 1 : 0.0 , 2 : 6.0 , 3 : 5.0 , 4 : 3.0 , 5 : 6.0 
+
+ 	player value: 14 dealerCard: Five5:
+1 normal (i live here, nice): 15 dealer: 6
+2 normal (i live here, nice): 16 dealer: 7
+3 better (i make 17+ , dealer near): 17 dealer: 8
+4 better (i make 17+ , dealer near): 18 dealer: 9
+5 better (i make 17+ , dealer near): 19 dealer: 10
+6 better (i make 17+ , dealer near): 20 dealer: 11
+7 better (i make 17+ , dealer near): 21 dealer: 12
+8 worse (i bust, dealer near bust): 14->22 dealer: 13
+9 worse (i bust, dealer near bust): 14->23 dealer: 14
+10 worse (i bust, dealer near bust): 14->24 dealer: 15
+10 worse (i bust, dealer near bust): 14->24 dealer: 15
+10 worse (i bust, dealer near bust): 14->24 dealer: 15
+10 worse (i bust, dealer near bust): 14->24 dealer: 15
+1 normal (i live here, nice): 15 dealer: 16
+0 : 0.0 , 1 : 0.0 , 2 : 6.0 , 3 : 5.0 , 4 : 3.0 , 5 : 6.0 
+
+ 	player value: 14 dealerCard: Six6:
+2 normal (i live here, nice): 16 dealer: 8
+3 better (i make 17+ , dealer near): 17 dealer: 9
+4 better (i make 17+ , dealer near): 18 dealer: 10
+5 better (i make 17+ , dealer near): 19 dealer: 11
+6 better (i make 17+ , dealer near): 20 dealer: 12
+7 better (i make 17+ , dealer near): 21 dealer: 13
+8 worse (i bust, dealer near bust): 14->22 dealer: 14
+9 worse (i bust, dealer near bust): 14->23 dealer: 15
+10 worse (i bust, dealer near bust): 14->24 dealer: 16
+10 worse (i bust, dealer near bust): 14->24 dealer: 16
+10 worse (i bust, dealer near bust): 14->24 dealer: 16
+10 worse (i bust, dealer near bust): 14->24 dealer: 16
+1 better (i lived , dealer make 17+): 15 dealer: 17
+0 : 0.0 , 1 : 1.0 , 2 : 6.0 , 3 : 6.0 , 4 : 1.0 , 5 : 6.0 
+
+ 	player value: 14 dealerCard: Seven7:
+2 normal (i live here, nice): 16 dealer: 9
+3 better (i make 17+ , dealer near): 17 dealer: 10
+4 better (i make 17+ , dealer near): 18 dealer: 11
+5 better (i make 17+ , dealer near): 19 dealer: 12
+6 better (i make 17+ , dealer near): 20 dealer: 13
+7 better (i make 17+ , dealer near): 21 dealer: 14
+8 worse (i bust, dealer near bust): 14->22 dealer: 15
+9 worse (i bust, dealer near bust): 14->23 dealer: 16
+10 normal (i bust and dealer make 17+) : 24 dealer: 17
+10 normal (i bust and dealer make 17+) : 24 dealer: 17
+10 normal (i bust and dealer make 17+) : 24 dealer: 17
+10 normal (i bust and dealer make 17+) : 24 dealer: 17
+1 better (i lived , dealer make 17+): 15 dealer: 18
+0 : 0.0 , 1 : 5.0 , 2 : 6.0 , 3 : 6.0 , 4 : 5.0 , 5 : 2.0 
+
+ 	player value: 14 dealerCard: Eight8:
+2 normal (i live here, nice): 16 dealer: 10
+3 better (i make 17+ , dealer near): 17 dealer: 11
+4 better (i make 17+ , dealer near): 18 dealer: 12
+5 better (i make 17+ , dealer near): 19 dealer: 13
+6 better (i make 17+ , dealer near): 20 dealer: 14
+7 better (i make 17+ , dealer near): 21 dealer: 15
+8 worse (i bust, dealer near bust): 14->22 dealer: 16
+9 normal (i bust and dealer make 17+) : 23 dealer: 17
+10 normal (i bust and dealer make 17+) : 24 dealer: 18
+10 normal (i bust and dealer make 17+) : 24 dealer: 18
+10 normal (i bust and dealer make 17+) : 24 dealer: 18
+10 normal (i bust and dealer make 17+) : 24 dealer: 18
+1 better (i lived , dealer make 17+): 15 dealer: 19
+ ---  
+	hit me please , hit me ! 
+ --- 
+0 : 0.0 , 1 : 6.0 , 2 : 6.0 , 3 : 6.0 , 4 : 6.0 , 5 : 1.0 
+
+ 	player value: 14 dealerCard: Nine9:
+2 normal (i live here, nice): 16 dealer: 11
+3 better (i make 17+ , dealer near): 17 dealer: 12
+4 better (i make 17+ , dealer near): 18 dealer: 13
+5 better (i make 17+ , dealer near): 19 dealer: 14
+6 better (i make 17+ , dealer near): 20 dealer: 15
+7 better (i make 17+ , dealer near): 21 dealer: 16
+8 normal (i bust and dealer make 17+) : 22 dealer: 17
+9 normal (i bust and dealer make 17+) : 23 dealer: 18
+10 normal (i bust and dealer make 17+) : 24 dealer: 19
+10 normal (i bust and dealer make 17+) : 24 dealer: 19
+10 normal (i bust and dealer make 17+) : 24 dealer: 19
+10 normal (i bust and dealer make 17+) : 24 dealer: 19
+1 better (i lived , dealer make 17+): 15 dealer: 20
+ ---  
+	hit me please , hit me ! 
+ --- 
+0 : 0.0 , 1 : 7.0 , 2 : 6.0 , 3 : 6.0 , 4 : 7.0 , 5 : 0.0 
+
+ 	player value: 14 dealerCard: Ten:
+2 normal (i live here, nice): 16 dealer: 12
+3 better (i make 17+ , dealer near): 17 dealer: 13
+4 better (i make 17+ , dealer near): 18 dealer: 14
+5 better (i make 17+ , dealer near): 19 dealer: 15
+6 better (i make 17+ , dealer near): 20 dealer: 16
+7 better (i make 17+, dealer either 17+): 21 dealer: 17
+8 normal (i bust and dealer make 17+) : 22 dealer: 18
+9 normal (i bust and dealer make 17+) : 23 dealer: 19
+10 normal (i bust and dealer make 17+) : 24 dealer: 20
+10 normal (i bust and dealer make 17+) : 24 dealer: 20
+10 normal (i bust and dealer make 17+) : 24 dealer: 20
+10 normal (i bust and dealer make 17+) : 24 dealer: 20
+1 better (i lived , dealer make 17+): 15 dealer: 21
+ ---  
+	hit me please , hit me ! 
+ --- 
+0 : 0.0 , 1 : 8.0 , 2 : 6.0 , 3 : 6.0 , 4 : 7.0 , 5 : 0.0 
+
+ 	player value: 14 dealerCard: Eleven:
+1 normal (i live here, nice): 15 dealer: 12
+2 normal (i live here, nice): 16 dealer: 13
+3 better (i make 17+ , dealer near): 17 dealer: 14
+4 better (i make 17+ , dealer near): 18 dealer: 15
+5 better (i make 17+ , dealer near): 19 dealer: 16
+6 better (i make 17+, dealer either 17+): 20 dealer: 17
+7 better (i make 17+, dealer either 17+): 21 dealer: 18
+8 normal (i bust and dealer make 17+) : 22 dealer: 19
+9 normal (i bust and dealer make 17+) : 23 dealer: 20
+10 normal (i bust and dealer make 17+) : 24 dealer: 21
+10 normal (i bust and dealer make 17+) : 24 dealer: 21
+10 normal (i bust and dealer make 17+) : 24 dealer: 21
+10 normal (i bust and dealer make 17+) : 24 dealer: 21
+ ---  
+	hit me please , hit me ! 
+ --- 
+0 : 0.0 , 1 : 8.0 , 2 : 6.0 , 3 : 5.0 , 4 : 8.0 , 5 : 0.0 
+
+ 		-------- 15 --------
+
+ 	player value: 15 dealerCard: Two2:
+1 normal (i live here, nice): 16 dealer: 3
+2 better (i make 17+ , dealer near): 17 dealer: 4
+3 better (i make 17+ , dealer near): 18 dealer: 5
+4 better (i make 17+ , dealer near): 19 dealer: 6
+5 better (i make 17+ , dealer near): 20 dealer: 7
+6 better (i make 17+ , dealer near): 21 dealer: 8
+7 worse (i bust, dealer near bust): 15->22 dealer: 9
+8 worse (i bust, dealer near bust): 15->23 dealer: 10
+9 worse (i bust, dealer near bust): 15->24 dealer: 11
+10 worse (i bust, dealer near bust): 15->25 dealer: 12
+10 worse (i bust, dealer near bust): 15->25 dealer: 12
+10 worse (i bust, dealer near bust): 15->25 dealer: 12
+10 worse (i bust, dealer near bust): 15->25 dealer: 12
+1 normal (i live here, nice): 16 dealer: 13
+0 : 0.0 , 1 : 0.0 , 2 : 7.0 , 3 : 5.0 , 4 : 2.0 , 5 : 7.0 
+
+ 	player value: 15 dealerCard: Three3:
+1 normal (i live here, nice): 16 dealer: 4
+2 better (i make 17+ , dealer near): 17 dealer: 5
+3 better (i make 17+ , dealer near): 18 dealer: 6
+4 better (i make 17+ , dealer near): 19 dealer: 7
+5 better (i make 17+ , dealer near): 20 dealer: 8
+6 better (i make 17+ , dealer near): 21 dealer: 9
+7 worse (i bust, dealer near bust): 15->22 dealer: 10
+8 worse (i bust, dealer near bust): 15->23 dealer: 11
+9 worse (i bust, dealer near bust): 15->24 dealer: 12
+10 worse (i bust, dealer near bust): 15->25 dealer: 13
+10 worse (i bust, dealer near bust): 15->25 dealer: 13
+10 worse (i bust, dealer near bust): 15->25 dealer: 13
+10 worse (i bust, dealer near bust): 15->25 dealer: 13
+1 normal (i live here, nice): 16 dealer: 14
+0 : 0.0 , 1 : 0.0 , 2 : 7.0 , 3 : 5.0 , 4 : 2.0 , 5 : 7.0 
+
+ 	player value: 15 dealerCard: Four4:
+1 normal (i live here, nice): 16 dealer: 5
+2 better (i make 17+ , dealer near): 17 dealer: 6
+3 better (i make 17+ , dealer near): 18 dealer: 7
+4 better (i make 17+ , dealer near): 19 dealer: 8
+5 better (i make 17+ , dealer near): 20 dealer: 9
+6 better (i make 17+ , dealer near): 21 dealer: 10
+7 worse (i bust, dealer near bust): 15->22 dealer: 11
+8 worse (i bust, dealer near bust): 15->23 dealer: 12
+9 worse (i bust, dealer near bust): 15->24 dealer: 13
+10 worse (i bust, dealer near bust): 15->25 dealer: 14
+10 worse (i bust, dealer near bust): 15->25 dealer: 14
+10 worse (i bust, dealer near bust): 15->25 dealer: 14
+10 worse (i bust, dealer near bust): 15->25 dealer: 14
+1 normal (i live here, nice): 16 dealer: 15
+0 : 0.0 , 1 : 0.0 , 2 : 7.0 , 3 : 5.0 , 4 : 2.0 , 5 : 7.0 
+
+ 	player value: 15 dealerCard: Five5:
+1 normal (i live here, nice): 16 dealer: 6
+2 better (i make 17+ , dealer near): 17 dealer: 7
+3 better (i make 17+ , dealer near): 18 dealer: 8
+4 better (i make 17+ , dealer near): 19 dealer: 9
+5 better (i make 17+ , dealer near): 20 dealer: 10
+6 better (i make 17+ , dealer near): 21 dealer: 11
+7 worse (i bust, dealer near bust): 15->22 dealer: 12
+8 worse (i bust, dealer near bust): 15->23 dealer: 13
+9 worse (i bust, dealer near bust): 15->24 dealer: 14
+10 worse (i bust, dealer near bust): 15->25 dealer: 15
+10 worse (i bust, dealer near bust): 15->25 dealer: 15
+10 worse (i bust, dealer near bust): 15->25 dealer: 15
+10 worse (i bust, dealer near bust): 15->25 dealer: 15
+1 normal (i live here, nice): 16 dealer: 16
+0 : 0.0 , 1 : 0.0 , 2 : 7.0 , 3 : 5.0 , 4 : 2.0 , 5 : 7.0 
+
+ 	player value: 15 dealerCard: Six6:
+2 better (i make 17+ , dealer near): 17 dealer: 8
+3 better (i make 17+ , dealer near): 18 dealer: 9
+4 better (i make 17+ , dealer near): 19 dealer: 10
+5 better (i make 17+ , dealer near): 20 dealer: 11
+6 better (i make 17+ , dealer near): 21 dealer: 12
+7 worse (i bust, dealer near bust): 15->22 dealer: 13
+8 worse (i bust, dealer near bust): 15->23 dealer: 14
+9 worse (i bust, dealer near bust): 15->24 dealer: 15
+10 worse (i bust, dealer near bust): 15->25 dealer: 16
+10 worse (i bust, dealer near bust): 15->25 dealer: 16
+10 worse (i bust, dealer near bust): 15->25 dealer: 16
+10 worse (i bust, dealer near bust): 15->25 dealer: 16
+1 better (i lived , dealer make 17+): 16 dealer: 17
+0 : 0.0 , 1 : 1.0 , 2 : 7.0 , 3 : 6.0 , 4 : 0.0 , 5 : 7.0 
+
+ 	player value: 15 dealerCard: Seven7:
+2 better (i make 17+ , dealer near): 17 dealer: 9
+3 better (i make 17+ , dealer near): 18 dealer: 10
+4 better (i make 17+ , dealer near): 19 dealer: 11
+5 better (i make 17+ , dealer near): 20 dealer: 12
+6 better (i make 17+ , dealer near): 21 dealer: 13
+7 worse (i bust, dealer near bust): 15->22 dealer: 14
+8 worse (i bust, dealer near bust): 15->23 dealer: 15
+9 worse (i bust, dealer near bust): 15->24 dealer: 16
+10 normal (i bust and dealer make 17+) : 25 dealer: 17
+10 normal (i bust and dealer make 17+) : 25 dealer: 17
+10 normal (i bust and dealer make 17+) : 25 dealer: 17
+10 normal (i bust and dealer make 17+) : 25 dealer: 17
+1 better (i lived , dealer make 17+): 16 dealer: 18
+0 : 0.0 , 1 : 5.0 , 2 : 7.0 , 3 : 6.0 , 4 : 4.0 , 5 : 3.0 
+
+ 	player value: 15 dealerCard: Eight8:
+2 better (i make 17+ , dealer near): 17 dealer: 10
+3 better (i make 17+ , dealer near): 18 dealer: 11
+4 better (i make 17+ , dealer near): 19 dealer: 12
+5 better (i make 17+ , dealer near): 20 dealer: 13
+6 better (i make 17+ , dealer near): 21 dealer: 14
+7 worse (i bust, dealer near bust): 15->22 dealer: 15
+8 worse (i bust, dealer near bust): 15->23 dealer: 16
+9 normal (i bust and dealer make 17+) : 24 dealer: 17
+10 normal (i bust and dealer make 17+) : 25 dealer: 18
+10 normal (i bust and dealer make 17+) : 25 dealer: 18
+10 normal (i bust and dealer make 17+) : 25 dealer: 18
+10 normal (i bust and dealer make 17+) : 25 dealer: 18
+1 better (i lived , dealer make 17+): 16 dealer: 19
+0 : 0.0 , 1 : 6.0 , 2 : 7.0 , 3 : 6.0 , 4 : 5.0 , 5 : 2.0 
+
+ 	player value: 15 dealerCard: Nine9:
+2 better (i make 17+ , dealer near): 17 dealer: 11
+3 better (i make 17+ , dealer near): 18 dealer: 12
+4 better (i make 17+ , dealer near): 19 dealer: 13
+5 better (i make 17+ , dealer near): 20 dealer: 14
+6 better (i make 17+ , dealer near): 21 dealer: 15
+7 worse (i bust, dealer near bust): 15->22 dealer: 16
+8 normal (i bust and dealer make 17+) : 23 dealer: 17
+9 normal (i bust and dealer make 17+) : 24 dealer: 18
+10 normal (i bust and dealer make 17+) : 25 dealer: 19
+10 normal (i bust and dealer make 17+) : 25 dealer: 19
+10 normal (i bust and dealer make 17+) : 25 dealer: 19
+10 normal (i bust and dealer make 17+) : 25 dealer: 19
+1 better (i lived , dealer make 17+): 16 dealer: 20
+ ---  
+	hit me please , hit me ! 
+ --- 
+0 : 0.0 , 1 : 7.0 , 2 : 7.0 , 3 : 6.0 , 4 : 6.0 , 5 : 1.0 
+
+ 	player value: 15 dealerCard: Ten:
+2 better (i make 17+ , dealer near): 17 dealer: 12
+3 better (i make 17+ , dealer near): 18 dealer: 13
+4 better (i make 17+ , dealer near): 19 dealer: 14
+5 better (i make 17+ , dealer near): 20 dealer: 15
+6 better (i make 17+ , dealer near): 21 dealer: 16
+7 normal (i bust and dealer make 17+) : 22 dealer: 17
+8 normal (i bust and dealer make 17+) : 23 dealer: 18
+9 normal (i bust and dealer make 17+) : 24 dealer: 19
+10 normal (i bust and dealer make 17+) : 25 dealer: 20
+10 normal (i bust and dealer make 17+) : 25 dealer: 20
+10 normal (i bust and dealer make 17+) : 25 dealer: 20
+10 normal (i bust and dealer make 17+) : 25 dealer: 20
+1 better (i lived , dealer make 17+): 16 dealer: 21
+ ---  
+	hit me please , hit me ! 
+ --- 
+0 : 0.0 , 1 : 8.0 , 2 : 7.0 , 3 : 6.0 , 4 : 7.0 , 5 : 0.0 
+
+ 	player value: 15 dealerCard: Eleven:
+1 normal (i live here, nice): 16 dealer: 12
+2 better (i make 17+ , dealer near): 17 dealer: 13
+3 better (i make 17+ , dealer near): 18 dealer: 14
+4 better (i make 17+ , dealer near): 19 dealer: 15
+5 better (i make 17+ , dealer near): 20 dealer: 16
+6 better (i make 17+, dealer either 17+): 21 dealer: 17
+7 normal (i bust and dealer make 17+) : 22 dealer: 18
+8 normal (i bust and dealer make 17+) : 23 dealer: 19
+9 normal (i bust and dealer make 17+) : 24 dealer: 20
+10 normal (i bust and dealer make 17+) : 25 dealer: 21
+10 normal (i bust and dealer make 17+) : 25 dealer: 21
+10 normal (i bust and dealer make 17+) : 25 dealer: 21
+10 normal (i bust and dealer make 17+) : 25 dealer: 21
+ ---  
+	hit me please , hit me ! 
+ --- 
+0 : 0.0 , 1 : 8.0 , 2 : 7.0 , 3 : 5.0 , 4 : 8.0 , 5 : 0.0 
+
+ 		-------- 16 --------
+
+ 	player value: 16 dealerCard: Two2:
+1 better (i make 17+ , dealer near): 17 dealer: 3
+2 better (i make 17+ , dealer near): 18 dealer: 4
+3 better (i make 17+ , dealer near): 19 dealer: 5
+4 better (i make 17+ , dealer near): 20 dealer: 6
+5 better (i make 17+ , dealer near): 21 dealer: 7
+6 worse (i bust, dealer near bust): 16->22 dealer: 8
+7 worse (i bust, dealer near bust): 16->23 dealer: 9
+8 worse (i bust, dealer near bust): 16->24 dealer: 10
+9 worse (i bust, dealer near bust): 16->25 dealer: 11
+10 worse (i bust, dealer near bust): 16->26 dealer: 12
+10 worse (i bust, dealer near bust): 16->26 dealer: 12
+10 worse (i bust, dealer near bust): 16->26 dealer: 12
+10 worse (i bust, dealer near bust): 16->26 dealer: 12
+1 better (i make 17+ , dealer near): 17 dealer: 13
+0 : 0.0 , 1 : 0.0 , 2 : 8.0 , 3 : 6.0 , 4 : 0.0 , 5 : 8.0 
+
+ 	player value: 16 dealerCard: Three3:
+1 better (i make 17+ , dealer near): 17 dealer: 4
+2 better (i make 17+ , dealer near): 18 dealer: 5
+3 better (i make 17+ , dealer near): 19 dealer: 6
+4 better (i make 17+ , dealer near): 20 dealer: 7
+5 better (i make 17+ , dealer near): 21 dealer: 8
+6 worse (i bust, dealer near bust): 16->22 dealer: 9
+7 worse (i bust, dealer near bust): 16->23 dealer: 10
+8 worse (i bust, dealer near bust): 16->24 dealer: 11
+9 worse (i bust, dealer near bust): 16->25 dealer: 12
+10 worse (i bust, dealer near bust): 16->26 dealer: 13
+10 worse (i bust, dealer near bust): 16->26 dealer: 13
+10 worse (i bust, dealer near bust): 16->26 dealer: 13
+10 worse (i bust, dealer near bust): 16->26 dealer: 13
+1 better (i make 17+ , dealer near): 17 dealer: 14
+0 : 0.0 , 1 : 0.0 , 2 : 8.0 , 3 : 6.0 , 4 : 0.0 , 5 : 8.0 
+
+ 	player value: 16 dealerCard: Four4:
+1 better (i make 17+ , dealer near): 17 dealer: 5
+2 better (i make 17+ , dealer near): 18 dealer: 6
+3 better (i make 17+ , dealer near): 19 dealer: 7
+4 better (i make 17+ , dealer near): 20 dealer: 8
+5 better (i make 17+ , dealer near): 21 dealer: 9
+6 worse (i bust, dealer near bust): 16->22 dealer: 10
+7 worse (i bust, dealer near bust): 16->23 dealer: 11
+8 worse (i bust, dealer near bust): 16->24 dealer: 12
+9 worse (i bust, dealer near bust): 16->25 dealer: 13
+10 worse (i bust, dealer near bust): 16->26 dealer: 14
+10 worse (i bust, dealer near bust): 16->26 dealer: 14
+10 worse (i bust, dealer near bust): 16->26 dealer: 14
+10 worse (i bust, dealer near bust): 16->26 dealer: 14
+1 better (i make 17+ , dealer near): 17 dealer: 15
+0 : 0.0 , 1 : 0.0 , 2 : 8.0 , 3 : 6.0 , 4 : 0.0 , 5 : 8.0 
+
+ 	player value: 16 dealerCard: Five5:
+1 better (i make 17+ , dealer near): 17 dealer: 6
+2 better (i make 17+ , dealer near): 18 dealer: 7
+3 better (i make 17+ , dealer near): 19 dealer: 8
+4 better (i make 17+ , dealer near): 20 dealer: 9
+5 better (i make 17+ , dealer near): 21 dealer: 10
+6 worse (i bust, dealer near bust): 16->22 dealer: 11
+7 worse (i bust, dealer near bust): 16->23 dealer: 12
+8 worse (i bust, dealer near bust): 16->24 dealer: 13
+9 worse (i bust, dealer near bust): 16->25 dealer: 14
+10 worse (i bust, dealer near bust): 16->26 dealer: 15
+10 worse (i bust, dealer near bust): 16->26 dealer: 15
+10 worse (i bust, dealer near bust): 16->26 dealer: 15
+10 worse (i bust, dealer near bust): 16->26 dealer: 15
+1 better (i make 17+ , dealer near): 17 dealer: 16
+0 : 0.0 , 1 : 0.0 , 2 : 8.0 , 3 : 6.0 , 4 : 0.0 , 5 : 8.0 
+
+ 	player value: 16 dealerCard: Six6:
+2 better (i make 17+ , dealer near): 18 dealer: 8
+3 better (i make 17+ , dealer near): 19 dealer: 9
+4 better (i make 17+ , dealer near): 20 dealer: 10
+5 better (i make 17+ , dealer near): 21 dealer: 11
+6 worse (i bust, dealer near bust): 16->22 dealer: 12
+7 worse (i bust, dealer near bust): 16->23 dealer: 13
+8 worse (i bust, dealer near bust): 16->24 dealer: 14
+9 worse (i bust, dealer near bust): 16->25 dealer: 15
+10 worse (i bust, dealer near bust): 16->26 dealer: 16
+10 worse (i bust, dealer near bust): 16->26 dealer: 16
+10 worse (i bust, dealer near bust): 16->26 dealer: 16
+10 worse (i bust, dealer near bust): 16->26 dealer: 16
+1 better (i make 17+, dealer either 17+): 17 dealer: 17
+0 : 0.0 , 1 : 1.0 , 2 : 8.0 , 3 : 5.0 , 4 : 0.0 , 5 : 8.0 
+
+ 	player value: 16 dealerCard: Seven7:
+2 better (i make 17+ , dealer near): 18 dealer: 9
+3 better (i make 17+ , dealer near): 19 dealer: 10
+4 better (i make 17+ , dealer near): 20 dealer: 11
+5 better (i make 17+ , dealer near): 21 dealer: 12
+6 worse (i bust, dealer near bust): 16->22 dealer: 13
+7 worse (i bust, dealer near bust): 16->23 dealer: 14
+8 worse (i bust, dealer near bust): 16->24 dealer: 15
+9 worse (i bust, dealer near bust): 16->25 dealer: 16
+10 normal (i bust and dealer make 17+) : 26 dealer: 17
+10 normal (i bust and dealer make 17+) : 26 dealer: 17
+10 normal (i bust and dealer make 17+) : 26 dealer: 17
+10 normal (i bust and dealer make 17+) : 26 dealer: 17
+1 better (i make 17+, dealer either 17+): 17 dealer: 18
+0 : 0.0 , 1 : 5.0 , 2 : 8.0 , 3 : 5.0 , 4 : 4.0 , 5 : 4.0 
+
+ 	player value: 16 dealerCard: Eight8:
+2 better (i make 17+ , dealer near): 18 dealer: 10
+3 better (i make 17+ , dealer near): 19 dealer: 11
+4 better (i make 17+ , dealer near): 20 dealer: 12
+5 better (i make 17+ , dealer near): 21 dealer: 13
+6 worse (i bust, dealer near bust): 16->22 dealer: 14
+7 worse (i bust, dealer near bust): 16->23 dealer: 15
+8 worse (i bust, dealer near bust): 16->24 dealer: 16
+9 normal (i bust and dealer make 17+) : 25 dealer: 17
+10 normal (i bust and dealer make 17+) : 26 dealer: 18
+10 normal (i bust and dealer make 17+) : 26 dealer: 18
+10 normal (i bust and dealer make 17+) : 26 dealer: 18
+10 normal (i bust and dealer make 17+) : 26 dealer: 18
+1 better (i make 17+, dealer either 17+): 17 dealer: 19
+0 : 0.0 , 1 : 6.0 , 2 : 8.0 , 3 : 5.0 , 4 : 5.0 , 5 : 3.0 
+
+ 	player value: 16 dealerCard: Nine9:
+2 better (i make 17+ , dealer near): 18 dealer: 11
+3 better (i make 17+ , dealer near): 19 dealer: 12
+4 better (i make 17+ , dealer near): 20 dealer: 13
+5 better (i make 17+ , dealer near): 21 dealer: 14
+6 worse (i bust, dealer near bust): 16->22 dealer: 15
+7 worse (i bust, dealer near bust): 16->23 dealer: 16
+8 normal (i bust and dealer make 17+) : 24 dealer: 17
+9 normal (i bust and dealer make 17+) : 25 dealer: 18
+10 normal (i bust and dealer make 17+) : 26 dealer: 19
+10 normal (i bust and dealer make 17+) : 26 dealer: 19
+10 normal (i bust and dealer make 17+) : 26 dealer: 19
+10 normal (i bust and dealer make 17+) : 26 dealer: 19
+1 better (i make 17+, dealer either 17+): 17 dealer: 20
+0 : 0.0 , 1 : 7.0 , 2 : 8.0 , 3 : 5.0 , 4 : 6.0 , 5 : 2.0 
+
+ 	player value: 16 dealerCard: Ten:
+2 better (i make 17+ , dealer near): 18 dealer: 12
+3 better (i make 17+ , dealer near): 19 dealer: 13
+4 better (i make 17+ , dealer near): 20 dealer: 14
+5 better (i make 17+ , dealer near): 21 dealer: 15
+6 worse (i bust, dealer near bust): 16->22 dealer: 16
+7 normal (i bust and dealer make 17+) : 23 dealer: 17
+8 normal (i bust and dealer make 17+) : 24 dealer: 18
+9 normal (i bust and dealer make 17+) : 25 dealer: 19
+10 normal (i bust and dealer make 17+) : 26 dealer: 20
+10 normal (i bust and dealer make 17+) : 26 dealer: 20
+10 normal (i bust and dealer make 17+) : 26 dealer: 20
+10 normal (i bust and dealer make 17+) : 26 dealer: 20
+1 better (i make 17+, dealer either 17+): 17 dealer: 21
+ ---  
+	hit me please , hit me ! 
+ --- 
+0 : 0.0 , 1 : 8.0 , 2 : 8.0 , 3 : 5.0 , 4 : 7.0 , 5 : 1.0 
+
+ 	player value: 16 dealerCard: Eleven:
+1 better (i make 17+ , dealer near): 17 dealer: 12
+2 better (i make 17+ , dealer near): 18 dealer: 13
+3 better (i make 17+ , dealer near): 19 dealer: 14
+4 better (i make 17+ , dealer near): 20 dealer: 15
+5 better (i make 17+ , dealer near): 21 dealer: 16
+6 normal (i bust and dealer make 17+) : 22 dealer: 17
+7 normal (i bust and dealer make 17+) : 23 dealer: 18
+8 normal (i bust and dealer make 17+) : 24 dealer: 19
+9 normal (i bust and dealer make 17+) : 25 dealer: 20
+10 normal (i bust and dealer make 17+) : 26 dealer: 21
+10 normal (i bust and dealer make 17+) : 26 dealer: 21
+10 normal (i bust and dealer make 17+) : 26 dealer: 21
+10 normal (i bust and dealer make 17+) : 26 dealer: 21
+ ---  
+	hit me please , hit me ! 
+ --- 
+0 : 0.0 , 1 : 8.0 , 2 : 8.0 , 3 : 5.0 , 4 : 8.0 , 5 : 0.0 
+
+ 		-------- 17 --------
+
+ 	player value: 17 dealerCard: Two2:
+1 better (i make 17+ , dealer near): 18 dealer: 3
+2 better (i make 17+ , dealer near): 19 dealer: 4
+3 better (i make 17+ , dealer near): 20 dealer: 5
+4 better (i make 17+ , dealer near): 21 dealer: 6
+5 worse (i bust, dealer near bust): 17->22 dealer: 7
+6 worse (i bust, dealer near bust): 17->23 dealer: 8
+7 worse (i bust, dealer near bust): 17->24 dealer: 9
+8 worse (i bust, dealer near bust): 17->25 dealer: 10
+9 worse (i bust, dealer near bust): 17->26 dealer: 11
+10 worse (i bust, dealer near bust): 17->27 dealer: 12
+10 worse (i bust, dealer near bust): 17->27 dealer: 12
+10 worse (i bust, dealer near bust): 17->27 dealer: 12
+10 worse (i bust, dealer near bust): 17->27 dealer: 12
+1 better (i make 17+ , dealer near): 18 dealer: 13
+0 : 0.0 , 1 : 0.0 , 2 : 9.0 , 3 : 5.0 , 4 : 0.0 , 5 : 9.0 
+
+ 	player value: 17 dealerCard: Three3:
+1 better (i make 17+ , dealer near): 18 dealer: 4
+2 better (i make 17+ , dealer near): 19 dealer: 5
+3 better (i make 17+ , dealer near): 20 dealer: 6
+4 better (i make 17+ , dealer near): 21 dealer: 7
+5 worse (i bust, dealer near bust): 17->22 dealer: 8
+6 worse (i bust, dealer near bust): 17->23 dealer: 9
+7 worse (i bust, dealer near bust): 17->24 dealer: 10
+8 worse (i bust, dealer near bust): 17->25 dealer: 11
+9 worse (i bust, dealer near bust): 17->26 dealer: 12
+10 worse (i bust, dealer near bust): 17->27 dealer: 13
+10 worse (i bust, dealer near bust): 17->27 dealer: 13
+10 worse (i bust, dealer near bust): 17->27 dealer: 13
+10 worse (i bust, dealer near bust): 17->27 dealer: 13
+1 better (i make 17+ , dealer near): 18 dealer: 14
+0 : 0.0 , 1 : 0.0 , 2 : 9.0 , 3 : 5.0 , 4 : 0.0 , 5 : 9.0 
+
+ 	player value: 17 dealerCard: Four4:
+1 better (i make 17+ , dealer near): 18 dealer: 5
+2 better (i make 17+ , dealer near): 19 dealer: 6
+3 better (i make 17+ , dealer near): 20 dealer: 7
+4 better (i make 17+ , dealer near): 21 dealer: 8
+5 worse (i bust, dealer near bust): 17->22 dealer: 9
+6 worse (i bust, dealer near bust): 17->23 dealer: 10
+7 worse (i bust, dealer near bust): 17->24 dealer: 11
+8 worse (i bust, dealer near bust): 17->25 dealer: 12
+9 worse (i bust, dealer near bust): 17->26 dealer: 13
+10 worse (i bust, dealer near bust): 17->27 dealer: 14
+10 worse (i bust, dealer near bust): 17->27 dealer: 14
+10 worse (i bust, dealer near bust): 17->27 dealer: 14
+10 worse (i bust, dealer near bust): 17->27 dealer: 14
+1 better (i make 17+ , dealer near): 18 dealer: 15
+0 : 0.0 , 1 : 0.0 , 2 : 9.0 , 3 : 5.0 , 4 : 0.0 , 5 : 9.0 
+
+ 	player value: 17 dealerCard: Five5:
+1 better (i make 17+ , dealer near): 18 dealer: 6
+2 better (i make 17+ , dealer near): 19 dealer: 7
+3 better (i make 17+ , dealer near): 20 dealer: 8
+4 better (i make 17+ , dealer near): 21 dealer: 9
+5 worse (i bust, dealer near bust): 17->22 dealer: 10
+6 worse (i bust, dealer near bust): 17->23 dealer: 11
+7 worse (i bust, dealer near bust): 17->24 dealer: 12
+8 worse (i bust, dealer near bust): 17->25 dealer: 13
+9 worse (i bust, dealer near bust): 17->26 dealer: 14
+10 worse (i bust, dealer near bust): 17->27 dealer: 15
+10 worse (i bust, dealer near bust): 17->27 dealer: 15
+10 worse (i bust, dealer near bust): 17->27 dealer: 15
+10 worse (i bust, dealer near bust): 17->27 dealer: 15
+1 better (i make 17+ , dealer near): 18 dealer: 16
+0 : 0.0 , 1 : 0.0 , 2 : 9.0 , 3 : 5.0 , 4 : 0.0 , 5 : 9.0 
+
+ 	player value: 17 dealerCard: Six6:
+2 better (i make 17+ , dealer near): 19 dealer: 8
+3 better (i make 17+ , dealer near): 20 dealer: 9
+4 better (i make 17+ , dealer near): 21 dealer: 10
+5 worse (i bust, dealer near bust): 17->22 dealer: 11
+6 worse (i bust, dealer near bust): 17->23 dealer: 12
+7 worse (i bust, dealer near bust): 17->24 dealer: 13
+8 worse (i bust, dealer near bust): 17->25 dealer: 14
+9 worse (i bust, dealer near bust): 17->26 dealer: 15
+10 worse (i bust, dealer near bust): 17->27 dealer: 16
+10 worse (i bust, dealer near bust): 17->27 dealer: 16
+10 worse (i bust, dealer near bust): 17->27 dealer: 16
+10 worse (i bust, dealer near bust): 17->27 dealer: 16
+1 better (i make 17+, dealer either 17+): 18 dealer: 17
+0 : 0.0 , 1 : 1.0 , 2 : 9.0 , 3 : 4.0 , 4 : 0.0 , 5 : 9.0 
+
+ 	player value: 17 dealerCard: Seven7:
+2 better (i make 17+ , dealer near): 19 dealer: 9
+3 better (i make 17+ , dealer near): 20 dealer: 10
+4 better (i make 17+ , dealer near): 21 dealer: 11
+5 worse (i bust, dealer near bust): 17->22 dealer: 12
+6 worse (i bust, dealer near bust): 17->23 dealer: 13
+7 worse (i bust, dealer near bust): 17->24 dealer: 14
+8 worse (i bust, dealer near bust): 17->25 dealer: 15
+9 worse (i bust, dealer near bust): 17->26 dealer: 16
+10 normal (i bust and dealer make 17+) : 27 dealer: 17
+10 normal (i bust and dealer make 17+) : 27 dealer: 17
+10 normal (i bust and dealer make 17+) : 27 dealer: 17
+10 normal (i bust and dealer make 17+) : 27 dealer: 17
+1 better (i make 17+, dealer either 17+): 18 dealer: 18
+0 : 0.0 , 1 : 5.0 , 2 : 9.0 , 3 : 4.0 , 4 : 4.0 , 5 : 5.0 
+
+ 	player value: 17 dealerCard: Eight8:
+2 better (i make 17+ , dealer near): 19 dealer: 10
+3 better (i make 17+ , dealer near): 20 dealer: 11
+4 better (i make 17+ , dealer near): 21 dealer: 12
+5 worse (i bust, dealer near bust): 17->22 dealer: 13
+6 worse (i bust, dealer near bust): 17->23 dealer: 14
+7 worse (i bust, dealer near bust): 17->24 dealer: 15
+8 worse (i bust, dealer near bust): 17->25 dealer: 16
+9 normal (i bust and dealer make 17+) : 26 dealer: 17
+10 normal (i bust and dealer make 17+) : 27 dealer: 18
+10 normal (i bust and dealer make 17+) : 27 dealer: 18
+10 normal (i bust and dealer make 17+) : 27 dealer: 18
+10 normal (i bust and dealer make 17+) : 27 dealer: 18
+1 better (i make 17+, dealer either 17+): 18 dealer: 19
+0 : 0.0 , 1 : 6.0 , 2 : 9.0 , 3 : 4.0 , 4 : 5.0 , 5 : 4.0 
+
+ 	player value: 17 dealerCard: Nine9:
+2 better (i make 17+ , dealer near): 19 dealer: 11
+3 better (i make 17+ , dealer near): 20 dealer: 12
+4 better (i make 17+ , dealer near): 21 dealer: 13
+5 worse (i bust, dealer near bust): 17->22 dealer: 14
+6 worse (i bust, dealer near bust): 17->23 dealer: 15
+7 worse (i bust, dealer near bust): 17->24 dealer: 16
+8 normal (i bust and dealer make 17+) : 25 dealer: 17
+9 normal (i bust and dealer make 17+) : 26 dealer: 18
+10 normal (i bust and dealer make 17+) : 27 dealer: 19
+10 normal (i bust and dealer make 17+) : 27 dealer: 19
+10 normal (i bust and dealer make 17+) : 27 dealer: 19
+10 normal (i bust and dealer make 17+) : 27 dealer: 19
+1 better (i make 17+, dealer either 17+): 18 dealer: 20
+0 : 0.0 , 1 : 7.0 , 2 : 9.0 , 3 : 4.0 , 4 : 6.0 , 5 : 3.0 
+
+ 	player value: 17 dealerCard: Ten:
+2 better (i make 17+ , dealer near): 19 dealer: 12
+3 better (i make 17+ , dealer near): 20 dealer: 13
+4 better (i make 17+ , dealer near): 21 dealer: 14
+5 worse (i bust, dealer near bust): 17->22 dealer: 15
+6 worse (i bust, dealer near bust): 17->23 dealer: 16
+7 normal (i bust and dealer make 17+) : 24 dealer: 17
+8 normal (i bust and dealer make 17+) : 25 dealer: 18
+9 normal (i bust and dealer make 17+) : 26 dealer: 19
+10 normal (i bust and dealer make 17+) : 27 dealer: 20
+10 normal (i bust and dealer make 17+) : 27 dealer: 20
+10 normal (i bust and dealer make 17+) : 27 dealer: 20
+10 normal (i bust and dealer make 17+) : 27 dealer: 20
+1 better (i make 17+, dealer either 17+): 18 dealer: 21
+0 : 0.0 , 1 : 8.0 , 2 : 9.0 , 3 : 4.0 , 4 : 7.0 , 5 : 2.0 
+
+ 	player value: 17 dealerCard: Eleven:
+1 better (i make 17+ , dealer near): 18 dealer: 12
+2 better (i make 17+ , dealer near): 19 dealer: 13
+3 better (i make 17+ , dealer near): 20 dealer: 14
+4 better (i make 17+ , dealer near): 21 dealer: 15
+5 worse (i bust, dealer near bust): 17->22 dealer: 16
+6 normal (i bust and dealer make 17+) : 23 dealer: 17
+7 normal (i bust and dealer make 17+) : 24 dealer: 18
+8 normal (i bust and dealer make 17+) : 25 dealer: 19
+9 normal (i bust and dealer make 17+) : 26 dealer: 20
+10 normal (i bust and dealer make 17+) : 27 dealer: 21
+10 normal (i bust and dealer make 17+) : 27 dealer: 21
+10 normal (i bust and dealer make 17+) : 27 dealer: 21
+10 normal (i bust and dealer make 17+) : 27 dealer: 21
+0 : 0.0 , 1 : 8.0 , 2 : 9.0 , 3 : 4.0 , 4 : 8.0 , 5 : 1.0 
+
+ 		-------- 18 --------
+
+ 	player value: 18 dealerCard: Two2:
+1 better (i make 17+ , dealer near): 19 dealer: 3
+2 better (i make 17+ , dealer near): 20 dealer: 4
+3 better (i make 17+ , dealer near): 21 dealer: 5
+4 worse (i bust, dealer near bust): 18->22 dealer: 6
+5 worse (i bust, dealer near bust): 18->23 dealer: 7
+6 worse (i bust, dealer near bust): 18->24 dealer: 8
+7 worse (i bust, dealer near bust): 18->25 dealer: 9
+8 worse (i bust, dealer near bust): 18->26 dealer: 10
+9 worse (i bust, dealer near bust): 18->27 dealer: 11
+10 worse (i bust, dealer near bust): 18->28 dealer: 12
+10 worse (i bust, dealer near bust): 18->28 dealer: 12
+10 worse (i bust, dealer near bust): 18->28 dealer: 12
+10 worse (i bust, dealer near bust): 18->28 dealer: 12
+1 better (i make 17+ , dealer near): 19 dealer: 13
+0 : 0.0 , 1 : 0.0 , 2 : 10.0 , 3 : 4.0 , 4 : 0.0 , 5 : 10.0 
+
+ 	player value: 18 dealerCard: Three3:
+1 better (i make 17+ , dealer near): 19 dealer: 4
+2 better (i make 17+ , dealer near): 20 dealer: 5
+3 better (i make 17+ , dealer near): 21 dealer: 6
+4 worse (i bust, dealer near bust): 18->22 dealer: 7
+5 worse (i bust, dealer near bust): 18->23 dealer: 8
+6 worse (i bust, dealer near bust): 18->24 dealer: 9
+7 worse (i bust, dealer near bust): 18->25 dealer: 10
+8 worse (i bust, dealer near bust): 18->26 dealer: 11
+9 worse (i bust, dealer near bust): 18->27 dealer: 12
+10 worse (i bust, dealer near bust): 18->28 dealer: 13
+10 worse (i bust, dealer near bust): 18->28 dealer: 13
+10 worse (i bust, dealer near bust): 18->28 dealer: 13
+10 worse (i bust, dealer near bust): 18->28 dealer: 13
+1 better (i make 17+ , dealer near): 19 dealer: 14
+0 : 0.0 , 1 : 0.0 , 2 : 10.0 , 3 : 4.0 , 4 : 0.0 , 5 : 10.0 
+
+ 	player value: 18 dealerCard: Four4:
+1 better (i make 17+ , dealer near): 19 dealer: 5
+2 better (i make 17+ , dealer near): 20 dealer: 6
+3 better (i make 17+ , dealer near): 21 dealer: 7
+4 worse (i bust, dealer near bust): 18->22 dealer: 8
+5 worse (i bust, dealer near bust): 18->23 dealer: 9
+6 worse (i bust, dealer near bust): 18->24 dealer: 10
+7 worse (i bust, dealer near bust): 18->25 dealer: 11
+8 worse (i bust, dealer near bust): 18->26 dealer: 12
+9 worse (i bust, dealer near bust): 18->27 dealer: 13
+10 worse (i bust, dealer near bust): 18->28 dealer: 14
+10 worse (i bust, dealer near bust): 18->28 dealer: 14
+10 worse (i bust, dealer near bust): 18->28 dealer: 14
+10 worse (i bust, dealer near bust): 18->28 dealer: 14
+1 better (i make 17+ , dealer near): 19 dealer: 15
+0 : 0.0 , 1 : 0.0 , 2 : 10.0 , 3 : 4.0 , 4 : 0.0 , 5 : 10.0 
+
+ 	player value: 18 dealerCard: Five5:
+1 better (i make 17+ , dealer near): 19 dealer: 6
+2 better (i make 17+ , dealer near): 20 dealer: 7
+3 better (i make 17+ , dealer near): 21 dealer: 8
+4 worse (i bust, dealer near bust): 18->22 dealer: 9
+5 worse (i bust, dealer near bust): 18->23 dealer: 10
+6 worse (i bust, dealer near bust): 18->24 dealer: 11
+7 worse (i bust, dealer near bust): 18->25 dealer: 12
+8 worse (i bust, dealer near bust): 18->26 dealer: 13
+9 worse (i bust, dealer near bust): 18->27 dealer: 14
+10 worse (i bust, dealer near bust): 18->28 dealer: 15
+10 worse (i bust, dealer near bust): 18->28 dealer: 15
+10 worse (i bust, dealer near bust): 18->28 dealer: 15
+10 worse (i bust, dealer near bust): 18->28 dealer: 15
+1 better (i make 17+ , dealer near): 19 dealer: 16
+0 : 0.0 , 1 : 0.0 , 2 : 10.0 , 3 : 4.0 , 4 : 0.0 , 5 : 10.0 
+
+ 	player value: 18 dealerCard: Six6:
+2 better (i make 17+ , dealer near): 20 dealer: 8
+3 better (i make 17+ , dealer near): 21 dealer: 9
+4 worse (i bust, dealer near bust): 18->22 dealer: 10
+5 worse (i bust, dealer near bust): 18->23 dealer: 11
+6 worse (i bust, dealer near bust): 18->24 dealer: 12
+7 worse (i bust, dealer near bust): 18->25 dealer: 13
+8 worse (i bust, dealer near bust): 18->26 dealer: 14
+9 worse (i bust, dealer near bust): 18->27 dealer: 15
+10 worse (i bust, dealer near bust): 18->28 dealer: 16
+10 worse (i bust, dealer near bust): 18->28 dealer: 16
+10 worse (i bust, dealer near bust): 18->28 dealer: 16
+10 worse (i bust, dealer near bust): 18->28 dealer: 16
+1 better (i make 17+, dealer either 17+): 19 dealer: 17
+0 : 0.0 , 1 : 1.0 , 2 : 10.0 , 3 : 3.0 , 4 : 0.0 , 5 : 10.0 
+
+ 	player value: 18 dealerCard: Seven7:
+2 better (i make 17+ , dealer near): 20 dealer: 9
+3 better (i make 17+ , dealer near): 21 dealer: 10
+4 worse (i bust, dealer near bust): 18->22 dealer: 11
+5 worse (i bust, dealer near bust): 18->23 dealer: 12
+6 worse (i bust, dealer near bust): 18->24 dealer: 13
+7 worse (i bust, dealer near bust): 18->25 dealer: 14
+8 worse (i bust, dealer near bust): 18->26 dealer: 15
+9 worse (i bust, dealer near bust): 18->27 dealer: 16
+10 normal (i bust and dealer make 17+) : 28 dealer: 17
+10 normal (i bust and dealer make 17+) : 28 dealer: 17
+10 normal (i bust and dealer make 17+) : 28 dealer: 17
+10 normal (i bust and dealer make 17+) : 28 dealer: 17
+1 better (i make 17+, dealer either 17+): 19 dealer: 18
+0 : 0.0 , 1 : 5.0 , 2 : 10.0 , 3 : 3.0 , 4 : 4.0 , 5 : 6.0 
+
+ 	player value: 18 dealerCard: Eight8:
+2 better (i make 17+ , dealer near): 20 dealer: 10
+3 better (i make 17+ , dealer near): 21 dealer: 11
+4 worse (i bust, dealer near bust): 18->22 dealer: 12
+5 worse (i bust, dealer near bust): 18->23 dealer: 13
+6 worse (i bust, dealer near bust): 18->24 dealer: 14
+7 worse (i bust, dealer near bust): 18->25 dealer: 15
+8 worse (i bust, dealer near bust): 18->26 dealer: 16
+9 normal (i bust and dealer make 17+) : 27 dealer: 17
+10 normal (i bust and dealer make 17+) : 28 dealer: 18
+10 normal (i bust and dealer make 17+) : 28 dealer: 18
+10 normal (i bust and dealer make 17+) : 28 dealer: 18
+10 normal (i bust and dealer make 17+) : 28 dealer: 18
+1 better (i make 17+, dealer either 17+): 19 dealer: 19
+0 : 0.0 , 1 : 6.0 , 2 : 10.0 , 3 : 3.0 , 4 : 5.0 , 5 : 5.0 
+
+ 	player value: 18 dealerCard: Nine9:
+2 better (i make 17+ , dealer near): 20 dealer: 11
+3 better (i make 17+ , dealer near): 21 dealer: 12
+4 worse (i bust, dealer near bust): 18->22 dealer: 13
+5 worse (i bust, dealer near bust): 18->23 dealer: 14
+6 worse (i bust, dealer near bust): 18->24 dealer: 15
+7 worse (i bust, dealer near bust): 18->25 dealer: 16
+8 normal (i bust and dealer make 17+) : 26 dealer: 17
+9 normal (i bust and dealer make 17+) : 27 dealer: 18
+10 normal (i bust and dealer make 17+) : 28 dealer: 19
+10 normal (i bust and dealer make 17+) : 28 dealer: 19
+10 normal (i bust and dealer make 17+) : 28 dealer: 19
+10 normal (i bust and dealer make 17+) : 28 dealer: 19
+1 better (i make 17+, dealer either 17+): 19 dealer: 20
+0 : 0.0 , 1 : 7.0 , 2 : 10.0 , 3 : 3.0 , 4 : 6.0 , 5 : 4.0 
+
+ 	player value: 18 dealerCard: Ten:
+2 better (i make 17+ , dealer near): 20 dealer: 12
+3 better (i make 17+ , dealer near): 21 dealer: 13
+4 worse (i bust, dealer near bust): 18->22 dealer: 14
+5 worse (i bust, dealer near bust): 18->23 dealer: 15
+6 worse (i bust, dealer near bust): 18->24 dealer: 16
+7 normal (i bust and dealer make 17+) : 25 dealer: 17
+8 normal (i bust and dealer make 17+) : 26 dealer: 18
+9 normal (i bust and dealer make 17+) : 27 dealer: 19
+10 normal (i bust and dealer make 17+) : 28 dealer: 20
+10 normal (i bust and dealer make 17+) : 28 dealer: 20
+10 normal (i bust and dealer make 17+) : 28 dealer: 20
+10 normal (i bust and dealer make 17+) : 28 dealer: 20
+1 better (i make 17+, dealer either 17+): 19 dealer: 21
+0 : 0.0 , 1 : 8.0 , 2 : 10.0 , 3 : 3.0 , 4 : 7.0 , 5 : 3.0 
+
+ 	player value: 18 dealerCard: Eleven:
+1 better (i make 17+ , dealer near): 19 dealer: 12
+2 better (i make 17+ , dealer near): 20 dealer: 13
+3 better (i make 17+ , dealer near): 21 dealer: 14
+4 worse (i bust, dealer near bust): 18->22 dealer: 15
+5 worse (i bust, dealer near bust): 18->23 dealer: 16
+6 normal (i bust and dealer make 17+) : 24 dealer: 17
+7 normal (i bust and dealer make 17+) : 25 dealer: 18
+8 normal (i bust and dealer make 17+) : 26 dealer: 19
+9 normal (i bust and dealer make 17+) : 27 dealer: 20
+10 normal (i bust and dealer make 17+) : 28 dealer: 21
+10 normal (i bust and dealer make 17+) : 28 dealer: 21
+10 normal (i bust and dealer make 17+) : 28 dealer: 21
+10 normal (i bust and dealer make 17+) : 28 dealer: 21
+0 : 0.0 , 1 : 8.0 , 2 : 10.0 , 3 : 3.0 , 4 : 8.0 , 5 : 2.0 
+
+ 		-------- 19 --------
+
+ 	player value: 19 dealerCard: Two2:
+1 better (i make 17+ , dealer near): 20 dealer: 3
+2 better (i make 17+ , dealer near): 21 dealer: 4
+3 worse (i bust, dealer near bust): 19->22 dealer: 5
+4 worse (i bust, dealer near bust): 19->23 dealer: 6
+5 worse (i bust, dealer near bust): 19->24 dealer: 7
+6 worse (i bust, dealer near bust): 19->25 dealer: 8
+7 worse (i bust, dealer near bust): 19->26 dealer: 9
+8 worse (i bust, dealer near bust): 19->27 dealer: 10
+9 worse (i bust, dealer near bust): 19->28 dealer: 11
+10 worse (i bust, dealer near bust): 19->29 dealer: 12
+10 worse (i bust, dealer near bust): 19->29 dealer: 12
+10 worse (i bust, dealer near bust): 19->29 dealer: 12
+10 worse (i bust, dealer near bust): 19->29 dealer: 12
+1 better (i make 17+ , dealer near): 20 dealer: 13
+0 : 0.0 , 1 : 0.0 , 2 : 11.0 , 3 : 3.0 , 4 : 0.0 , 5 : 11.0 
+
+ 	player value: 19 dealerCard: Three3:
+1 better (i make 17+ , dealer near): 20 dealer: 4
+2 better (i make 17+ , dealer near): 21 dealer: 5
+3 worse (i bust, dealer near bust): 19->22 dealer: 6
+4 worse (i bust, dealer near bust): 19->23 dealer: 7
+5 worse (i bust, dealer near bust): 19->24 dealer: 8
+6 worse (i bust, dealer near bust): 19->25 dealer: 9
+7 worse (i bust, dealer near bust): 19->26 dealer: 10
+8 worse (i bust, dealer near bust): 19->27 dealer: 11
+9 worse (i bust, dealer near bust): 19->28 dealer: 12
+10 worse (i bust, dealer near bust): 19->29 dealer: 13
+10 worse (i bust, dealer near bust): 19->29 dealer: 13
+10 worse (i bust, dealer near bust): 19->29 dealer: 13
+10 worse (i bust, dealer near bust): 19->29 dealer: 13
+1 better (i make 17+ , dealer near): 20 dealer: 14
+0 : 0.0 , 1 : 0.0 , 2 : 11.0 , 3 : 3.0 , 4 : 0.0 , 5 : 11.0 
+
+ 	player value: 19 dealerCard: Four4:
+1 better (i make 17+ , dealer near): 20 dealer: 5
+2 better (i make 17+ , dealer near): 21 dealer: 6
+3 worse (i bust, dealer near bust): 19->22 dealer: 7
+4 worse (i bust, dealer near bust): 19->23 dealer: 8
+5 worse (i bust, dealer near bust): 19->24 dealer: 9
+6 worse (i bust, dealer near bust): 19->25 dealer: 10
+7 worse (i bust, dealer near bust): 19->26 dealer: 11
+8 worse (i bust, dealer near bust): 19->27 dealer: 12
+9 worse (i bust, dealer near bust): 19->28 dealer: 13
+10 worse (i bust, dealer near bust): 19->29 dealer: 14
+10 worse (i bust, dealer near bust): 19->29 dealer: 14
+10 worse (i bust, dealer near bust): 19->29 dealer: 14
+10 worse (i bust, dealer near bust): 19->29 dealer: 14
+1 better (i make 17+ , dealer near): 20 dealer: 15
+0 : 0.0 , 1 : 0.0 , 2 : 11.0 , 3 : 3.0 , 4 : 0.0 , 5 : 11.0 
+
+ 	player value: 19 dealerCard: Five5:
+1 better (i make 17+ , dealer near): 20 dealer: 6
+2 better (i make 17+ , dealer near): 21 dealer: 7
+3 worse (i bust, dealer near bust): 19->22 dealer: 8
+4 worse (i bust, dealer near bust): 19->23 dealer: 9
+5 worse (i bust, dealer near bust): 19->24 dealer: 10
+6 worse (i bust, dealer near bust): 19->25 dealer: 11
+7 worse (i bust, dealer near bust): 19->26 dealer: 12
+8 worse (i bust, dealer near bust): 19->27 dealer: 13
+9 worse (i bust, dealer near bust): 19->28 dealer: 14
+10 worse (i bust, dealer near bust): 19->29 dealer: 15
+10 worse (i bust, dealer near bust): 19->29 dealer: 15
+10 worse (i bust, dealer near bust): 19->29 dealer: 15
+10 worse (i bust, dealer near bust): 19->29 dealer: 15
+1 better (i make 17+ , dealer near): 20 dealer: 16
+0 : 0.0 , 1 : 0.0 , 2 : 11.0 , 3 : 3.0 , 4 : 0.0 , 5 : 11.0 
+
+ 	player value: 19 dealerCard: Six6:
+2 better (i make 17+ , dealer near): 21 dealer: 8
+3 worse (i bust, dealer near bust): 19->22 dealer: 9
+4 worse (i bust, dealer near bust): 19->23 dealer: 10
+5 worse (i bust, dealer near bust): 19->24 dealer: 11
+6 worse (i bust, dealer near bust): 19->25 dealer: 12
+7 worse (i bust, dealer near bust): 19->26 dealer: 13
+8 worse (i bust, dealer near bust): 19->27 dealer: 14
+9 worse (i bust, dealer near bust): 19->28 dealer: 15
+10 worse (i bust, dealer near bust): 19->29 dealer: 16
+10 worse (i bust, dealer near bust): 19->29 dealer: 16
+10 worse (i bust, dealer near bust): 19->29 dealer: 16
+10 worse (i bust, dealer near bust): 19->29 dealer: 16
+1 better (i make 17+, dealer either 17+): 20 dealer: 17
+0 : 0.0 , 1 : 1.0 , 2 : 11.0 , 3 : 2.0 , 4 : 0.0 , 5 : 11.0 
+
+ 	player value: 19 dealerCard: Seven7:
+2 better (i make 17+ , dealer near): 21 dealer: 9
+3 worse (i bust, dealer near bust): 19->22 dealer: 10
+4 worse (i bust, dealer near bust): 19->23 dealer: 11
+5 worse (i bust, dealer near bust): 19->24 dealer: 12
+6 worse (i bust, dealer near bust): 19->25 dealer: 13
+7 worse (i bust, dealer near bust): 19->26 dealer: 14
+8 worse (i bust, dealer near bust): 19->27 dealer: 15
+9 worse (i bust, dealer near bust): 19->28 dealer: 16
+10 normal (i bust and dealer make 17+) : 29 dealer: 17
+10 normal (i bust and dealer make 17+) : 29 dealer: 17
+10 normal (i bust and dealer make 17+) : 29 dealer: 17
+10 normal (i bust and dealer make 17+) : 29 dealer: 17
+1 better (i make 17+, dealer either 17+): 20 dealer: 18
+0 : 0.0 , 1 : 5.0 , 2 : 11.0 , 3 : 2.0 , 4 : 4.0 , 5 : 7.0 
+
+ 	player value: 19 dealerCard: Eight8:
+2 better (i make 17+ , dealer near): 21 dealer: 10
+3 worse (i bust, dealer near bust): 19->22 dealer: 11
+4 worse (i bust, dealer near bust): 19->23 dealer: 12
+5 worse (i bust, dealer near bust): 19->24 dealer: 13
+6 worse (i bust, dealer near bust): 19->25 dealer: 14
+7 worse (i bust, dealer near bust): 19->26 dealer: 15
+8 worse (i bust, dealer near bust): 19->27 dealer: 16
+9 normal (i bust and dealer make 17+) : 28 dealer: 17
+10 normal (i bust and dealer make 17+) : 29 dealer: 18
+10 normal (i bust and dealer make 17+) : 29 dealer: 18
+10 normal (i bust and dealer make 17+) : 29 dealer: 18
+10 normal (i bust and dealer make 17+) : 29 dealer: 18
+1 better (i make 17+, dealer either 17+): 20 dealer: 19
+0 : 0.0 , 1 : 6.0 , 2 : 11.0 , 3 : 2.0 , 4 : 5.0 , 5 : 6.0 
+
+ 	player value: 19 dealerCard: Nine9:
+2 better (i make 17+ , dealer near): 21 dealer: 11
+3 worse (i bust, dealer near bust): 19->22 dealer: 12
+4 worse (i bust, dealer near bust): 19->23 dealer: 13
+5 worse (i bust, dealer near bust): 19->24 dealer: 14
+6 worse (i bust, dealer near bust): 19->25 dealer: 15
+7 worse (i bust, dealer near bust): 19->26 dealer: 16
+8 normal (i bust and dealer make 17+) : 27 dealer: 17
+9 normal (i bust and dealer make 17+) : 28 dealer: 18
+10 normal (i bust and dealer make 17+) : 29 dealer: 19
+10 normal (i bust and dealer make 17+) : 29 dealer: 19
+10 normal (i bust and dealer make 17+) : 29 dealer: 19
+10 normal (i bust and dealer make 17+) : 29 dealer: 19
+1 better (i make 17+, dealer either 17+): 20 dealer: 20
+0 : 0.0 , 1 : 7.0 , 2 : 11.0 , 3 : 2.0 , 4 : 6.0 , 5 : 5.0 
+
+ 	player value: 19 dealerCard: Ten:
+2 better (i make 17+ , dealer near): 21 dealer: 12
+3 worse (i bust, dealer near bust): 19->22 dealer: 13
+4 worse (i bust, dealer near bust): 19->23 dealer: 14
+5 worse (i bust, dealer near bust): 19->24 dealer: 15
+6 worse (i bust, dealer near bust): 19->25 dealer: 16
+7 normal (i bust and dealer make 17+) : 26 dealer: 17
+8 normal (i bust and dealer make 17+) : 27 dealer: 18
+9 normal (i bust and dealer make 17+) : 28 dealer: 19
+10 normal (i bust and dealer make 17+) : 29 dealer: 20
+10 normal (i bust and dealer make 17+) : 29 dealer: 20
+10 normal (i bust and dealer make 17+) : 29 dealer: 20
+10 normal (i bust and dealer make 17+) : 29 dealer: 20
+1 better (i make 17+, dealer either 17+): 20 dealer: 21
+0 : 0.0 , 1 : 8.0 , 2 : 11.0 , 3 : 2.0 , 4 : 7.0 , 5 : 4.0 
+
+ 	player value: 19 dealerCard: Eleven:
+1 better (i make 17+ , dealer near): 20 dealer: 12
+2 better (i make 17+ , dealer near): 21 dealer: 13
+3 worse (i bust, dealer near bust): 19->22 dealer: 14
+4 worse (i bust, dealer near bust): 19->23 dealer: 15
+5 worse (i bust, dealer near bust): 19->24 dealer: 16
+6 normal (i bust and dealer make 17+) : 25 dealer: 17
+7 normal (i bust and dealer make 17+) : 26 dealer: 18
+8 normal (i bust and dealer make 17+) : 27 dealer: 19
+9 normal (i bust and dealer make 17+) : 28 dealer: 20
+10 normal (i bust and dealer make 17+) : 29 dealer: 21
+10 normal (i bust and dealer make 17+) : 29 dealer: 21
+10 normal (i bust and dealer make 17+) : 29 dealer: 21
+10 normal (i bust and dealer make 17+) : 29 dealer: 21
+0 : 0.0 , 1 : 8.0 , 2 : 11.0 , 3 : 2.0 , 4 : 8.0 , 5 : 3.0 

@@ -123,7 +123,12 @@ public class HardCardDetect {
 				for(Card dealerCard : Card.values()){
 					if(dealerCard == Card.One1 || dealerCard == Card.JJJ || dealerCard == Card.QQQ || dealerCard == Card.KKK) continue;
 					System.out.println("\n \tplayer value: "+startValue.getValue() +" dealerCard: "+ dealerCard +":");
-					HelloWorld.printDoubleMatrix(detectNextCardsAdvProb(startValue, dealerCard));
+					
+					double[] result = detectNextCardsAdvProb(startValue, dealerCard);
+					
+					if(result[1] >= result[2]) System.out.println(" ---  \n\thit me please , hit me ! \n --- ");
+					
+					HelloWorld.printDoubleMatrix(result);
 				}
 			}
 		}

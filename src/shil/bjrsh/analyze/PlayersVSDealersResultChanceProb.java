@@ -171,6 +171,10 @@ public class PlayersVSDealersResultChanceProb {
 			}
 		}
 		
+		if(hitDealerCards.getValue() >= BlackJackInfo.DealerStop){
+			draw++;
+		}
+		
 		return new double[]{win,draw,lose,better,normal,worse};
 	}
 	
