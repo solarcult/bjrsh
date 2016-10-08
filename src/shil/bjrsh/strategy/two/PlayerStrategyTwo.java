@@ -171,8 +171,8 @@ public class PlayerStrategyTwo implements Strategy{
 		
 //		printStrategyROI();
 		
-//		printStrategyROIwithoutA();
-		printStrategyROIwithoutAStartingOn(StartValue.Six);
+		printStrategyROIwithoutA();
+//		printStrategyROIwithoutAStartingOn(StartValue.Six);
 	}
 	
 }
