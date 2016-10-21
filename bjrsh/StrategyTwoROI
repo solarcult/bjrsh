@@ -19,28 +19,6 @@ StartValue: 	Seven	 roi: -0.06823116383367042
 StartValue: 	Eighteen	 roi: 6.626786689101554E-4
 tROI: 	-1.482957080179662
 
-how many :807856
-CalcStrategyProfitMachine used total seconds :4639
-StartValue: 	Six	 roi: -0.061767914671519764
-StartValue: 	Fifteen	 roi: -0.4215253487875058
-StartValue: 	Twelve	 roi: -0.372312733631979
-StartValue: 	Seventeen	 roi: -0.22032987355311984
-StartValue: 	Eleven	 roi: 0.10771050757664669
-StartValue: 	Five	 roi: -0.040101250349643486
-StartValue: 	Twenty	 roi: 0.7211998629810977
-StartValue: 	Fourteen	 roi: -0.4133032729616196
-StartValue: 	Thirteen	 roi: -0.394349003355375
-StartValue: 	Nineteen	 roi: 0.1702698745772692
-StartValue: 	Nine	 roi: -0.005499836617402243
-StartValue: 	Ten	 roi: 0.06484378036217445
-StartValue: 	Eight	 roi: -0.04699968530449729
-StartValue: 	Four	 roi: -0.01646682195570404
-StartValue: 	Sixteen	 roi: -0.42228821647684833
-StartValue: 	Seven	 roi: -0.06823116383367052
-StartValue: 	Eighteen	 roi: 6.626786689112362E-4
-tROI: 	-1.4184884173327856
-
-
 15vsT hit
 how many :543863
 StartValue: 	Six	 roi: -0.0629306256568988

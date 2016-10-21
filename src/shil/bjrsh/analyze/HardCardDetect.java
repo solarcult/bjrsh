@@ -22,16 +22,21 @@ public class HardCardDetect {
 		return PlayersVSDealersResultChanceProb.hitPlayerOneMore(originPlayerCards,hitPlayerCards, hitDealerCards);
 	}
 	
-	public static double[] detectNextCardsAdvProb(StartValue startValue,Card dealerCard){
+	public static double[] detectNextCardsAdvProb(StartValue startValue,Card dealerCard,boolean dealerStandOnSoft17){
 		double[] result = new double[6];
 		for(Card nextCard : Card.values()){
+			if(!dealerStandOnSoft17){
+				if(nextCard==Card.One1 || nextCard == Card.Eleven) continue;
+			}
 			double[] t = detectNextCardAdvProb(startValue, dealerCard, nextCard, nextCard);
 			result = WinDrawLose.addMatrix(result, t);
 		}
-		double[] a1 = detectNextCardAdvProb(startValue, dealerCard, Card.One1, Card.Eleven);
-		result = WinDrawLose.addMatrix(result, a1);
-		double[] a2 = detectNextCardAdvProb(startValue, dealerCard, Card.Eleven, Card.One1);
-		result = WinDrawLose.addMatrix(result, a2);
+		if(dealerStandOnSoft17){
+			double[] a1 = detectNextCardAdvProb(startValue, dealerCard, Card.One1, Card.Eleven);
+			result = WinDrawLose.addMatrix(result, a1);
+			double[] a2 = detectNextCardAdvProb(startValue, dealerCard, Card.Eleven, Card.One1);
+			result = WinDrawLose.addMatrix(result, a2);
+		}
 		return result;
 	}
 	
@@ -124,7 +129,7 @@ public class HardCardDetect {
 					if(dealerCard == Card.One1 || dealerCard == Card.JJJ || dealerCard == Card.QQQ || dealerCard == Card.KKK) continue;
 					System.out.println("\n \tplayer value: "+startValue.getValue() +" dealerCard: "+ dealerCard +":");
 					
-					double[] result = detectNextCardsAdvProb(startValue, dealerCard);
+					double[] result = detectNextCardsAdvProb(startValue, dealerCard,false);
 					
 					if(result[1] >= result[2]) System.out.println(" ---  \n\thit me please , hit me ! \n --- ");
 					
@@ -139,9 +144,9 @@ public class HardCardDetect {
 //		HelloWorld.printDoubleMatrix(detectNextCardsAdvProb(StartValue.Fifteen, Card.Two2));
 //		HelloWorld.printDoubleMatrix(detectNextCardsAdvProb(StartValue.Twelve, Card.Two2));
 //		according2Prob(StartValue.Fourteen, Card.Ten, Card.Six6, Card.Six6);
-//		according2FullProb(StartValue.Fourteen, Card.Eight8);
+		according2FullProb(StartValue.Fourteen, Card.Eight8);
 		
-		showHardDecideAllHands();
+//		showHardDecideAllHands();
 	}
 
 }
