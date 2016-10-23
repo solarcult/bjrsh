@@ -31,7 +31,7 @@ public class PlayerStartTwoCards {
 				//TODO 没有考虑两张一样牌的概率
 				if(one == two) {
 //					System.out.println(one+" "+two);
-					continue;
+//					continue;
 				}
 				PlayerCardsPathValue cardsPathValue = new PlayerCardsPathValue(one,two);
 				if(cardsPathValue.isValid()) {
@@ -68,7 +68,7 @@ public class PlayerStartTwoCards {
 			frequency.addValue(cardsPathValue.getValue());
 		}
 		frequency.incrementValue(1, 20);//AX牌
-		frequency.incrementValue(0, 12);//成对出现
+//		frequency.incrementValue(0, 12);//成对出现
 		System.out.println(frequency);
 	}
 	

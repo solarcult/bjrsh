@@ -38,6 +38,8 @@ public class PlayerStrategyTwo implements Strategy{
 		if(playerCardsPathValue.getAction() == PlayerAction.Init){
 			//the first time reset action
 			playerCardsPathValue.setAction(PlayerStrategyMatrix.getPlayerAction(playerCardsPathValue.getStartValue(),dealerCard).getStartAction());
+		}else if(playerCardsPathValue.getAction() == PlayerAction.TestSecondChoice){
+			playerCardsPathValue.setAction(PlayerStrategyMatrix.getPlayerAction(playerCardsPathValue.getStartValue(),dealerCard).getThreeCardAction());
 		}
 		
 		if(playerCardsPathValue.getValue() > BlackJackInfo.BlackJack){

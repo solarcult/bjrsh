@@ -144,7 +144,7 @@ public class HardCardDetect {
 //		HelloWorld.printDoubleMatrix(detectNextCardsAdvProb(StartValue.Fifteen, Card.Two2));
 //		HelloWorld.printDoubleMatrix(detectNextCardsAdvProb(StartValue.Twelve, Card.Two2));
 //		according2Prob(StartValue.Fourteen, Card.Ten, Card.Six6, Card.Six6);
-		according2FullProb(StartValue.Fourteen, Card.Eight8);
+		according2FullProb(StartValue.Fifteen, Card.Ten);
 		
 //		showHardDecideAllHands();
 	}
