@@ -60,14 +60,16 @@ public class DealerCardsPathValue{
 		boolean isAbe11Conitnue = true;
 		int tempValue = 0;
 		for(Card card : this.cards){
-			if(Card.One1.equals(card)){
-				int test = tempValue + Card.Eleven.getValue();
-				if(test >= BlackJackInfo.DealerStop && test <= BlackJackInfo.BlackJack){
-					isAbe11Conitnue = false;
-					break;
-				}
-			}
 			tempValue += card.getValue();
+		}
+		
+		//check if One1 become 11 ,if reach the DealerStop ,if yes, should ignore because we have A is Eleven version. 
+		if(this.cards.contains(Card.One1)){
+			tempValue -= Card.One1.getValue();
+			tempValue += Card.Eleven.getValue();
+			if(tempValue >= BlackJackInfo.DealerStop && tempValue <= BlackJackInfo.BlackJack){
+				isAbe11Conitnue = false;
+			}
 		}
 			
 		return isAbe11Conitnue;
