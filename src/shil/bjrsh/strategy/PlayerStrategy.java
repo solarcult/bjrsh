@@ -1,8 +1,7 @@
-package shil.bjrsh.strategy.two;
+package shil.bjrsh.strategy;
 
 import shil.bjrsh.core.Card;
 import shil.bjrsh.core.StartValue;
-import shil.bjrsh.strategy.PlayerAction;
 
 /**
  * 用户的策略,开始牌可以double或giveup或split,当摸了一张以后就没有机会这么做了
@@ -16,7 +15,7 @@ public class PlayerStrategy implements Comparable<PlayerStrategy>{
 	private PlayerAction startAction;
 	private PlayerAction threeCardAction;
 	
-	protected PlayerStrategy(StartValue startValue,Card dealerCard,PlayerAction startAction,PlayerAction threeCardAction){
+	public PlayerStrategy(StartValue startValue,Card dealerCard,PlayerAction startAction,PlayerAction threeCardAction){
 		this.startValue = startValue;
 		this.dealercard = dealerCard;
 		this.startAction = startAction;

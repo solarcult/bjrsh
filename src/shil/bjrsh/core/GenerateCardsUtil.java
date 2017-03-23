@@ -3,6 +3,8 @@ package shil.bjrsh.core;
 import java.util.Collection;
 import java.util.HashSet;
 
+import shil.bjrsh.HelloWorld;
+
 public class GenerateCardsUtil {
 	
 	/**
@@ -60,6 +62,11 @@ public class GenerateCardsUtil {
 		}
 		
 		return playerCardsPathValues;
+	}
+	
+	public static void main(String[] args){
+		PlayerCardsPathValue x = new PlayerCardsPathValue(Card.Nine9,Card.Four4,Card.Five5);
+		HelloWorld.print(hitPlayerOneMoreCard(x));
 	}
 	
 }

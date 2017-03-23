@@ -106,6 +106,7 @@ public class DealerCards {
 	public static void main(String[] args){
 //		HelloWorld.print(DealerCards.StartSix);
 //		printFrequency(StartTwo);
-		printAll();
+//		printAll();
+		System.out.println(StartTwo.size());
 	}
 }

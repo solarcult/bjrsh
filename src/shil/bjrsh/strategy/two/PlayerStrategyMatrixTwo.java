@@ -1,16 +1,19 @@
 package shil.bjrsh.strategy.two;
 
-import java.util.Map;
 import java.util.TreeMap;
 
 import shil.bjrsh.core.Card;
 import shil.bjrsh.core.StartValue;
 import shil.bjrsh.strategy.PlayerAction;
+import shil.bjrsh.strategy.PlayerStrategy;
+import shil.bjrsh.strategy.PlayerStrategyMatrix;
 
-public class PlayerStrategyMatrix {
-
-	private static Map<PlayerStrategy,PlayerStrategy> strategyMatrix = new TreeMap<PlayerStrategy,PlayerStrategy>();
-	static{
+public class PlayerStrategyMatrixTwo extends PlayerStrategyMatrix{
+	
+	public PlayerStrategyMatrixTwo(){
+	
+		strategyMatrix = new TreeMap<PlayerStrategy,PlayerStrategy>();
+	
 		//TODO 用户策略,没有考虑到Ax的情况 和 split的情况
 		for(StartValue startValue : StartValue.values()){
 			if(startValue== StartValue.One) continue;
@@ -178,25 +181,7 @@ public class PlayerStrategyMatrix {
 		}
 	}
 	
-	public static PlayerStrategy getPlayerAction(StartValue startValue,Card dealerCard){
-		return strategyMatrix.get(PlayerStrategy.builderOne(startValue, dealerCard));
-	}
-	
-	public static PlayerStrategy getPlayerAction(PlayerStrategy playerStrategy){
-		return strategyMatrix.get(playerStrategy);
-	}
-	
-	public static Map<PlayerStrategy,PlayerStrategy> getStrategyMatrix(){
-		return strategyMatrix;
-	}
-	
-	public static void printStrategyMatrix(){
-		for(PlayerStrategy playerStrategy : strategyMatrix.keySet()){
-			System.out.println(playerStrategy);
-		}
-	}
-	
 	public static void main(String[] args){
-		printStrategyMatrix();
+		new PlayerStrategyMatrixTwo().printStrategyMatrix();
 	}
 }

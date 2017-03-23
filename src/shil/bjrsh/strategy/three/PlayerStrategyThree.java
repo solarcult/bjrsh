@@ -1,4 +1,4 @@
-package shil.bjrsh.strategy;
+package shil.bjrsh.strategy.three;
 
 import java.util.Collection;
 import java.util.HashSet;

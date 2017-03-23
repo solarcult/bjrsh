@@ -1,4 +1,4 @@
-package shil.bjrsh.strategy;
+package shil.bjrsh.strategy.one;
 
 import java.util.ArrayList;
 import java.util.Collection;
