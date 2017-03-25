@@ -25,7 +25,7 @@ public class PlayerStrategyTwo extends Strategy{
 
 	public static Strategy getInstance() {
 		if(playerStrategyTwo == null){
-			playerStrategyTwo = new PlayerStrategyTwo(new PlayerStrategyMatrixTwo());
+			playerStrategyTwo = new PlayerStrategyTwo(new PlayerStrategyMatrixTwoTwo());
 		}
 		return playerStrategyTwo;
 	}

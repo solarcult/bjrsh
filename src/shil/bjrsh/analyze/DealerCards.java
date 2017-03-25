@@ -107,6 +107,21 @@ public class DealerCards {
 //		HelloWorld.print(DealerCards.StartSix);
 //		printFrequency(StartTwo);
 //		printAll();
+		
 		System.out.println(StartTwo.size());
+		System.out.println(StartThree.size());
+		System.out.println(StartFour.size());
+		System.out.println(StartFive.size());
+		System.out.println(StartSix.size());
+		System.out.println(StartSeven.size());
+		System.out.println(StartEight.size());
+		System.out.println(StartNine.size());
+		System.out.println(StartTen.size());
+		System.out.println(StartJ.size());
+		System.out.println(StartQ.size());
+		System.out.println(StartK.size());
+		System.out.println(StartEleven.size());
+
+		
 	}
 }

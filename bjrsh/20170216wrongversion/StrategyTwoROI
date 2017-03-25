@@ -1,3 +1,221 @@
+TwoOne
+how many :751912
+CalcStrategyProfitMachine used total seconds :513
+StartValue: 	Six	 roi: -0.062437870900064966
+StartValue: 	Fifteen	 roi: -0.4039013093173106
+StartValue: 	Twelve	 roi: -0.5034742015448427
+StartValue: 	Seventeen	 roi: -0.22449804330470782
+StartValue: 	Eleven	 roi: 0.18154516468507773
+StartValue: 	Five	 roi: -0.04052838214605525
+StartValue: 	Twenty	 roi: 0.7083707636326404
+StartValue: 	Fourteen	 roi: -0.43615731665862406
+StartValue: 	Thirteen	 roi: -0.47121819420352934
+StartValue: 	Nineteen	 roi: 0.1645480146614402
+StartValue: 	Nine	 roi: -0.008236216223958474
+StartValue: 	Ten	 roi: 0.04825293176133648
+StartValue: 	Eight	 roi: -0.04895265774770944
+StartValue: 	Four	 roi: -0.016693291444199423
+StartValue: 	Sixteen	 roi: -0.36884043177240533
+StartValue: 	Seven	 roi: -0.06956292460765451
+StartValue: 	Eighteen	 roi: -0.0044306644448932776
+tROI: 	-1.5562146295754609
+
+TwoTwo 12 vs 2,3 hit
+how many :1080762
+CalcStrategyProfitMachine used total seconds :533
+StartValue: 	Six	 roi: -0.060859507369385474
+StartValue: 	Fifteen	 roi: -0.4039013093173107
+StartValue: 	Twelve	 roi: -0.3633587675318421
+StartValue: 	Seventeen	 roi: -0.224498043304708
+StartValue: 	Eleven	 roi: 0.18154516468507773
+StartValue: 	Five	 roi: -0.03794051108645734
+StartValue: 	Twenty	 roi: 0.7083707636326415
+StartValue: 	Fourteen	 roi: -0.4361573166586241
+StartValue: 	Thirteen	 roi: -0.4712181942035293
+StartValue: 	Nineteen	 roi: 0.16454801466144137
+StartValue: 	Nine	 roi: -0.006416776757445347
+StartValue: 	Ten	 roi: 0.04825293176133634
+StartValue: 	Eight	 roi: -0.04731957631450325
+StartValue: 	Four	 roi: -0.015500291046074904
+StartValue: 	Sixteen	 roi: -0.36884043177240555
+StartValue: 	Seven	 roi: -0.06814814516822977
+StartValue: 	Eighteen	 roi: -0.004430664444894188
+tROI: 	-1.4058726602349128
+
+Stand version:
+how many :1075002  12vs 2 hit 3 stand  -0.0002
+CalcStrategyProfitMachine used total seconds :508
+StartValue: 	Six	 roi: -0.06089286275716984
+StartValue: 	Fifteen	 roi: -0.4039013093173106
+StartValue: 	Twelve	 roi: -0.36335876753184215
+StartValue: 	Seventeen	 roi: -0.22449804330470768
+StartValue: 	Eleven	 roi: 0.1815451646850776
+StartValue: 	Five	 roi: -0.037963979455397485
+StartValue: 	Twenty	 roi: 0.7083707636326403
+StartValue: 	Fourteen	 roi: -0.436157316658624
+StartValue: 	Thirteen	 roi: -0.4712181942035293
+StartValue: 	Nineteen	 roi: 0.16454801466144062
+StartValue: 	Nine	 roi: -0.006469729687927339
+StartValue: 	Ten	 roi: 0.04825293176133635
+StartValue: 	Eight	 roi: -0.04736806815901662
+StartValue: 	Four	 roi: -0.015511951689839196
+StartValue: 	Sixteen	 roi: -0.3688404317724053
+StartValue: 	Seven	 roi: -0.06819053392483485
+StartValue: 	Eighteen	 roi: -0.004430664444893846
+tROI: 	-1.4060849781670033
+
+how many :1544907  16 vs 9 10 2nd stand-> hit  0.004
+CalcStrategyProfitMachine used total seconds :497
+StartValue: 	Six	 roi: -0.060628333893624764
+StartValue: 	Fifteen	 roi: -0.40390130931731033
+StartValue: 	Twelve	 roi: -0.3630249046797708
+StartValue: 	Seventeen	 roi: -0.22449804330470743
+StartValue: 	Eleven	 roi: 0.18154516468507778
+StartValue: 	Five	 roi: -0.03486261547262884
+StartValue: 	Twenty	 roi: 0.7083707636326417
+StartValue: 	Fourteen	 roi: -0.4361573166586237
+StartValue: 	Thirteen	 roi: -0.4712181942035289
+StartValue: 	Nineteen	 roi: 0.16454801466143928
+StartValue: 	Nine	 roi: -0.006294383765038675
+StartValue: 	Ten	 roi: 0.04825293176133651
+StartValue: 	Eight	 roi: -0.047230456113298236
+StartValue: 	Four	 roi: -0.015375402932736443
+StartValue: 	Sixteen	 roi: -0.36884043177240516
+StartValue: 	Seven	 roi: -0.06809872299815137
+StartValue: 	Eighteen	 roi: -0.00443066444489338
+tROI: 	-1.4018439048162226
+
+how many :1168983    16 vs 9 2nd stand-> hit
+CalcStrategyProfitMachine used total seconds :505
+StartValue: 	Six	 roi: -0.0607064238538463
+StartValue: 	Fifteen	 roi: -0.40390130931731055
+StartValue: 	Twelve	 roi: -0.36312110698904987
+StartValue: 	Seventeen	 roi: -0.2244980433047081
+StartValue: 	Eleven	 roi: 0.1815451646850777
+StartValue: 	Five	 roi: -0.03729908529778987
+StartValue: 	Twenty	 roi: 0.7083707636326401
+StartValue: 	Fourteen	 roi: -0.43615731665862395
+StartValue: 	Thirteen	 roi: -0.4712181942035291
+StartValue: 	Nineteen	 roi: 0.1645480146614408
+StartValue: 	Nine	 roi: -0.006348503126766799
+StartValue: 	Ten	 roi: 0.04825293176133637
+StartValue: 	Eight	 roi: -0.04726382573814383
+StartValue: 	Four	 roi: -0.015469886625407603
+StartValue: 	Sixteen	 roi: -0.36884043177240533
+StartValue: 	Seven	 roi: -0.06810608929222078
+StartValue: 	Eighteen	 roi: -0.0044306644448932776
+tROI: 	-1.4046440058842005
+
+how many :887258   15 2nd hit-> stand -0.0049
+CalcStrategyProfitMachine used total seconds :536
+StartValue: 	Six	 roi: -0.06125270113315856
+StartValue: 	Fifteen	 roi: -0.4039013093173107
+StartValue: 	Twelve	 roi: -0.36456192085186145
+StartValue: 	Seventeen	 roi: -0.22449804330470802
+StartValue: 	Eleven	 roi: 0.18154516468507767
+StartValue: 	Five	 roi: -0.038663443462653685
+StartValue: 	Twenty	 roi: 0.7083707636326414
+StartValue: 	Fourteen	 roi: -0.4361573166586242
+StartValue: 	Thirteen	 roi: -0.47121819420352945
+StartValue: 	Nineteen	 roi: 0.16454801466144095
+StartValue: 	Nine	 roi: -0.006973169669018047
+StartValue: 	Ten	 roi: 0.04825293176133639
+StartValue: 	Eight	 roi: -0.04785454424747264
+StartValue: 	Four	 roi: -0.016716141377804965
+StartValue: 	Sixteen	 roi: -0.3688404317724055
+StartValue: 	Seven	 roi: -0.06862814784488569
+StartValue: 	Eighteen	 roi: -0.004430664444893909
+tROI: 	-1.4109791535478307
+
+
+how many :981134  15 vs 7 hit -> stand   -0.003
+CalcStrategyProfitMachine used total seconds :512
+StartValue: 	Six	 roi: -0.06113987949450104
+StartValue: 	Fifteen	 roi: -0.4039013093173102
+StartValue: 	Twelve	 roi: -0.36417837237669765
+StartValue: 	Seventeen	 roi: -0.22449804330470768
+StartValue: 	Eleven	 roi: 0.18154516468507773
+StartValue: 	Five	 roi: -0.03843442160175617
+StartValue: 	Twenty	 roi: 0.7083707636326416
+StartValue: 	Fourteen	 roi: -0.4361573166586237
+StartValue: 	Thirteen	 roi: -0.4712181942035288
+StartValue: 	Nineteen	 roi: 0.16454801466144067
+StartValue: 	Nine	 roi: -0.006854401359104062
+StartValue: 	Ten	 roi: 0.04825293176133648
+StartValue: 	Eight	 roi: -0.04772047597327414
+StartValue: 	Four	 roi: -0.015881455361144596
+StartValue: 	Sixteen	 roi: -0.36884043177240505
+StartValue: 	Seven	 roi: -0.06849774498049746
+StartValue: 	Eighteen	 roi: -0.004430664444894269
+tROI: 	-1.4090358361079485
+
+
+how many :887040  16 vs 7&8 hit->stand  -0.0043
+CalcStrategyProfitMachine used total seconds :498
+StartValue: 	Six	 roi: -0.06159418980737406
+StartValue: 	Fifteen	 roi: -0.40390130931731055
+StartValue: 	Twelve	 roi: -0.36425950436918875
+StartValue: 	Seventeen	 roi: -0.22449804330470766
+StartValue: 	Eleven	 roi: 0.1815451646850776
+StartValue: 	Five	 roi: -0.039378772463923205
+StartValue: 	Twenty	 roi: 0.7083707636326403
+StartValue: 	Fourteen	 roi: -0.43615731665862395
+StartValue: 	Thirteen	 roi: -0.4712181942035293
+StartValue: 	Nineteen	 roi: 0.16454801466144056
+StartValue: 	Nine	 roi: -0.006925205564767042
+StartValue: 	Ten	 roi: 0.04825293176133635
+StartValue: 	Eight	 roi: -0.04776594535478951
+StartValue: 	Four	 roi: -0.01562791660628943
+StartValue: 	Sixteen	 roi: -0.36884043177240533
+StartValue: 	Seven	 roi: -0.06852256160574502
+StartValue: 	Eighteen	 roi: -0.004430664444893843
+tROI: 	-1.4104031807330533
+
+
+how many :1058262  12vs 2 stand 3 hit
+CalcStrategyProfitMachine used total seconds :505
+StartValue: 	Six	 roi: -0.06093487357107562
+StartValue: 	Fifteen	 roi: -0.4039013093173108
+StartValue: 	Twelve	 roi: -0.5034742015448428
+StartValue: 	Seventeen	 roi: -0.22449804330470802
+StartValue: 	Eleven	 roi: 0.18154516468507764
+StartValue: 	Five	 roi: -0.037994581863330476
+StartValue: 	Twenty	 roi: 0.7083707636326414
+StartValue: 	Fourteen	 roi: -0.4361573166586241
+StartValue: 	Thirteen	 roi: -0.47121819420352945
+StartValue: 	Nineteen	 roi: 0.16454801466144095
+StartValue: 	Nine	 roi: -0.006537709030066943
+StartValue: 	Ten	 roi: 0.04825293176133638
+StartValue: 	Eight	 roi: -0.047428311210328936
+StartValue: 	Four	 roi: -0.01552769668480601
+StartValue: 	Sixteen	 roi: -0.3688404317724055
+StartValue: 	Seven	 roi: -0.06824270414191531
+StartValue: 	Eighteen	 roi: -0.004430664444893909
+tROI: 	-1.5464691630073415
+
+twotwo 12 vs 2,3 stand
+how many :1052502
+CalcStrategyProfitMachine used total seconds :525
+StartValue: 	Six	 roi: -0.06096822895886005
+StartValue: 	Fifteen	 roi: -0.4039013093173103
+StartValue: 	Twelve	 roi: -0.5034742015448422
+StartValue: 	Seventeen	 roi: -0.22449804330470755
+StartValue: 	Eleven	 roi: 0.18154516468507773
+StartValue: 	Five	 roi: -0.03801805023227093
+StartValue: 	Twenty	 roi: 0.7083707636326414
+StartValue: 	Fourteen	 roi: -0.4361573166586237
+StartValue: 	Thirteen	 roi: -0.47121819420352884
+StartValue: 	Nineteen	 roi: 0.1645480146614395
+StartValue: 	Nine	 roi: -0.006590661960548822
+StartValue: 	Ten	 roi: 0.04825293176133653
+StartValue: 	Eight	 roi: -0.04747680305484231
+StartValue: 	Four	 roi: -0.01553935732857019
+StartValue: 	Sixteen	 roi: -0.36884043177240505
+StartValue: 	Seven	 roi: -0.06828509289852051
+StartValue: 	Eighteen	 roi: -0.004430664444893531
+tROI: 	-1.546681480939429
+
+
 how many :751912
 CalcStrategyProfitMachine used total seconds :4327
 StartValue: 	Six	 roi: -0.061767914671519666

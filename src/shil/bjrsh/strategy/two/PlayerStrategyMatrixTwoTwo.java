@@ -8,9 +8,9 @@ import shil.bjrsh.strategy.PlayerAction;
 import shil.bjrsh.strategy.PlayerStrategy;
 import shil.bjrsh.strategy.PlayerStrategyMatrix;
 
-public class PlayerStrategyMatrixTwo extends PlayerStrategyMatrix{
+public class PlayerStrategyMatrixTwoTwo extends PlayerStrategyMatrix{
 	
-	public PlayerStrategyMatrixTwo(){
+	public PlayerStrategyMatrixTwoTwo(){
 	
 		strategyMatrix = new TreeMap<PlayerStrategy,PlayerStrategy>();
 	
@@ -28,7 +28,7 @@ public class PlayerStrategyMatrixTwo extends PlayerStrategyMatrix{
 			else if(startValue == StartValue.Nine){
 				for(Card dealerCard : Card.values()){
 					if(dealerCard == Card.One1) continue;
-					if(dealerCard == Card.Five5 || dealerCard == Card.Six6){
+					if(dealerCard == Card.Four4 || dealerCard == Card.Five5 || dealerCard == Card.Six6){
 						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Double,PlayerAction.Hit);
 						strategyMatrix.put(playerStrategy,playerStrategy); 
 					}else{
@@ -64,7 +64,13 @@ public class PlayerStrategyMatrixTwo extends PlayerStrategyMatrix{
 			else if(startValue == StartValue.Twelve){// && startValue.getValue()<=16){
 				for(Card dealerCard : Card.values()){
 					if(dealerCard == Card.One1) continue;
-					if(dealerCard.getValue() >=2 && dealerCard.getValue() <=6){
+					if(dealerCard.getValue() == 2 ){
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Hit,PlayerAction.Hit);
+						strategyMatrix.put(playerStrategy,playerStrategy);
+					}else if(dealerCard.getValue() == 3 ){
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Stand,PlayerAction.Stand);
+						strategyMatrix.put(playerStrategy,playerStrategy);
+					}else if(dealerCard.getValue() >3 && dealerCard.getValue() <=6){
 						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Stand,PlayerAction.Stand);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}else{
@@ -96,13 +102,13 @@ public class PlayerStrategyMatrixTwo extends PlayerStrategyMatrix{
 						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Stand,PlayerAction.Stand);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}else if(dealerCard.getValue() == 7){
-						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Stand,PlayerAction.Stand);
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Hit,PlayerAction.Hit);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}else if(dealerCard.getValue() == 8){
-						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Hit,PlayerAction.Hit);
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Hit);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}else if(dealerCard.getValue() == 9){
-						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Hit,PlayerAction.Hit);
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Hit);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}else if(dealerCard.getValue() == 10){
 						//T,J,Q,K
@@ -124,10 +130,10 @@ public class PlayerStrategyMatrixTwo extends PlayerStrategyMatrix{
 						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Stand,PlayerAction.Stand);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}else if(dealerCard.getValue() == 7 ){
-						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Stand,PlayerAction.Stand);
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Hit,PlayerAction.Hit);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}else if(dealerCard.getValue() == 8 ){
-						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Stand);
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Hit);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}else if(dealerCard.getValue() == 9 ){
 						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Hit);
@@ -151,13 +157,13 @@ public class PlayerStrategyMatrixTwo extends PlayerStrategyMatrix{
 						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Stand,PlayerAction.Stand);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}else if(dealerCard.getValue() == 7 ){
-						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Stand,PlayerAction.Stand);
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Hit,PlayerAction.Hit);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}else if(dealerCard.getValue() ==8 ){
-						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Stand);
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Hit);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}else if(dealerCard.getValue() ==9 ){
-						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Stand);
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Hit);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}else if(dealerCard.getValue() ==10 ){
 						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Stand);
@@ -182,6 +188,6 @@ public class PlayerStrategyMatrixTwo extends PlayerStrategyMatrix{
 	}
 	
 	public static void main(String[] args){
-		new PlayerStrategyMatrixTwo().printStrategyMatrix();
+		new PlayerStrategyMatrixTwoTwo().printStrategyMatrix();
 	}
 }
