@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class DealerCardsPathValue{
+public class DealerCardsPathValue implements CardsPathValue{
 	
 	public static int IllegalCards = -1;
 	
@@ -55,6 +55,10 @@ public class DealerCardsPathValue{
 		return isElevenOk && notOutofCards && isAbe11Conitnue; 
 	}
 	
+	/**
+	 * 7,One1 代表8的时候必须停止,这个组合没有意义，因为另外的那个7,Eleven的组合会存在，代表18.
+	 * @return
+	 */
 	private boolean isAbe11Conitnue(){
 		//规定,庄家如果到17点必须停止,所以当A为11时,庄家必须停止.
 		boolean isAbe11Conitnue = true;

@@ -5,8 +5,10 @@ import java.util.Collection;
 import java.util.List;
 
 import shil.bjrsh.CalcStrategyProfitMachine;
+import shil.bjrsh.HelloWorld;
 import shil.bjrsh.OneCalcPackage;
 import shil.bjrsh.PlayerStartTwoCards;
+import shil.bjrsh.analyze.AnalyzeCardsPathValue;
 import shil.bjrsh.core.CalcROIMap;
 import shil.bjrsh.core.Card;
 import shil.bjrsh.core.PlayerCardsPathValue;
@@ -70,7 +72,7 @@ public class PlayerStrategyTwo extends Strategy{
 		System.out.println(big);
 		calcROIMap.printROI();
 	}
-
+	
 	public static void printStrategyROI(){
 		List<OneCalcPackage> oneCalcPackages = new ArrayList<OneCalcPackage>();
 		Collection<PlayerCardsPathValue> ptcs =  PlayerStartTwoCards.generatePlayerTwoStartCards();
@@ -114,6 +116,23 @@ public class PlayerStrategyTwo extends Strategy{
 		calcROIMap.printROI();
 	}
 	
+	public static void thisIsIt(){
+		Collection<PlayerCardsPathValue> allinone = new ArrayList<>();
+		Collection<PlayerCardsPathValue> ptcs =  PlayerStartTwoCards.generatePlayerTwoStartCardsWithoutA();
+		for (PlayerCardsPathValue ptc : ptcs) {
+			System.out.print("---------player: ");
+			HelloWorld.print(ptc.getCards());
+			for (Card dealerCard : Card.values()) {
+				if(dealerCard == Card.One1) continue;
+				Collection<PlayerCardsPathValue> pcs = PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(ptc, dealerCard);
+				System.out.println("=== dealer : " + dealerCard.getValue() +" size: "+pcs.size());
+				allinone.addAll(pcs);
+			}
+		}
+		System.out.println(allinone.size());
+		HelloWorld.printMapPrecent(AnalyzeCardsPathValue.analyzePlayerCardsPathValue(allinone));
+	}
+	
 	public static void main(String[] args){
 //		Collection<PlayerCardsPathValue> x = generatePlayerCardsPaths(new PlayerCardsPathValue(StartValue.Seventeen), Card.Seven7);
 //		HelloWorld.print(x) ;
@@ -125,6 +144,28 @@ public class PlayerStrategyTwo extends Strategy{
 		
 		printStrategyROIwithoutA();
 //		printStrategyROIwithoutAStartingOn(StartValue.Six);
+		
+//		Collection<PlayerCardsPathValue> pcs = PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(new PlayerCardsPathValue(Card.Eight8,Card.Two2), Card.Six6);
+//		for(PlayerCardsPathValue p : pcs){
+//			if(p.getValue() == 11){
+//				System.out.println(p);
+//			}
+//		}
+//		System.out.println(pcs.size());
+		
+//		HelloWorld.printMapPrecent(AnalyzeCardsPathValue.analyzePlayerCardsPathValue(pcs));
+		
+//		PlayerCardsPathValue x = new PlayerCardsPathValue(Card.Seven7,Card.Two2);
+//		x.addCard(Card.One1);
+//		x.setAction(PlayerAction.DoubleDone);
+//		System.out.println(x.isValid());
+		
+		
+//		Collection<PlayerCardsPathValue> t = PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(new PlayerCardsPathValue(Card.Eight8,Card.Two2), Card.Seven7);
+//		HelloWorld.print(t);
+//		HelloWorld.printMapPrecent(AnalyzeCardsPathValue.analyzePlayerCardsPathValue(t));
+		
+//		thisIsIt();
 	}
 	
 }

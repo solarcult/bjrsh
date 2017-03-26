@@ -6,7 +6,7 @@ import java.util.Map;
 
 import shil.bjrsh.strategy.PlayerAction;
 
-public class PlayerCardsPathValue {
+public class PlayerCardsPathValue implements CardsPathValue{
 
 	public static int IllegalCards = -1;
 	
@@ -61,7 +61,8 @@ public class PlayerCardsPathValue {
 	public boolean isValid(){
 		boolean isElevenOk = getValue() != IllegalCards;
 		boolean notOutofCards = notOutofCards();
-		return isElevenOk && notOutofCards; 
+		boolean isAbe11Conitune = isAbe11Conitune();
+		return isElevenOk && notOutofCards && isAbe11Conitune; 
 	}
 	
 	private boolean notOutofCards(){
@@ -75,6 +76,30 @@ public class PlayerCardsPathValue {
 			}
 		}
 		return notOutofCards;
+	}
+	
+	/**
+	 * 此处的意思为，如果用户为8,2,One1,则不把它当做合法的，因为另一个组合会有8,2,Eleven，所以忽略掉821这个组合.
+	 * 如果用户把A当做11能达到17，则停止要牌，这是正常的选择。
+	 * @return 这个组合是否合法继续
+	 */
+	private boolean isAbe11Conitune(){
+		boolean isAbe11Conitnue = true;
+		//此处没有使用tempValue=startvalue是因为如果用card...的初始函数会造成开始的cards会被加两遍,所以自己造数据测试,初始化时,需要注意.
+		int tempValue = 0;
+		for(Card card : this.cards){
+			tempValue += card.getValue();
+		}
+		
+		if(this.cards.contains(Card.One1)){
+			tempValue -= Card.One1.getValue();
+			tempValue += Card.Eleven.getValue();
+			if(tempValue >= BlackJackInfo.DealerStop && tempValue <= BlackJackInfo.BlackJack){
+				isAbe11Conitnue = false;
+			}
+		}
+			
+		return isAbe11Conitnue;
 	}
 	
 	public StartValue getStartValue(){

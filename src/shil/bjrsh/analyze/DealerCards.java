@@ -2,10 +2,12 @@ package shil.bjrsh.analyze;
 
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Map.Entry;
 
 import org.apache.commons.math3.stat.Frequency;
 
+import shil.bjrsh.HelloWorld;
 import shil.bjrsh.core.Card;
 import shil.bjrsh.core.DealerCardsPathValue;
 import shil.bjrsh.core.GenerateCardsUtil;
@@ -72,6 +74,8 @@ public class DealerCards {
 		System.out.println(frequency);
 	}
 	
+	@Deprecated 
+	//replace by analyzeDealerCardValuePrecent
 	public static void moreAccurateRate(Collection<DealerCardsPathValue> dealerPackage){
 		HashMap<Integer, Double> amap = new HashMap<Integer, Double>();
 		for(DealerCardsPathValue onepath : dealerPackage){
@@ -94,6 +98,8 @@ public class DealerCards {
 		System.out.println(frequency);
 	}
 	
+	@Deprecated
+	//replace by HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.KKK));
 	public static void printAll(){
 		for(Card card: Card.values()){
 			if(card.getValue()>=2 && card.getValue()<=11 && card!=Card.JJJ && card!=Card.QQQ && card!=Card.KKK){
@@ -103,25 +109,42 @@ public class DealerCards {
 		}
 	}
 	
+	public static Map<Integer,Double> analyzeDealerCardValuePrecent(Card card){
+		Collection<DealerCardsPathValue> x = fetchDealerCards(card);
+		return AnalyzeCardsPathValue.analyzeDealerCardsPathValue(x);
+	}
+	
 	public static void main(String[] args){
 //		HelloWorld.print(DealerCards.StartSix);
 //		printFrequency(StartTwo);
 //		printAll();
 		
 		System.out.println(StartTwo.size());
+		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.Two2));
 		System.out.println(StartThree.size());
+		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.Three3));
 		System.out.println(StartFour.size());
+		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.Four4));
 		System.out.println(StartFive.size());
+		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.Five5));
 		System.out.println(StartSix.size());
+		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.Six6));
 		System.out.println(StartSeven.size());
+		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.Seven7));
 		System.out.println(StartEight.size());
+		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.Eight8));
 		System.out.println(StartNine.size());
+		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.Nine9));
 		System.out.println(StartTen.size());
+		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.Ten));
 		System.out.println(StartJ.size());
+		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.JJJ));
 		System.out.println(StartQ.size());
+		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.QQQ));
 		System.out.println(StartK.size());
+		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.KKK));
 		System.out.println(StartEleven.size());
-
+		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.Eleven));
 		
 	}
 }
