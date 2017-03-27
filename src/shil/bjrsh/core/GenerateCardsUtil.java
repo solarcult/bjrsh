@@ -64,6 +64,25 @@ public class GenerateCardsUtil {
 		return playerCardsPathValues;
 	}
 	
+	/**
+	 * 专门为AX牌做的再来一张,其他逻辑不要用
+	 * @param playerCardsPathValue
+	 * @return
+	 */
+	@Deprecated
+	public static Collection<PlayerCardsPathValue> hitPlayerOneMoreCardEvenIlleage(PlayerCardsPathValue playerCardsPathValue){
+		Collection<PlayerCardsPathValue> playerCardsPathValues = new HashSet<PlayerCardsPathValue>();
+				
+		//Boss, give me one more cards
+		for (Card card : Card.values()) {
+			PlayerCardsPathValue aNewPath = new PlayerCardsPathValue(playerCardsPathValue);
+			aNewPath.addCard(card);
+			playerCardsPathValues.add(aNewPath);
+		}
+		
+		return playerCardsPathValues;
+	}
+	
 	public static void main(String[] args){
 		PlayerCardsPathValue x = new PlayerCardsPathValue(Card.Nine9,Card.Four4,Card.Five5);
 		HelloWorld.print(hitPlayerOneMoreCard(x));
