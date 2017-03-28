@@ -129,6 +129,8 @@ public class PlayerCardsPathValue implements CardsPathValue{
 		StartValue tempStartValue = (StartValue.Eleven == startValue) ? StartValue.One : startValue;
 		result = prime * result
 				+ ((tempStartValue == null) ? 0 : tempStartValue.hashCode());
+		//wrong understand, 原因如下行。原注释：[如果牌的列表顺序一致,则不用比value,一定一致的.但如果包含A的情况,value就会不一样,所以没有必要存在],注释存在 if只用在运算DealerVSPlayerAdvantage.makePlayerOneMoreVSNowDealerChange(),时,因为这是22,A会被解释成15而不是5. 26A为19而不是9
+		//玩家用2,2起手hitnextOnecard时，第一局会出现2,2,1,和2,2,11并存的情况,实际现实中会用最大的做为起手,但如果算strategy时,必须把这行注释去掉,因为当2,2,A,7出现时,如果第一步只留下2,2,11,会造成2,2,A,7这个组合不会出现.
 		result = prime * result + value;
 		return result;
 	}
@@ -165,8 +167,9 @@ public class PlayerCardsPathValue implements CardsPathValue{
 		StartValue otherStartValue = (StartValue.Eleven == other.startValue) ? StartValue.One : other.startValue;
 		if(myStartValue != otherStartValue)
 			return false;
-		if (value != other.value)
-			return false;
+		//wrong understand, 原因如下行。原注释：[如果牌的列表顺序一致,则不用比value,一定一致的.但如果包含A的情况,value就会不一样,所以没有必要存在],注释存在 if只用在运算DealerVSPlayerAdvantage.makePlayerOneMoreVSNowDealerChange(),时,因为这是22,A会被解释成15而不是5. 26A为19而不是9
+		//玩家用2,2起手hitnextOnecard时，第一局会出现2,2,1,和2,2,11并存的情况,实际现实中会用最大的做为起手,但如果算strategy时,必须把这行注释去掉,因为当2,2,A,7出现时,如果第一步只留下2,2,11,会造成2,2,A,7这个组合不会出现.
+		if (value != other.value) return false;
 		return true;
 	}
 

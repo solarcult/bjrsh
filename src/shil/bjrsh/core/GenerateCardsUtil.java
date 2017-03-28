@@ -75,16 +75,23 @@ public class GenerateCardsUtil {
 				
 		//Boss, give me one more cards
 		for (Card card : Card.values()) {
+			//此处将11放在最后是为了处理AT的生成数据情况,特殊处理,否者会出来ATA被当做22的情况,实际应该是12.
+			if(card == Card.Eleven) continue;
 			PlayerCardsPathValue aNewPath = new PlayerCardsPathValue(playerCardsPathValue);
 			aNewPath.addCard(card);
 			playerCardsPathValues.add(aNewPath);
 		}
+		PlayerCardsPathValue aNewPath = new PlayerCardsPathValue(playerCardsPathValue);
+		aNewPath.addCard(Card.Eleven);
+		
+		playerCardsPathValues.add(aNewPath);
 		
 		return playerCardsPathValues;
 	}
 	
 	public static void main(String[] args){
-		PlayerCardsPathValue x = new PlayerCardsPathValue(Card.Nine9,Card.Four4,Card.Five5);
+		PlayerCardsPathValue x = new PlayerCardsPathValue(Card.Two2,Card.Two2);
+//		PlayerCardsPathValue x = new PlayerCardsPathValue(StartValue.Four);
 		HelloWorld.print(hitPlayerOneMoreCard(x));
 	}
 	

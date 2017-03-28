@@ -28,7 +28,7 @@ public class PlayerStrategyMatrixTwoTwo extends PlayerStrategyMatrix{
 			else if(startValue == StartValue.Nine){
 				for(Card dealerCard : Card.values()){
 					if(dealerCard == Card.One1) continue;
-					if(dealerCard == Card.Four4 || dealerCard == Card.Five5 || dealerCard == Card.Six6){
+					if(dealerCard == Card.Three3 || dealerCard == Card.Four4 || dealerCard == Card.Five5 || dealerCard == Card.Six6 || dealerCard == Card.Seven7){
 						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Double,PlayerAction.Hit);
 						strategyMatrix.put(playerStrategy,playerStrategy); 
 					}else{
@@ -40,7 +40,7 @@ public class PlayerStrategyMatrixTwoTwo extends PlayerStrategyMatrix{
 			else if(startValue == StartValue.Ten) {
 				for(Card dealerCard : Card.values()){
 					if(dealerCard == Card.One1) continue;
-					if(dealerCard.getValue() >=2 && dealerCard.getValue() <=8){
+					if(dealerCard.getValue() >=2 && dealerCard.getValue() <=9){
 						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Double,PlayerAction.Hit);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}else{
@@ -166,7 +166,7 @@ public class PlayerStrategyMatrixTwoTwo extends PlayerStrategyMatrix{
 						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Hit);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}else if(dealerCard.getValue() ==10 ){
-						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Stand);
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Hit);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}
 					else{
