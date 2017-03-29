@@ -90,7 +90,7 @@ public class PlayerCardsPathValue implements CardsPathValue{
 		for(Card card : this.cards){
 			tempValue += card.getValue();
 		}
-		
+		//如果A变成11可以达到17到21,则抛弃这个组合,因为另外一个11的组合会替代这个.
 		if(this.cards.contains(Card.One1)){
 			tempValue -= Card.One1.getValue();
 			tempValue += Card.Eleven.getValue();

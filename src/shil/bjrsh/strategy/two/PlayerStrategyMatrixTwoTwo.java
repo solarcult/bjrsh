@@ -157,16 +157,16 @@ public class PlayerStrategyMatrixTwoTwo extends PlayerStrategyMatrix{
 						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Stand,PlayerAction.Stand);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}else if(dealerCard.getValue() == 7 ){
-						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Hit,PlayerAction.Hit);
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Stand,PlayerAction.Stand);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}else if(dealerCard.getValue() ==8 ){
-						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Hit);
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Stand);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}else if(dealerCard.getValue() ==9 ){
-						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Hit);
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Stand);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}else if(dealerCard.getValue() ==10 ){
-						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Hit);
+						PlayerStrategy playerStrategy = new PlayerStrategy(startValue, dealerCard, PlayerAction.Giveup,PlayerAction.Stand);
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}
 					else{
@@ -175,8 +175,7 @@ public class PlayerStrategyMatrixTwoTwo extends PlayerStrategyMatrix{
 						strategyMatrix.put(playerStrategy,playerStrategy);
 					}
 				}
-			}
-			else{
+			}else{
 				// start >= 17 just wait , watch and pray
 				for(Card dealerCard : Card.values()){
 					if(dealerCard == Card.One1) continue;

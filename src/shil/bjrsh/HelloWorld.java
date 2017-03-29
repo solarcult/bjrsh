@@ -5,8 +5,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.apache.commons.math3.stat.Frequency;
-
 import shil.bjrsh.analyze.DealerCards;
 
 public class HelloWorld {
@@ -76,16 +74,5 @@ public class HelloWorld {
 		for(Entry<K,V> e : map.entrySet()){
 			System.out.println(e.getKey() +" : " + e.getValue());
 		}
-	}
-	
-	public static void printMapPrecent(Map<Integer,Double> map){
-		Frequency frequency = new Frequency();
-		for(Entry<Integer, Double> e : map.entrySet()){
-			System.out.println(e.getKey() +" : " + 100*e.getValue());
-			frequency.incrementValue(e.getKey(),(long) ((long) 10000000*e.getValue()));
-		}
-		System.out.println(frequency);
-	}
-	
-	
+	}	
 }

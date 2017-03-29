@@ -109,7 +109,7 @@ public class DealerCards {
 		}
 	}
 	
-	public static Map<Integer,Double> analyzeDealerCardValuePrecent(Card card){
+	public static Map<Integer,AnalyzeStatus> analyzeDealerCardValuePrecent(Card card){
 		Collection<DealerCardsPathValue> x = fetchDealerCards(card);
 		return AnalyzeCardsPathValue.analyzeDealerCardsPathValue(x);
 	}
@@ -120,31 +120,31 @@ public class DealerCards {
 //		printAll();
 		
 		System.out.println(StartTwo.size());
-		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.Two2));
+		HelloWorld.printMap(analyzeDealerCardValuePrecent(Card.Two2));
 		System.out.println(StartThree.size());
-		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.Three3));
+		HelloWorld.printMap(analyzeDealerCardValuePrecent(Card.Three3));
 		System.out.println(StartFour.size());
-		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.Four4));
+		HelloWorld.printMap(analyzeDealerCardValuePrecent(Card.Four4));
 		System.out.println(StartFive.size());
-		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.Five5));
+		HelloWorld.printMap(analyzeDealerCardValuePrecent(Card.Five5));
 		System.out.println(StartSix.size());
-		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.Six6));
+		HelloWorld.printMap(analyzeDealerCardValuePrecent(Card.Six6));
 		System.out.println(StartSeven.size());
-		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.Seven7));
+		HelloWorld.printMap(analyzeDealerCardValuePrecent(Card.Seven7));
 		System.out.println(StartEight.size());
-		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.Eight8));
+		HelloWorld.printMap(analyzeDealerCardValuePrecent(Card.Eight8));
 		System.out.println(StartNine.size());
-		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.Nine9));
+		HelloWorld.printMap(analyzeDealerCardValuePrecent(Card.Nine9));
 		System.out.println(StartTen.size());
-		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.Ten));
+		HelloWorld.printMap(analyzeDealerCardValuePrecent(Card.Ten));
 		System.out.println(StartJ.size());
-		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.JJJ));
+		HelloWorld.printMap(analyzeDealerCardValuePrecent(Card.JJJ));
 		System.out.println(StartQ.size());
-		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.QQQ));
+		HelloWorld.printMap(analyzeDealerCardValuePrecent(Card.QQQ));
 		System.out.println(StartK.size());
-		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.KKK));
+		HelloWorld.printMap(analyzeDealerCardValuePrecent(Card.KKK));
 		System.out.println(StartEleven.size());
-		HelloWorld.printMapPrecent(analyzeDealerCardValuePrecent(Card.Eleven));
+		HelloWorld.printMap(analyzeDealerCardValuePrecent(Card.Eleven));
 		
 	}
 }
