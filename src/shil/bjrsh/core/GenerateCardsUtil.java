@@ -4,6 +4,8 @@ import java.util.Collection;
 import java.util.HashSet;
 
 import shil.bjrsh.HelloWorld;
+import shil.bjrsh.analyze.AnalyzeCardsPathValue;
+import shil.bjrsh.strategy.two.PlayerStrategyTwo;
 
 public class GenerateCardsUtil {
 	
@@ -90,9 +92,17 @@ public class GenerateCardsUtil {
 	}
 	
 	public static void main(String[] args){
-		PlayerCardsPathValue x = new PlayerCardsPathValue(Card.Two2,Card.Two2);
-//		PlayerCardsPathValue x = new PlayerCardsPathValue(StartValue.Four);
-		HelloWorld.print(hitPlayerOneMoreCard(x));
+		
+		PlayerCardsPathValue x = new PlayerCardsPathValue(Card.Seven7,Card.Seven7);
+		Collection<PlayerCardsPathValue> xs = PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(x, Card.Six6);
+		HelloWorld.print(xs);
+		HelloWorld.printMap(AnalyzeCardsPathValue.analyzePlayerCardsPathValue(xs));
+		System.out.println();
+		
+		PlayerCardsPathValue y = new PlayerCardsPathValue(Card.Seven7);
+		Collection<PlayerCardsPathValue> ys = PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(y, Card.Six6);
+		HelloWorld.printMap(AnalyzeCardsPathValue.analyzePlayerCardsPathValue(ys));
+		HelloWorld.print(ys);
 	}
 	
 }

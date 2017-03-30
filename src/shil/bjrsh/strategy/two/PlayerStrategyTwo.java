@@ -5,8 +5,10 @@ import java.util.Collection;
 import java.util.List;
 
 import shil.bjrsh.CalcStrategyProfitMachine;
+import shil.bjrsh.HelloWorld;
 import shil.bjrsh.OneCalcPackage;
 import shil.bjrsh.PlayerStartTwoCards;
+import shil.bjrsh.analyze.AnalyzeCardsPathValue;
 import shil.bjrsh.core.CalcROIMap;
 import shil.bjrsh.core.Card;
 import shil.bjrsh.core.PlayerCardsPathValue;
@@ -25,7 +27,7 @@ public class PlayerStrategyTwo extends Strategy{
 
 	public static Strategy getInstance() {
 		if(playerStrategyTwo == null){
-			playerStrategyTwo = new PlayerStrategyTwo(new PlayerStrategyMatrixTwoTwo());
+			playerStrategyTwo = new PlayerStrategyTwo(new PSM15Hit16Stand());
 		}
 		return playerStrategyTwo;
 	}
@@ -122,13 +124,13 @@ public class PlayerStrategyTwo extends Strategy{
 			for (Card dealerCard : Card.values()) {
 				if(dealerCard == Card.One1) continue;
 				Collection<PlayerCardsPathValue> pcs = PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(new PlayerCardsPathValue(ptc), dealerCard);
-				System.out.println(ptc.getCards().get(0)+" "+ptc.getCards().get(1)+" : " + dealerCard.getValue() + " = "+pcs.size());
+//				System.out.println(ptc.getCards().get(0)+" "+ptc.getCards().get(1)+" : " + dealerCard.getValue() + " = "+pcs.size());
 //				HelloWorld.print(pcs);
 				allinone.addAll(pcs);
 			}
 		}
 		System.out.println(allinone.size());
-//		HelloWorld.printMap(AnalyzeCardsPathValue.analyzePlayerCardsPathValue(allinone));
+		HelloWorld.printMap(AnalyzeCardsPathValue.analyzePlayerCardsPathValue(allinone));
 	}
 	
 	public static void main(String[] args){
@@ -163,7 +165,7 @@ public class PlayerStrategyTwo extends Strategy{
 //		HelloWorld.print(t);
 //		HelloWorld.printMapPrecent(AnalyzeCardsPathValue.analyzePlayerCardsPathValue(t));
 		
-//		thisIsIt();
+		thisIsIt();
 	}
 	
 }
