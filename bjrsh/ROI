@@ -24,6 +24,28 @@ tROI: 	-1.076966616190736
 1 : AnalyzeStatus [value=21, 	precent= 0.04678882807800503, 	tillPct= 0.8786004678487617, 	prob= 0.5183560094008627, 	tillProb= 9.733687529265287, 	totalProb=11.078627755682916]
 
 
+PSM14Hit15Hit16Stand
+
+how many :260260
+CalcStrategyProfitMachine used total seconds :118
+StartValue: 	Six	 roi: -0.058036047641380484
+StartValue: 	Fifteen	 roi: -0.3605534273723581
+StartValue: 	Twelve	 roi: -0.3615316852316586
+StartValue: 	Seventeen	 roi: -0.22449804330470857
+StartValue: 	Eleven	 roi: 0.1923685496614962
+StartValue: 	Five	 roi: -0.03949879606495621
+StartValue: 	Twenty	 roi: 0.7083707636326408
+StartValue: 	Fourteen	 roi: -0.373931514744513
+StartValue: 	Thirteen	 roi: -0.3710495991284706
+StartValue: 	Nineteen	 roi: 0.16454801466144137
+StartValue: 	Nine	 roi: -0.0026090310841152074
+StartValue: 	Ten	 roi: 0.11567973857217935
+StartValue: 	Eight	 roi: -0.04765090784106572
+StartValue: 	Four	 roi: -0.015599339294138027
+StartValue: 	Sixteen	 roi: -0.33740129742118496
+StartValue: 	Seven	 roi: -0.0660353551634498
+StartValue: 	Eighteen	 roi: -0.0044306644448938205
+tROI: 	-1.0818586422091356
 
 
 PSM15Hit16Stand 

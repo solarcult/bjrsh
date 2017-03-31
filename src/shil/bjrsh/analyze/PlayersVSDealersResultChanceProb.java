@@ -2,6 +2,8 @@ package shil.bjrsh.analyze;
 
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.Map;
+import java.util.Map.Entry;
 
 import shil.bjrsh.HelloWorld;
 import shil.bjrsh.core.BlackJackInfo;
@@ -50,6 +52,15 @@ public class PlayersVSDealersResultChanceProb {
 		return calcPlayerdVSDealerProbs(players, dealers);
 	}
 	
+	
+	public static double[] calcPlayerVSDealerAnaylzeStatus(Collection<PlayerCardsPathValue> players, Card dealerCard){
+		Collection<DealerCardsPathValue> dealers = DealerCards.fetchDealerCards(dealerCard);
+		Map<Integer,AnalyzeStatus> playermap = AnalyzeCardsPathValue.analyzePlayerCardsPathValue(players);
+		Map<Integer,AnalyzeStatus> dealermap = AnalyzeCardsPathValue.analyzeDealerCardsPathValue(dealers);
+		return calcPlayerVSDealerAnaylzeStatus(playermap, dealermap);
+	}
+	
+	
 	public static double[] calcPlayerdVSDealerProbs(Collection<PlayerCardsPathValue> players , Collection<DealerCardsPathValue> dealers){
 		double winrate = 0;
 		double drawrate = 0;
@@ -70,6 +81,34 @@ public class PlayersVSDealersResultChanceProb {
 					drawrate += combineRate;
 				}else if(player.getValue() < dealer.getValue()){
 					loserate += combineRate;
+				}
+			}
+		}
+		
+		double totalrate = winrate + drawrate + loserate;
+		
+		return new double[]{winrate/totalrate,drawrate/totalrate,loserate/totalrate};
+	}
+	
+	public static double[] calcPlayerVSDealerAnaylzeStatus(Map<Integer,AnalyzeStatus> playermap,Map<Integer,AnalyzeStatus> dealermap){
+		double winrate = 0;
+		double drawrate = 0;
+		double loserate = 0;
+		
+		for(Entry<Integer,AnalyzeStatus> pe : playermap.entrySet()){
+			for(Entry<Integer,AnalyzeStatus> de : dealermap.entrySet()){
+				AnalyzeStatus pa = pe.getValue();
+				AnalyzeStatus da = de.getValue();
+				if(pa.getValue() > BlackJackInfo.BlackJack){
+					loserate += pa.getPrecent() * da.getPrecent();
+				}else if(da.getValue() > BlackJackInfo.BlackJack){
+					winrate += pa.getPrecent() * da.getPrecent();
+				}else if(pa.getValue() > da.getValue()){
+					winrate += pa.getPrecent() * da.getPrecent();
+				}else if(pa.getValue() < da.getValue()){
+					loserate += pa.getPrecent() * da.getPrecent();
+				}else if(pa.getValue() == da.getValue()){
+					drawrate += pa.getPrecent() * da.getPrecent();
 				}
 			}
 		}

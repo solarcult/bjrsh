@@ -9,6 +9,7 @@ import shil.bjrsh.HelloWorld;
 import shil.bjrsh.OneCalcPackage;
 import shil.bjrsh.PlayerStartTwoCards;
 import shil.bjrsh.analyze.AnalyzeCardsPathValue;
+import shil.bjrsh.analyze.PlayersVSDealersResultChanceProb;
 import shil.bjrsh.core.CalcROIMap;
 import shil.bjrsh.core.Card;
 import shil.bjrsh.core.PlayerCardsPathValue;
@@ -27,7 +28,7 @@ public class PlayerStrategyTwo extends Strategy{
 
 	public static Strategy getInstance() {
 		if(playerStrategyTwo == null){
-			playerStrategyTwo = new PlayerStrategyTwo(new PSM15Hit16Stand());
+			playerStrategyTwo = new PlayerStrategyTwo(new PSM14Hit15Hit16Stand());
 		}
 		return playerStrategyTwo;
 	}
@@ -124,13 +125,30 @@ public class PlayerStrategyTwo extends Strategy{
 			for (Card dealerCard : Card.values()) {
 				if(dealerCard == Card.One1) continue;
 				Collection<PlayerCardsPathValue> pcs = PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(new PlayerCardsPathValue(ptc), dealerCard);
-//				System.out.println(ptc.getCards().get(0)+" "+ptc.getCards().get(1)+" : " + dealerCard.getValue() + " = "+pcs.size());
+				System.out.println(ptc.getCards().get(0)+" "+ptc.getCards().get(1)+" : " + dealerCard.getValue() + " = "+pcs.size());
 //				HelloWorld.print(pcs);
 				allinone.addAll(pcs);
 			}
 		}
 		System.out.println(allinone.size());
 		HelloWorld.printMap(AnalyzeCardsPathValue.analyzePlayerCardsPathValue(allinone));
+	}
+	
+	public static void thatIsIt(){
+		for (StartValue startValue : StartValue.values()) {
+			if (startValue.getValue() < StartValue.Four.getValue()) continue;
+			for (Card dealerCard : Card.values()) {
+				if(Card.One1 == dealerCard || dealerCard == Card.JJJ || dealerCard == Card.QQQ || dealerCard == Card.KKK) continue;
+				Collection<PlayerCardsPathValue> players = PlayerStrategyTwo.getInstance().generatePlayerCardsPaths(new PlayerCardsPathValue(startValue), dealerCard);
+				double[] x = PlayersVSDealersResultChanceProb.calcPlayerVSDealerAnaylzeStatus(players, dealerCard);
+//				if(startValue==StartValue.Nine && dealerCard==Card.Three3){
+//					HelloWorld.print(players);
+//				}
+				System.out.println("Player : "+startValue +" Dealer : "+dealerCard+" = "+ (x[0]-x[2])*100);
+//				HelloWorld.printDoubleWDL();
+//				HelloWorld.print2DoubleWDL(PlayersVSDealersResultChanceProb.calcPlayerVSDealerAnaylzeStatus(players, dealerCard), PlayersVSDealersResultChanceProb.calcPlayerdVSDealerProbs(players, dealerCard));
+			}
+		}
 	}
 	
 	public static void main(String[] args){
@@ -165,7 +183,8 @@ public class PlayerStrategyTwo extends Strategy{
 //		HelloWorld.print(t);
 //		HelloWorld.printMapPrecent(AnalyzeCardsPathValue.analyzePlayerCardsPathValue(t));
 		
-		thisIsIt();
+//		thisIsIt();
+//		thatIsIt();
 	}
 	
 }

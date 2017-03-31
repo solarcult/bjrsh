@@ -37,6 +37,22 @@ public class DealerVSPlayerAdvantage {
 		return diff;
 	}
 	
+	public static List<DealerVSPlayerChance> checkTwoWayMakeTheSameResult(){
+		List<DealerVSPlayerChance> diff = new ArrayList<DealerVSPlayerChance>();
+		for (StartValue startValue : StartValue.values()) {
+			if (startValue.getValue() < StartValue.Six.getValue() || startValue == StartValue.TwentyOne) continue;
+			for (Card dealerCard : Card.values()) {
+				if(Card.One1 == dealerCard || dealerCard == Card.JJJ || dealerCard == Card.QQQ || dealerCard == Card.KKK) continue;
+				PlayerCardsPathValue playerCardsPathValue = new PlayerCardsPathValue(startValue); 
+				Collection<PlayerCardsPathValue> playerOneMoreCards = GenerateCardsUtil.hitPlayerOneMoreCard(playerCardsPathValue);
+//				double[] playerOneMore = PlayersVSDealersResultChanceProb.calcPlayerdVSDealerProbs(playerOneMoreCards, dealerCard);
+				HelloWorld.print2DoubleWDL(PlayersVSDealersResultChanceProb.calcPlayerVSDealerAnaylzeStatus(playerOneMoreCards, dealerCard), PlayersVSDealersResultChanceProb.calcPlayerdVSDealerProbs(playerOneMoreCards, dealerCard));
+
+			}
+		}
+		return diff;
+	}
+	
 	public static void main(String[] args){
 		List<DealerVSPlayerChance> ao = makePlayerOneMoreVSNowDealerChange();
 //		List<DealerVSPlayerChance> ao = makePlayerOneMoreVSNowPlayerChange();

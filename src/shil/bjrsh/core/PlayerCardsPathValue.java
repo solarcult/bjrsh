@@ -102,6 +102,33 @@ public class PlayerCardsPathValue implements CardsPathValue{
 		return isAbe11Conitnue;
 	}
 	
+	/* 这个方法会造成颠覆性的代码重构,因为穷举时,我们不用再考虑A当11的情况了,自适应.
+	private boolean isAbe11Conitune(){
+		boolean isAbe11Conitnue = true;
+		//此处没有使用tempValue=startvalue是因为如果用card...的初始函数会造成开始的cards会被加两遍,所以自己造数据测试,初始化时,需要注意.
+		int tempValue = 0;
+		for(Card card : this.cards){
+			tempValue += card.getValue();
+		}
+		List<Card> nCards = new ArrayList<>(this.cards.size());
+		//如果A变成11可以达到17到21,则抛弃这个组合,因为另外一个11的组合会替代这个.
+		if(this.cards.contains(Card.One1)){
+			tempValue -= Card.One1.getValue();
+			tempValue += Card.Eleven.getValue();
+			if(tempValue >= BlackJackInfo.DealerStop && tempValue <= BlackJackInfo.BlackJack){
+				for(Card card : this.cards){
+					if(card == Card.One1){
+						nCards.add(Card.Eleven);
+					}else{
+						nCards.add(card);
+					}
+				}
+			}
+		}
+			
+		return isAbe11Conitnue;
+	}
+	*/
 	public StartValue getStartValue(){
 		return this.startValue;
 	}
