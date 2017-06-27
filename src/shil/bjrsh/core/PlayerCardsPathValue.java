@@ -14,6 +14,7 @@ public class PlayerCardsPathValue implements CardsPathValue{
 	private List<Card> cards;
 	private StartValue startValue;
 	private PlayerAction action;
+	private int betMutiV = 1;
 	
 	public PlayerCardsPathValue(StartValue startValue){
 		this.startValue = startValue;
@@ -216,4 +217,13 @@ public class PlayerCardsPathValue implements CardsPathValue{
 	public void setAction(PlayerAction result) {
 		this.action = result;
 	}
+
+	public int getBetMutiV() {
+		return betMutiV;
+	}
+
+	public void setBetMutiV(int betMutiV) {
+		this.betMutiV = betMutiV;
+	}
+	
 }

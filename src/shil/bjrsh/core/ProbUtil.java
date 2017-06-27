@@ -59,6 +59,8 @@ public class ProbUtil {
 		cardsPathValue3.addCard(Card.Eight8);
 		cardsPathValue3.addCard(Card.One1);
 		
+		System.out.println(cardsPathValue3.prob());
+		
 		PlayerCardsPathValue playerCardsPathValue = new PlayerCardsPathValue(StartValue.One);
 		playerCardsPathValue.addCard(Card.One1);
 		playerCardsPathValue.addCard(Card.Eleven);

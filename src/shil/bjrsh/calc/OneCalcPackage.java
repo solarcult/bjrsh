@@ -1,4 +1,4 @@
-package shil.bjrsh;
+package shil.bjrsh.calc;
 
 import shil.bjrsh.core.Card;
 import shil.bjrsh.core.PlayerCardsPathValue;

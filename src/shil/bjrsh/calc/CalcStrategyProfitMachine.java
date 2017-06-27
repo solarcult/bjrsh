@@ -1,4 +1,4 @@
-package shil.bjrsh;
+package shil.bjrsh.calc;
 
 import java.util.Collection;
 import java.util.concurrent.Callable;
@@ -14,7 +14,7 @@ import shil.bjrsh.core.Card;
 import shil.bjrsh.core.PlayerCardsPathValue;
 import shil.bjrsh.core.ProfitUtil;
 import shil.bjrsh.core.StartValue;
-import shil.bjrsh.strategy.Strategy;
+import shil.bjrsh.strategy.two.TwoStrategy;
 
 /**
  * 并行计算接口,使用所有CPU计算
@@ -27,9 +27,9 @@ public class CalcStrategyProfitMachine {
 
 	private ExecutorService machines ;
 	private CompletionService<OnePackageResult> completionService;
-	private Strategy strategy;
+	private TwoStrategy strategy;
 	
-	public CalcStrategyProfitMachine (Strategy strategy){
+	public CalcStrategyProfitMachine (TwoStrategy strategy){
 		this.strategy = strategy;
 		machines = Executors.newFixedThreadPool(cores);
 		completionService = new ExecutorCompletionService<OnePackageResult>(machines);

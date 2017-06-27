@@ -4,29 +4,28 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import shil.bjrsh.CalcStrategyProfitMachine;
 import shil.bjrsh.HelloWorld;
-import shil.bjrsh.OneCalcPackage;
 import shil.bjrsh.PlayerStartTwoCards;
 import shil.bjrsh.analyze.AnalyzeCardsPathValue;
 import shil.bjrsh.analyze.PlayersVSDealersResultChanceProb;
+import shil.bjrsh.calc.CalcStrategyProfitMachine;
+import shil.bjrsh.calc.OneCalcPackage;
 import shil.bjrsh.core.CalcROIMap;
 import shil.bjrsh.core.Card;
 import shil.bjrsh.core.PlayerCardsPathValue;
 import shil.bjrsh.core.ProfitUtil;
 import shil.bjrsh.core.StartValue;
 import shil.bjrsh.strategy.PlayerStrategyMatrix;
-import shil.bjrsh.strategy.Strategy;
 
-public class PlayerStrategyTwo extends Strategy{
+public class PlayerStrategyTwo extends TwoStrategy{
 
-	private static Strategy playerStrategyTwo;
+	private static TwoStrategy playerStrategyTwo;
 	
 	public PlayerStrategyTwo(PlayerStrategyMatrix playerStrategyMatrix) {
 		super(playerStrategyMatrix);
 	}	
 
-	public static Strategy getInstance() {
+	public static TwoStrategy getInstance() {
 		if(playerStrategyTwo == null){
 			playerStrategyTwo = new PlayerStrategyTwo(new PSM14Hit15Hit16Stand());
 		}
